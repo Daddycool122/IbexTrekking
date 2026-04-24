@@ -158,26 +158,16 @@
 
 @media screen and (max-width: 600px) {
   .modal_container {
-    align-items: flex-end;
-    padding: 0;
+    align-items: center;
+    padding: 15px;
   }
 
   .modal_content {
     width: 100%;
-    max-height: 85vh;
-    border-radius: 20px 20px 0 0;
+    max-height: 95vh;
+    border-radius: 16px;
     padding: 25px 20px;
-    animation: slideUp 0.4s ease;
-  }
-
-  @keyframes slideUp {
-    from {
-      transform: translateY(100%);
-    }
-
-    to {
-      transform: translateY(0);
-    }
+    animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   .title {
