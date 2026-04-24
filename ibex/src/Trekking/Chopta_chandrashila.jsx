@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -263,51 +264,21 @@ export default function Chopta_Chandrashila() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is the best time to do Chopta Chandrashila trek?
-                <br />
-                The best time is from March to June and September to November
-                for clear skies and pleasant weather. Avoid monsoon due to
-                landslides.
-              </li>
-              <li className={styles.li}>
-                Is this trek suitable for beginners?
-                <br />
-                Yes, this is an easy to moderate trek and is ideal for beginners
-                with basic fitness levels.
-              </li>
-              <li className={styles.li}>
-                Will we experience snow on this trek?
-                <br />
-                Yes, you can experience snow from December to early March,
-                making it a great winter trek.
-              </li>
-              <li className={styles.li}>
-                Do we need a guide for this trek?
-                <br />
-                Yes, a certified guide is recommended for safety and navigation,
-                especially in winter or forested areas.
-              </li>
-              <li className={styles.li}>
-                How do I reach Chopta for the trek?
-                <br />
-                The trek starts from Sari or Chopta, which can be reached by
-                road from Haridwar or Rishikesh via Rudraprayag and Ukhimath.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "What is the best time to do Chopta Chandrashila trek?", answer: "The best time is from March to June and September to November for clear skies and pleasant weather. Avoid monsoon due to landslides." },
+            { question: "Is this trek suitable for beginners?", answer: "Yes, this is an easy to moderate trek and is ideal for beginners with basic fitness levels." },
+            { question: "Will we experience snow on this trek?", answer: "Yes, you can experience snow from December to early March, making it a great winter trek." },
+            { question: "Do we need a guide for this trek?", answer: "Yes, a certified guide is recommended for safety and navigation, especially in winter or forested areas." },
+            { question: "How do I reach Chopta for the trek?", answer: "The trek starts from Sari or Chopta, which can be reached by road from Haridwar or Rishikesh via Rudraprayag and Ukhimath." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Chopta Chandrashilla Trek"}
-            price={7499}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Chopta Chandrashilla Trek"}
+          price={7499}
+        />
       </div>
       <Footer />
     </>

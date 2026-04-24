@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -296,51 +297,21 @@ export default function PanchKedar() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is Panch Kedar?
-                <br />
-                Panch Kedar refers to the five sacred Shiva temples in
-                Uttarakhand – Kedarnath, Tungnath, Rudranath, Madhyamaheshwar,
-                and Kalpeshwar.
-              </li>
-              <li className={styles.li}>
-                How long does Panch Kedar trek take?
-                <br />
-                It usually takes around 15–18 days to complete the full circuit
-                covering all five temples.
-              </li>
-              <li className={styles.li}>
-                What is the best season for Panch Kedar trek?
-                <br />
-                May to June and September to October are the best seasons. Avoid
-                monsoon due to landslides.
-              </li>
-              <li className={styles.li}>
-                Is this trek difficult?
-                <br />
-                Yes, it is a long and challenging trek as it covers multiple
-                high-altitude temples and remote trails.
-              </li>
-              <li className={styles.li}>
-                Do we need special permits for Panch Kedar?
-                <br />
-                No special permit is required, but you need ID proofs and forest
-                entry passes for some areas.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "What is Panch Kedar?", answer: "Panch Kedar refers to the five sacred Shiva temples in Uttarakhand – Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, and Kalpeshwar." },
+            { question: "How long does Panch Kedar trek take?", answer: "It usually takes around 15–18 days to complete the full circuit covering all five temples." },
+            { question: "What is the best season for Panch Kedar trek?", answer: "May to June and September to October are the best seasons. Avoid monsoon due to landslides." },
+            { question: "Is this trek difficult?", answer: "Yes, it is a long and challenging trek as it covers multiple high-altitude temples and remote trails." },
+            { question: "Do we need special permits for Panch Kedar?", answer: "No special permit is required, but you need ID proofs and forest entry passes for some areas." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Panch Kedar Trek"}
-            price={34999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Panch Kedar Trek"}
+          price={34999}
+        />
       </div>
       <Footer />
     </>

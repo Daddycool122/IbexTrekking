@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -281,46 +282,14 @@ export default function Gaumukh_Tapovan() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is the best season for Gaumukh Tapovan trek?
-                <br />
-                May to June and September to early October are the best months
-                for this trek. Monsoon and heavy snow make it unsafe in other
-                months.
-              </li>
-              <li className={styles.li}>
-                Is Gaumukh Tapovan trek difficult?
-                <br />
-                Yes, it is a moderate to difficult trek due to high altitude
-                (14,600 ft) and glacier crossing, requiring good fitness and
-                prior trekking experience.
-              </li>
-              <li className={styles.li}>
-                Are permits required for this trek?
-                <br />
-                Yes, permits are mandatory from the Forest Department since the
-                trek passes through Gangotri National Park.
-              </li>
-              <li className={styles.li}>
-                Do we get to see Mt. Shivling from Tapovan?
-                <br />
-                Yes, Tapovan offers spectacular views of Mt. Shivling,
-                Bhagirathi peaks, and other Himalayan ranges.
-              </li>
-              <li className={styles.li}>
-                Is camping allowed in Gaumukh area?
-                <br />
-                Camping is only allowed at designated campsites like Chirbasa,
-                Bhojbasa, and Tapovan. No camping is permitted near the actual
-                Gaumukh glacier snout.
-              </li>
-            </ul>
-          </div>
-        </div>
+          <FaqAccordion faqs={[
+            { question: "What is the best season for Gaumukh Tapovan trek?", answer: "May to June and September to early October are the best months for this trek. Monsoon and heavy snow make it unsafe in other months." },
+            { question: "Is Gaumukh Tapovan trek difficult?", answer: "Yes, it is a moderate to difficult trek due to high altitude (14,600 ft) and glacier crossing, requiring good fitness and prior trekking experience." },
+            { question: "Are permits required for this trek?", answer: "Yes, permits are mandatory from the Forest Department since the trek passes through Gangotri National Park." },
+            { question: "Do we get to see Mt. Shivling from Tapovan?", answer: "Yes, Tapovan offers spectacular views of Mt. Shivling, Bhagirathi peaks, and other Himalayan ranges." },
+            { question: "Is camping allowed in Gaumukh area?", answer: "Camping is only allowed at designated campsites like Chirbasa, Bhojbasa, and Tapovan. No camping is permitted near the actual Gaumukh glacier snout." }
+          ]} />
 
-        <div className={styles.billing_section}>
           <FormNP
             open_form={open_form}
             setOpen_form={setOpen_form}

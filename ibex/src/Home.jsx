@@ -52,10 +52,12 @@ export default function Home() {
         scrollToTrekking={scrollToTrekking}
         scrollToReviw={scrollToReviw}
       />
-      <div className={styles.title}>
-        Find your perfect <br />
-        Escape
-        <span className={styles.title_border}></span>
+      <div className={styles.section_intro}>
+        <p className={styles.section_kicker}>Adventure Starts Here</p>
+        <h2 className={styles.section_title}>
+          Find your perfect <span>Escape</span>
+        </h2>
+        <span className={styles.section_divider}></span>
       </div>
 
       <div className={styles.trr_section}>
@@ -84,9 +86,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.title} ref={trekking_ref}>
-        We are trusted by
-        <span className={styles.title_border}></span>
+      <div className={styles.section_intro} ref={trekking_ref}>
+        <p className={styles.section_kicker}>Recognized and Recommended</p>
+        <h2 className={styles.section_title}>We are trusted by</h2>
+        <span className={styles.section_divider}></span>
       </div>
 
       <div className={styles.trusted_by}>
@@ -98,10 +101,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.title} ref={trekking_ref}>
-        Your Trekking Journey <br />
-        Begins
-        <span className={styles.title_border}></span>
+      <div className={`${styles.section_intro} ${styles.section_intro_alt}`}>
+        <p className={styles.section_kicker}>Curated Himalayan Experiences</p>
+        <h2 className={styles.section_title}>
+          Your Trekking Journey <span>Begins</span>
+        </h2>
+        <span className={styles.section_divider}></span>
       </div>
 
       <div className={styles.adventure_card_section}>
@@ -898,10 +903,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.title} ref={rafting_ref}>
-        Ride the Rapids <br />
-        With Us
-        <span className={styles.title_border}></span>
+      <div className={`${styles.section_intro} ${styles.section_intro_alt}`} ref={rafting_ref}>
+        <p className={styles.section_kicker}>Water Thrills, Expert Guides</p>
+        <h2 className={styles.section_title}>
+          Ride the Rapids <span>With Us</span>
+        </h2>
+        <span className={styles.section_divider}></span>
       </div>
 
       <div className={styles.adventure_card_section}>

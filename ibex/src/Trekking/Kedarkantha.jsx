@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -227,48 +228,21 @@ export default function Kedarkantha() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                Why is Kedarkantha called the best winter trek?
-                <br />
-                It is known for its accessible summit, breathtaking snow views,
-                and well-marked trails even in heavy snow.
-              </li>
-              <li className={styles.li}>
-                When can I find snow on Kedarkantha trek?
-                <br />
-                From mid-December to mid-April, the trek is covered in snow.
-              </li>
-              <li className={styles.li}>
-                Is Kedarkantha trek suitable for beginners?
-                <br />
-                Yes, it is an easy to moderate trek and perfect for first-time
-                trekkers.
-              </li>
-              <li className={styles.li}>
-                What is the maximum altitude of Kedarkantha?
-                <br />
-                The summit is at 12,500 ft (3,800 m).
-              </li>
-              <li className={styles.li}>
-                Are there network signals on the trek?
-                <br />
-                Mobile network is available up to Sankri, but not beyond the
-                base village.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "Why is Kedarkantha called the best winter trek?", answer: "It is known for its accessible summit, breathtaking snow views, and well-marked trails even in heavy snow." },
+            { question: "When can I find snow on Kedarkantha trek?", answer: "From mid-December to mid-April, the trek is covered in snow." },
+            { question: "Is Kedarkantha trek suitable for beginners?", answer: "Yes, it is an easy to moderate trek and perfect for first-time trekkers." },
+            { question: "What is the maximum altitude of Kedarkantha?", answer: "The summit is at 12,500 ft (3,800 m)." },
+            { question: "Are there network signals on the trek?", answer: "Mobile network is available up to Sankri, but not beyond the base village." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Kedarkantha Trek"}
-            price={8999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Kedarkantha Trek"}
+          price={8999}
+        />
       </div>
       <Footer />
     </>

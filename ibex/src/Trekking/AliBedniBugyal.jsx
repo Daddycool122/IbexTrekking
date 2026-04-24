@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -285,51 +286,21 @@ export default function AliBedniBugyal() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is the total distance of the trek?
-                <br />
-                The trek covers about 35–40 km over 5 days, spread across
-                forests, meadows, and descents.
-              </li>
-              <li className={styles.li}>
-                Is Ali Bedni Bugyal suitable for beginners?
-                <br />
-                Yes, it’s a beginner-friendly trek if you prepare fitness-wise.
-                Prior trekking experience helps but is not mandatory.
-              </li>
-              <li className={styles.li}>
-                What is the best time to do the trek?
-                <br />
-                April–June: Green meadows & wildflowers. <br />{" "}
-                September–November: Crystal-clear mountain views. <br />{" "}
-                December–March: Snow trek.
-              </li>
-              <li className={styles.li}>
-                How difficult is the trek?
-                <br />
-                Rated Easy to Moderate. Long trekking hours (6–8 hrs on some
-                days), but manageable with preparation.
-              </li>
-              <li className={styles.li}>
-                Will I get mobile network on the trek?
-                <br />
-                Limited or no network during the trek. Network is available in
-                Lohajung.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "What is the total distance of the trek?", answer: "The trek covers about 35–40 km over 5 days, spread across forests, meadows, and descents." },
+            { question: "Is Ali Bedni Bugyal suitable for beginners?", answer: "Yes, it’s a beginner-friendly trek if you prepare fitness-wise. Prior trekking experience helps but is not mandatory." },
+            { question: "What is the best time to do the trek?", answer: "April–June: Green meadows & wildflowers. <br /> September–November: Crystal-clear mountain views. <br /> December–March: Snow trek." },
+            { question: "How difficult is the trek?", answer: "Rated Easy to Moderate. Long trekking hours (6–8 hrs on some days), but manageable with preparation." },
+            { question: "Will I get mobile network on the trek?", answer: "Limited or no network during the trek. Network is available in Lohajung." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Ali Bedni Bugyal Trek"}
-            price={8999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Ali Bedni Bugyal Trek"}
+          price={8999}
+        />
       </div>
       <Footer />
     </>

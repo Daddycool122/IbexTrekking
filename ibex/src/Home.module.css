@@ -154,7 +154,7 @@
   justify-content: space-between;
 }
 
-.ad_cd_title + .ad_cd_book {
+.ad_cd_title+.ad_cd_book {
   margin-top: 4px;
 }
 
@@ -167,6 +167,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .ad_cd_book_book {
   height: 50px;
   width: 80%;
@@ -559,6 +560,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   overflow: hidden;
 }
 
@@ -580,5 +582,101 @@
     max-width: 100%;
     min-height: auto;
     padding: 0.65rem;
+  }
+}
+
+/* Home section redesign: trusted + trekking intro */
+.section_intro {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding: 0 clamp(1rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.section_kicker {
+  margin: 0;
+  font-size: clamp(0.72rem, 0.62rem + 0.22vw, 0.86rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f37002;
+}
+
+.section_title {
+  margin: 0;
+  font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #1f1f1f;
+}
+
+.section_title span {
+  display: block;
+  background: linear-gradient(90deg, #f37002 0%, #ff9344 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section_divider {
+  display: block;
+  height: 4px;
+  width: clamp(72px, 8vw, 110px);
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f37002 0%, #ff9a4e 100%);
+  margin-top: 0.3rem;
+}
+
+.section_intro_alt {
+  margin-top: clamp(2rem, 3.8vw, 3rem);
+}
+
+.trusted_by {
+  width: 100%;
+  margin-top: clamp(0.9rem, 1.8vw, 1.4rem);
+  padding: 0 clamp(1rem, 3vw, 2.5rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: clamp(0.9rem, 2vw, 1.4rem);
+  align-items: stretch;
+  overflow: visible;
+}
+
+.tb_img_section {
+  width: 100%;
+  min-height: 140px;
+  height: clamp(140px, 16vw, 190px);
+  border-radius: 16px;
+  border: 1px solid rgba(243, 112, 2, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(243, 112, 2, 0.08), transparent 45%),
+    #ffffff;
+  box-shadow: 0 14px 28px rgba(21, 21, 21, 0.08);
+  padding: clamp(0.7rem, 1.2vw, 0.9rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tb_img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: saturate(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .trusted_by {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .section_title span {
+    display: inline;
   }
 }

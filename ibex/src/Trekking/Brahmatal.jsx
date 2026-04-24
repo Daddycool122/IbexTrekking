@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -16,6 +17,7 @@ import img9 from "../assets/Trek/brahmataal/img9.jpeg";
 import img10 from "../assets/Trek/brahmataal/img10.jpeg";
 import { useState, useEffect } from "react";
 import FormNP from "./FormNP";
+import Footer from "../footer/Footer";
 
 export default function Brahmatal() {
   const [open_form, setOpen_form] = useState(false);
@@ -241,52 +243,23 @@ export default function Brahmatal() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                When is the best time for Brahmatal trek?
-                <br />
-                December to March is the best time for snow lovers. It is also
-                open in autumn for clear skies.
-              </li>
-              <li className={styles.li}>
-                Is Brahmatal trek safe for solo trekkers?
-                <br />
-                Yes, it is safe when done with a certified trekking
-                organization. Avoid solo trekking in winter due to snow.
-              </li>
-              <li className={styles.li}>
-                Will we see snow during the trek?
-                <br />
-                Yes, from late December to March, the trail is covered with
-                snow, making it a perfect winter trek.
-              </li>
-              <li className={styles.li}>
-                Do we need prior experience for this trek?
-                <br />
-                No prior experience is needed, but you should be physically fit
-                as the altitude reaches 12,200 ft.
-              </li>
-              <li className={styles.li}>
-                What peaks are visible from Brahmatal summit?
-                <br />
-                You can see Mt. Trishul, Nanda Ghunti, and other Himalayan peaks
-                clearly from the summit.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "When is the best time for Brahmatal trek?", answer: "December to March is the best time for snow lovers. It is also open in autumn for clear skies." },
+            { question: "Is Brahmatal trek safe for solo trekkers?", answer: "Yes, it is safe when done with a certified trekking organization. Avoid solo trekking in winter due to snow." },
+            { question: "Will we see snow during the trek?", answer: "Yes, from late December to March, the trail is covered with snow, making it a perfect winter trek." },
+            { question: "Do we need prior experience for this trek?", answer: "No prior experience is needed, but you should be physically fit as the altitude reaches 12,200 ft." },
+            { question: "What peaks are visible from Brahmatal summit?", answer: "You can see Mt. Trishul, Nanda Ghunti, and other Himalayan peaks clearly from the summit." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Brahmataal Trek"}
-            price={9999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Brahmataal Trek"}
+          price={9999}
+        />
       </div>
-      <div className={styles.empty_section}></div>
+      <Footer />
     </>
   );
 }

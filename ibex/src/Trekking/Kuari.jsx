@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -32,7 +33,7 @@ export default function WinterKuariPass() {
         des={"An alpine pass with views that steal your breath."}
       />
       <Photos
-        photos={[img1, img2, , img3, img4, img5, img6, img7, img8, img9, img10]}
+        photos={[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]}
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
@@ -160,18 +161,6 @@ export default function WinterKuariPass() {
             </ul>
           </div>
 
-          {/* <Title text={"How To Reach"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                Pick-up: Haridwar Railway Station at 6:30 AM
-              </li>
-              <li className={styles.li}>
-                Drop: Haridwar Railway Station (by evening)
-              </li>
-            </ul>
-          </div> */}
-
           <Title text={"Trek Essentials"} />
           <div className={styles.ul_section}>
             <ul>
@@ -230,49 +219,43 @@ export default function WinterKuariPass() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is the best time for Kuari Pass trek?
-                <br />
-                December to March for snow lovers, and April for spring views.
-              </li>
-              <li className={styles.li}>
-                Is it suitable for beginners?
-                <br />
-                Yes, it is perfect for beginners who are physically fit and
-                ready for moderate ascents.
-              </li>
-              <li className={styles.li}>
-                What kind of shoes should we bring?
-                <br />
-                High-ankle waterproof trekking shoes with good grip are
-                recommended.
-              </li>
-              <li className={styles.li}>
-                Can we offload our backpacks?
-                <br />
-                Yes, backpack offloading is available at an extra cost if you
-                don’t want to carry your own bag.
-              </li>
-              <li className={styles.li}>
-                How to reach Rishikesh for the pick-up?
-                <br />
-                Rishikesh is well connected by train and road. The nearest
-                airport is Jolly Grant Airport in Dehradun (35 km away).
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"winter kauri pass trek"}
-            price={9999}
+          <FaqAccordion
+            faqs={[
+              {
+                question: "What is the best time for Kuari Pass trek?",
+                answer:
+                  "December to March for snow lovers, and April for spring views.",
+              },
+              {
+                question: "Is it suitable for beginners?",
+                answer:
+                  "Yes, it is perfect for beginners who are physically fit and ready for moderate ascents.",
+              },
+              {
+                question: "What kind of shoes should we bring?",
+                answer:
+                  "High-ankle waterproof trekking shoes with good grip are recommended.",
+              },
+              {
+                question: "Can we offload our backpacks?",
+                answer:
+                  "Yes, backpack offloading is available at an extra cost if you don’t want to carry your own bag.",
+              },
+              {
+                question: "How to reach Rishikesh for the pick-up?",
+                answer:
+                  "Rishikesh is well connected by train and road. The nearest airport is Jolly Grant Airport in Dehradun (35 km away).",
+              },
+            ]}
           />
         </div>
+
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"winter kauri pass trek"}
+          price={9999}
+        />
       </div>
       <Footer />
     </>

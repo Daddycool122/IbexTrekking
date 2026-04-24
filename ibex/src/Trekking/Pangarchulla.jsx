@@ -269,14 +269,12 @@ export default function PangarchullaPeak() {
           </div>
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Pangarchulla Trek"}
-            price={12999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Pangarchulla Trek"}
+          price={12999}
+        />
       </div>
       <Footer />
     </>

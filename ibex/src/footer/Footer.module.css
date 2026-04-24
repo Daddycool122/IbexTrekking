@@ -1,91 +1,183 @@
 .des_footer {
-  height: fit-content;
   width: 100%;
-  background-color: black;
-  color: white;
-  margin-top: 40px;
-  padding: clamp(1.25rem, 3vw, 3.125rem);
+  background: #080a0f;
+  color: #fff;
   position: relative;
-  padding-bottom: 100px;
+  overflow: hidden;
+  padding: 80px 5% 0px;
+  border-top: 2px solid rgba(255, 255, 255, 0.05);
+  margin-top: 20px;
 }
 
-.cr {
-  height: 60px;
-  border-top: 1px solid rgba(255, 255, 255, 0.365);
+.watermark {
   position: absolute;
-  width: 100%;
-  left: 0px;
-  bottom: 0px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18vw;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.02);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  font-family: Arial, sans-serif;
+  letter-spacing: -2px;
+}
+
+.footer_content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 60px;
+  padding-bottom: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.brand_section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.7px;
+  flex-direction: column;
 }
 
 .name {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #fff 0%, #f37002 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
 .des {
-  font-size: clamp(1.25rem, 1rem + 1.2vw, 1.875rem);
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 350px;
 }
 
-.info_Section {
-  width: 100%;
-  height: fit-content;
+.contact_details {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-  gap: clamp(1.25rem, 3vw, 3.125rem);
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.links_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .info_title {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.info_title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 30px;
+  background-color: #f37002;
+  border-radius: 2px;
+}
+
+.link_column {
+  display: flex;
+  flex-direction: column;
 }
 
 .info_info {
-  font-size: clamp(0.9rem, 0.8rem + 0.35vw, 1.125rem);
-  letter-spacing: 0.7px;
-  margin-bottom: 8px;
-  color: rgba(255, 255, 255, 0.794);
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-bottom: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  width: fit-content;
 }
 
-.info_indi {
-  max-width: min(100%, 360px);
+.info_info:hover {
+  color: #f37002;
+  transform: translateX(6px);
 }
 
-@media screen and (max-width: 900px) {
-  .cr {
-    font-size: 0.85rem;
-    padding-inline: 0.75rem;
-    text-align: center;
-  }
+.cr {
+  height: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
 }
 
-@media screen and (max-width: 600px) {
-  .info_Section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+@media screen and (max-width: 1024px) {
+  .footer_content {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
-  .des_footer {
-    padding: 20px;
-    padding-bottom: 80px;
-  }
-
-  .name {
-    font-size: 14px;
+  .brand_section {
+    max-width: 100%;
   }
 
   .des {
-    font-size: 20px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .watermark {
+    font-size: 28vw;
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .des_footer {
+    padding: 60px 20px 0px;
+  }
+
+  .links_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .cr {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 20px;
   }
 }

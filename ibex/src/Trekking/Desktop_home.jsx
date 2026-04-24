@@ -46,8 +46,9 @@ export default function Desktop_home({
                 Rafting
               </div>
             </div>
-            {/* <div className={styles.login_section}>Login</div> */}
-            <div className={styles.login_section_}></div>
+            <a href="tel://+916396518778" className={styles.contact_btn}>
+              Contact Us
+            </a>
           </div>
         </header>
 
@@ -73,11 +74,11 @@ export default function Desktop_home({
                   height={"35px"}
                   width={"35px"}
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -193,44 +194,46 @@ export default function Desktop_home({
         ) : null}
 
         <div className={styles.content_section_home}>
-          <div className={styles.main_name}>{title}</div>
-          <div className={styles.tag_line}>
-            Ride Waves, Climb Peaks, <br />
-            Explore
-          </div>
-          <div
-            className={styles.book_now_btn}
-            onClick={() => {
-              scrollToTrekking();
-            }}
-          >
-            <div className={styles.book_now_arrow}>
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                height={"28px"}
-                width={"28px"}
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {" "}
-                  <path
-                    d="M6 12H18M18 12L13 7M18 12L13 17"
-                    stroke="#fff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>{" "}
-                </g>
-              </svg>
+          <div className={styles.text_content_home}>
+            <div className={styles.main_name}>{title}</div>
+            <div className={styles.tag_line}>
+              Ride Waves, Climb Peaks, <br />
+              Explore
             </div>
-            <div className={styles.book_now_text}>Trekking</div>
+            <div
+              className={styles.book_now_btn}
+              onClick={() => {
+                scrollToTrekking();
+              }}
+            >
+              <div className={styles.book_now_arrow}>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height={"28px"}
+                  width={"28px"}
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      d="M6 12H18M18 12L13 7M18 12L13 17"
+                      stroke="#f37002"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>{" "}
+                  </g>
+                </svg>
+              </div>
+              <div className={styles.book_now_text}>Trekking</div>
+            </div>
           </div>
           <div
             className={styles.trust_box_home}
@@ -258,11 +261,11 @@ export default function Desktop_home({
                 width={"26px"}
                 className={styles.star_svg_section}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}

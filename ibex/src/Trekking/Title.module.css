@@ -1,9 +1,12 @@
 .title {
-  font-size: 24px;
-  color: #000000c7;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  margin-top: 20px;
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -219,50 +220,21 @@ export default function KunjapuriHike() {
           </div> */}
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                How long is the Kunjapuri hike?
-                <br />
-                The downhill trek from Kunjapuri to Rishikesh is about 9–10 km
-                and takes around 4–5 hours.
-              </li>
-              <li className={styles.li}>
-                Is the trek suitable for beginners?
-                <br />
-                Yes, it’s an easy trek, mostly downhill, suitable for beginners,
-                kids, and families.
-              </li>
-              <li className={styles.li}>
-                What is the best time for the Kunjapuri hike?
-                <br />
-                The hike is done year-round, but the sunrise view is best in
-                October to April, when skies are clearer.
-              </li>
-              <li className={styles.li}>
-                Can I swim at Neer Waterfall?
-                <br />
-                Yes, you can swim and relax at the waterfall. Carry a change of
-                clothes if you plan to take a dip.
-              </li>
-              <li className={styles.li}>
-                What is included in the cost?
-                <br />
-                Transport, breakfast, snacks, trek leader, and entry fees for
-                Neer Waterfall are included.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "How long is the Kunjapuri hike?", answer: "The downhill trek from Kunjapuri to Rishikesh is about 9–10 km and takes around 4–5 hours." },
+            { question: "Is the trek suitable for beginners?", answer: "Yes, it’s an easy trek, mostly downhill, suitable for beginners, kids, and families." },
+            { question: "What is the best time for the Kunjapuri hike?", answer: "The hike is done year-round, but the sunrise view is best in October to April, when skies are clearer." },
+            { question: "Can I swim at Neer Waterfall?", answer: "Yes, you can swim and relax at the waterfall. Carry a change of clothes if you plan to take a dip." },
+            { question: "What is included in the cost?", answer: "Transport, breakfast, snacks, trek leader, and entry fees for Neer Waterfall are included." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Kunjapuri Hike"}
-            price={2499}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Kunjapuri Hike"}
+          price={2499}
+        />
       </div>
       <Footer />
     </>

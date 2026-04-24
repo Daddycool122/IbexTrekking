@@ -1,3 +1,4 @@
+import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -276,90 +277,27 @@ export default function Kedarkantha() {
           </div>
 
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What kind of accommodation will we get?
-                <br />
-                At Natin Village (base camp), trekkers stay in guest houses
-                (triple/quad sharing) with separate male & female arrangements.
-                During the trek, camping is in twin-sharing all-season tents
-                with sleeping bags, mattresses, and other equipment provided.
-              </li>
-              <li className={styles.li}>
-                Are tents and sleeping bags provided?
-                <br />
-                Yes, all central equipment including sleeping bags, mattresses,
-                and tents are provided.
-              </li>
-              <li className={styles.li}>
-                What’s the reporting time and place?
-                <br />
-                Reporting is at Prince Chowk, Dehradun (near railway station) at
-                6:00 AM.
-              </li>
-              <li className={styles.li}>
-                Can you arrange stay if we arrive early?
-                <br />
-                No, we don’t provide early accommodation but we can suggest
-                nearby hotels like Hotel Star Wood, Hotel Vishnu Inn, and Hotel
-                Aashrya.
-              </li>
-              <li className={styles.li}>
-                How many trekkers are there in one group?
-                <br />
-                Minimum 6 trekkers are required to run a batch, and maximum
-                group size is 24–26.
-              </li>
-              <li className={styles.li}>
-                Is this trek suitable for beginners?
-                <br />
-                Yes, Dayara Bugyal is considered one of the best
-                beginner-friendly treks.
-              </li>
-              <li className={styles.li}>
-                What are some alternative treks?
-                <br />
-                Alternatives include Chopta Chandrashila, Kuari Pass (Winter),
-                Brahmatal, Ali Bedni Bugyal, and Kedarkantha.
-              </li>
-              <li className={styles.li}>
-                What food is served on the trek?
-                <br />
-                Nutritious vegetarian food is served with occasional eggs. Meals
-                typically include dal, sabzi, roti, rice, daliya, poha,
-                sandwiches, and tea.
-              </li>
-              <li className={styles.li}>
-                Is drinking water available?
-                <br />
-                Yes, trekkers must carry 2 x 1L bottles which can be refilled at
-                campsites.
-              </li>
-              <li className={styles.li}>
-                What kind of shoes should we wear?
-                <br />
-                Shoes with good grip, ankle support, and water-resistant layers
-                are recommended (e.g., Quechua Trek 100, MH 500, MH 100).
-              </li>
-              <li className={styles.li}>
-                Is a trekking pole necessary?
-                <br />
-                Yes, it is highly recommended for balance and reducing strain
-                during the trek.
-              </li>
-            </ul>
-          </div>
+          <FaqAccordion faqs={[
+            { question: "What kind of accommodation will we get?", answer: "At Natin Village (base camp), trekkers stay in guest houses (triple/quad sharing) with separate male & female arrangements. During the trek, camping is in twin-sharing all-season tents with sleeping bags, mattresses, and other equipment provided." },
+            { question: "Are tents and sleeping bags provided?", answer: "Yes, all central equipment including sleeping bags, mattresses, and tents are provided." },
+            { question: "What’s the reporting time and place?", answer: "Reporting is at Prince Chowk, Dehradun (near railway station) at 6:00 AM." },
+            { question: "Can you arrange stay if we arrive early?", answer: "No, we don’t provide early accommodation but we can suggest nearby hotels like Hotel Star Wood, Hotel Vishnu Inn, and Hotel Aashrya." },
+            { question: "How many trekkers are there in one group?", answer: "Minimum 6 trekkers are required to run a batch, and maximum group size is 24–26." },
+            { question: "Is this trek suitable for beginners?", answer: "Yes, Dayara Bugyal is considered one of the best beginner-friendly treks." },
+            { question: "What are some alternative treks?", answer: "Alternatives include Chopta Chandrashila, Kuari Pass (Winter), Brahmatal, Ali Bedni Bugyal, and Kedarkantha." },
+            { question: "What food is served on the trek?", answer: "Nutritious vegetarian food is served with occasional eggs. Meals typically include dal, sabzi, roti, rice, daliya, poha, sandwiches, and tea." },
+            { question: "Is drinking water available?", answer: "Yes, trekkers must carry 2 x 1L bottles which can be refilled at campsites." },
+            { question: "What kind of shoes should we wear?", answer: "Shoes with good grip, ankle support, and water-resistant layers are recommended (e.g., Quechua Trek 100, MH 500, MH 100)." },
+            { question: "Is a trekking pole necessary?", answer: "Yes, it is highly recommended for balance and reducing strain during the trek." }
+          ]} />
         </div>
 
-        <div className={styles.billing_section}>
-          <FormNP
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={"Dayara Bugyal Trek"}
-            price={9999}
-          />
-        </div>
+        <FormNP
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={"Dayara Bugyal Trek"}
+          price={9999}
+        />
       </div>
       <Footer />
     </>

@@ -376,22 +376,20 @@ export default function Rafting() {
           </div>
         </div>
 
-        <div className={styles.billing_section}>
-          <RaftingForm
-            open_form={open_form}
-            setOpen_form={setOpen_form}
-            name={
-              (km == 16
-                ? "16 km"
-                : km == 25
+        <RaftingForm
+          open_form={open_form}
+          setOpen_form={setOpen_form}
+          name={
+            (km == 16
+              ? "16 km"
+              : km == 25
                 ? "25 km"
                 : km == 35
-                ? "35 km"
-                : "16 km") + " River Rafting"
-            }
-            price={km == 16 ? 1020 : km == 25 ? 1520 : km == 35 ? 2520 : 1020}
-          />
-        </div>
+                  ? "35 km"
+                  : "16 km") + " River Rafting"
+          }
+          price={km == 16 ? 1020 : km == 25 ? 1520 : km == 35 ? 2520 : 1020}
+        />
       </div>
       <Footer />
     </>
