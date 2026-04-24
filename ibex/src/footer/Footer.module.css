@@ -1,0 +1,91 @@
+.des_footer {
+  height: fit-content;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  padding: clamp(1.25rem, 3vw, 3.125rem);
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.cr {
+  height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.365);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.7px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.des {
+  font-size: clamp(1.25rem, 1rem + 1.2vw, 1.875rem);
+}
+
+.info_Section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: clamp(1.25rem, 3vw, 3.125rem);
+  flex-wrap: wrap;
+}
+
+.info_title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
+}
+
+.info_info {
+  font-size: clamp(0.9rem, 0.8rem + 0.35vw, 1.125rem);
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.794);
+  cursor: pointer;
+}
+
+.info_indi {
+  max-width: min(100%, 360px);
+}
+
+@media screen and (max-width: 900px) {
+  .cr {
+    font-size: 0.85rem;
+    padding-inline: 0.75rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info_Section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .des_footer {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .des {
+    font-size: 20px;
+  }
+}

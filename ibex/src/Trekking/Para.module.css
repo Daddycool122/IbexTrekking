@@ -1,0 +1,16 @@
+.para {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  /* font-weight: 500; */
+  color: #000000b2;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .para {
+    font-size: 14px;
+    margin-top: 6px;
+    width: 90%;
+  }
+}

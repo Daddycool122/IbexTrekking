@@ -1,0 +1,122 @@
+.review-wrapper,
+.review-wrapper * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.review-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.review-card {
+  background: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.02);
+}
+
+.review-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.review-card p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.review-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.review-card input,
+.review-card select,
+.review-card textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card input:focus,
+.review-card select:focus,
+.review-card textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.4);
+  outline: none;
+}
+
+.review-card textarea {
+  resize: none;
+  height: 120px;
+}
+
+.review-card button {
+  background: #4f46e5;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.review-card button:hover {
+  background: #3b35c4;
+  transform: translateY(-2px);
+}
+
+.review-card select {
+  appearance: none; /* Remove default iOS dropdown style */
+  -webkit-appearance: none; /* Remove default iOS styling */
+  background: #fff
+    url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%227%22%20viewBox%3D%220%200%2010%207%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%207L0%200h10L5%207z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E")
+    no-repeat right 12px center;
+  background-size: 12px;
+  padding: 12px;
+  padding-right: 40px; /* Space for the dropdown arrow */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  height: 48px; /* Set consistent height */
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .review-card {
+    padding: 20px;
+  }
+  .review-card h2 {
+    font-size: 24px;
+  }
+}

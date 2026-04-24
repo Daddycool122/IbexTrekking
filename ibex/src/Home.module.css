@@ -1,0 +1,584 @@
+.title {
+  font-size: 36px;
+  padding-left: 40px;
+  letter-spacing: 0.7px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.empty_section {
+  height: 600px;
+  width: 100%;
+}
+
+.title_border {
+  display: block;
+  height: 4px;
+  width: 80px;
+  background-color: #f37002;
+  border-radius: 100px;
+}
+
+.trr_section {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.trr_indi {
+  height: 380px;
+  width: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trr_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trr_blur {
+  height: 40%;
+  width: 100%;
+  background-color: rgba(65, 63, 63, 0.178);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px 10px 0 0;
+}
+
+.trr_title {
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  color: white;
+  font-weight: 500;
+}
+
+.trr_des {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  color: white;
+  font-weight: 400;
+}
+
+.adventure_card_section {
+  height: fit-content;
+  width: fit-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.indi_adventure_card {
+  height: 450px;
+  width: 350px;
+  /* background-color: red; */
+}
+
+.ad_cd_img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.date_night_rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date_night {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.696);
+  letter-spacing: 0.7px;
+}
+
+.dn_rating_Section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+.rating {
+  color: #f37002;
+}
+
+.ad_cd_title {
+  letter-spacing: 0.7px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 8px;
+  line-height: 1.35;
+}
+
+.ad_cd_price {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.ad_cd_price_main {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.ad_cd_price_cut {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.ad_cd_book {
+  margin-top: 6px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad_cd_title + .ad_cd_book {
+  margin-top: 4px;
+}
+
+.ad_cd_call {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #f37002;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad_cd_book_book {
+  height: 50px;
+  width: 80%;
+  border: 2px solid #f37002;
+  border-radius: 4px;
+  background-color: #f37002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 0.7px;
+}
+
+.review_section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.indi_review {
+  height: fit-content;
+  width: 400px;
+  background-color: #57b9d0;
+  border-radius: 15px;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.review {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  color: rgb(255, 255, 255);
+}
+
+.line {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_line {
+  height: 2px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.review_name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: white;
+}
+
+.des {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.763);
+  letter-spacing: 0.7px;
+  color: white;
+}
+
+.trusted_by {
+  /* height: 300px; */
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.trusted_by::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+.tb_img_section {
+  height: 180px;
+  width: 320px;
+  overflow: hidden;
+  box-shadow: 0 0 2px gray;
+  border-radius: 4px;
+}
+
+.tb_img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.header_trekking {
+  height: 60px;
+  background-color: #57b9d0;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back_section {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back_arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.empty_section {
+  height: 100%;
+  width: 20%;
+}
+
+.trek_title_section {
+  height: 100%;
+  width: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 18px;
+    padding-left: 20px;
+    letter-spacing: 0.7px;
+    margin-top: 20px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .back_arrow {
+    height: 25px;
+    width: 25px;
+  }
+
+  .header_trekking {
+    height: 60px;
+    /* background-color: black; */
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title_border {
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color: #f37002;
+    border-radius: 100px;
+  }
+
+  .trek_title_section {
+    height: 100%;
+    width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .trr_section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .trr_indi {
+    height: 350px;
+    width: 350px;
+  }
+
+  .trr_title {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .trr_des {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: white;
+    font-weight: 400;
+  }
+
+  .adventure_card_section {
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .indi_adventure_card {
+    height: 450px;
+    width: 98%;
+    /* background-color: red; */
+  }
+
+  .review_section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .indi_review {
+    height: fit-content;
+    width: 100%;
+    background-color: #57b9d0;
+    border-radius: 15px;
+    padding: 15px;
+    flex-shrink: 0;
+  }
+}
+
+/* Responsive quality pass */
+.title {
+  font-size: clamp(1.125rem, 1rem + 1.2vw, 2.25rem);
+}
+
+.trr_section {
+  height: auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.trr_indi {
+  width: min(100%, 380px);
+}
+
+.adventure_card_section {
+  width: 100%;
+  padding-inline: clamp(1rem, 3vw, 2.5rem);
+  gap: clamp(1rem, 2.5vw, 2rem);
+  justify-content: center;
+}
+
+.indi_adventure_card {
+  width: min(100%, 350px);
+  height: auto;
+  min-height: 450px;
+}
+
+.ad_cd_book_book {
+  width: calc(100% - 60px);
+}
+
+.review_section {
+  padding-inline: clamp(1rem, 3vw, 2.5rem);
+  justify-content: center;
+}
+
+.indi_review {
+  width: min(100%, 420px);
+}
+
+.header_trekking {
+  padding-inline: clamp(1rem, 3vw, 2.5rem);
+}
+
+.back_section,
+.empty_section,
+.trek_title_section {
+  width: auto;
+  min-width: 80px;
+}
+
+.trek_title_section {
+  text-align: center;
+  font-size: clamp(1rem, 0.9rem + 0.7vw, 1.25rem);
+}
+
+@media screen and (max-width: 900px) {
+  .trr_section {
+    justify-content: center;
+  }
+
+  .tb_img_section {
+    width: min(100%, 320px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trr_indi {
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+  }
+
+  .adventure_card_section {
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .indi_adventure_card {
+    width: 100%;
+    min-height: 420px;
+  }
+
+  .date_night_rating {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .ad_cd_title {
+    font-size: 1rem;
+  }
+
+  .review_section {
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+}
+
+/* Card consistency + visual polish */
+.adventure_card_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+}
+
+.indi_adventure_card {
+  width: 100%;
+  max-width: 360px;
+  min-height: auto;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(243, 112, 2, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.indi_adventure_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13);
+}
+
+.ad_cd_img {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+}
+
+.date_night_rating {
+  margin-top: 0.7rem;
+  min-height: 24px;
+}
+
+.ad_cd_title {
+  min-height: 0;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.ad_cd_price {
+  min-height: 0;
+}
+
+.ad_cd_book {
+  margin-top: 6px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .adventure_card_section {
+    grid-template-columns: 1fr;
+  }
+
+  .indi_adventure_card {
+    max-width: 100%;
+    min-height: auto;
+    padding: 0.65rem;
+  }
+}
