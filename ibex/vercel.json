@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/create-order", "destination": "/create-order" },
+    { "source": "/verify-order", "destination": "/verify-order" },
+    { "source": "/get-reviews", "destination": "/get-reviews" },
+    { "source": "/submit-review", "destination": "/submit-review" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
