@@ -47,12 +47,12 @@ export default function Rafting() {
           ) : null}
           {km == 25 ? (
             <div className={styles.title}>
-              25 KM River Rafting · ₹1,520/Person
+              25 KM River Rafting · ₹2,020/Person
             </div>
           ) : null}
           {km == 35 ? (
             <div className={styles.title}>
-              35 KM River Rafting · ₹2,520/Person
+              35 KM River Rafting · ₹3,520/Person
             </div>
           ) : null}
 
@@ -388,7 +388,7 @@ export default function Rafting() {
                   ? "35 km"
                   : "16 km") + " River Rafting"
           }
-          price={km == 16 ? 1020 : km == 25 ? 1520 : km == 35 ? 2520 : 1020}
+          price={km == 16 ? 1020 : km == 25 ? 2020 : km == 35 ? 3520 : 1020}
         />
       </div>
       <Footer />

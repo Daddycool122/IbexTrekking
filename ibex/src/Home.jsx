@@ -1020,8 +1020,8 @@ export default function Home() {
             Thrill-seekers, meet your 25 KM adventure challenge.
           </div>
           <div className={styles.ad_cd_price}>
-            <span className={styles.ad_cd_price_main}>INR 1,520</span>
-            <span className={styles.ad_cd_price_cut}>INR 1,800</span>
+            <span className={styles.ad_cd_price_main}>INR 2,020</span>
+            <span className={styles.ad_cd_price_cut}>INR 2,400</span>
           </div>
           <div className={styles.ad_cd_book}>
             <a href="tel://+916396518778" className={styles.ad_cd_call}>
@@ -1092,8 +1092,8 @@ export default function Home() {
             Thrill-seekers, meet your 35 KM adventure challenge.
           </div>
           <div className={styles.ad_cd_price}>
-            <span className={styles.ad_cd_price_main}>INR 2,520</span>
-            <span className={styles.ad_cd_price_cut}>INR 2,800</span>
+            <span className={styles.ad_cd_price_main}>INR 3,520</span>
+            <span className={styles.ad_cd_price_cut}>INR 4,200</span>
           </div>
           <div className={styles.ad_cd_book}>
             <a href="tel://+916396518778" className={styles.ad_cd_call}>

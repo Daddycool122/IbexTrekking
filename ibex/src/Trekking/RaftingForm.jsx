@@ -55,7 +55,7 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
     setIsProcessing(true);
     try {
       await launchRazorpayPayment({
-        amount: price * no_of_people * 100,
+        amount: Math.round(price * no_of_people * 1.18) * 100,
         key: RAZORPAY_LIVE_KEY_ID,
         description: "Rafting Booking",
         themeColor: "#f37002",
@@ -72,8 +72,10 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
           name_of_trek: name,
           date_of_departure: date,
           number_of_people: no_of_people,
-          total_amount: price * no_of_people,
-          amount_paid: price * no_of_people,
+          base_price: price * no_of_people,
+          gst_amount: Math.round(price * no_of_people * 0.18),
+          total_amount: Math.round(price * no_of_people * 1.18),
+          amount_paid: Math.round(price * no_of_people * 1.18),
           invoice: "invoice_" + Date.now(),
         }),
         onVerified: (result, bookingData) => {
@@ -170,6 +172,9 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
             <div style={{ fontWeight: 700 }}>Total Amount</div>
             <div style={{ fontWeight: 700, color: "#f37002" }}>
               ₹{price.toLocaleString()} x {no_of_people} = ₹{(price * no_of_people).toLocaleString()}
+              <span style={{ fontSize: "12px", color: "#666", display: "block" }}>
+                (Including 18% GST: ₹{Math.round(price * no_of_people * 1.18).toLocaleString()})
+              </span>
             </div>
           </div>
         )}
@@ -178,7 +183,7 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
           className={`${styles.btn} ${isProcessing ? "shimmer_loading" : ""}`}
           onClick={startPayment}
         >
-          {isProcessing ? "Redirecting to Payment..." : `Book & Pay ₹${(price * no_of_people).toLocaleString()}`}
+          {isProcessing ? "Redirecting to Payment..." : `Book & Pay ₹${Math.round(price * no_of_people * 1.18).toLocaleString()}`}
         </div>
       </div>
     </div>,
