@@ -42,9 +42,9 @@
 }
 
 .indi_day_selected {
-  background: #f37002;
+  background: #059669;
   color: white;
-  box-shadow: 0 4px 12px rgba(243, 112, 2, 0.4);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
 }
 
 .indi_day_hike,
@@ -75,10 +75,10 @@
 }
 
 .indi_day_selected_hike {
-  background: #f37002;
+  background: #059669;
   color: white;
-  border-color: #f37002;
-  box-shadow: 0 4px 12px rgba(243, 112, 2, 0.4);
+  border-color: #059669;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
 }
 
 .indi_iti {

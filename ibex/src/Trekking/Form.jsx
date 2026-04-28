@@ -62,7 +62,7 @@ export default function Form({ open_form, setOpen_form, name, price }) {
         amount: finalAmount * 100,
         key: RAZORPAY_LIVE_KEY_ID,
         description: `Booking for ${name}`,
-        themeColor: "#f37002",
+        themeColor: "#059669",
         prefill: {
           name: p_name,
           email: email,
@@ -181,7 +181,7 @@ export default function Form({ open_form, setOpen_form, name, price }) {
             </div>
             <div className={styles.mobile_pay_summary}>
               <div style={{ fontWeight: 700 }}>Grand Total</div>
-              <div style={{ fontWeight: 700, color: "#f37002" }}>
+              <div style={{ fontWeight: 700, color: "#059669" }}>
                 ₹{(price * no_of_people * 1.05).toLocaleString()}
               </div>
             </div>

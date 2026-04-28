@@ -44,7 +44,7 @@
 .cross_section {
   height: 35px;
   width: 35px;
-  background-color: #f37002;
+  background-color: #059669;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@
 }
 
 .input:focus {
-  border-color: #f37002;
+  border-color: #059669;
 }
 
 .input_error {
@@ -123,13 +123,13 @@
 }
 
 .ta:focus {
-  border-color: #f37002;
+  border-color: #059669;
 }
 
 .btn {
   height: 55px;
   width: 100%;
-  background-color: #f37002;
+  background-color: #059669;
   margin-top: 25px;
   border-radius: 8px;
   display: flex;

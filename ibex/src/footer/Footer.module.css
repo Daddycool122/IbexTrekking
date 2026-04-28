@@ -44,7 +44,7 @@
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 2px;
-  background: linear-gradient(135deg, #fff 0%, #f37002 100%);
+  background: linear-gradient(135deg, #fff 0%, #059669 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -96,7 +96,7 @@
   bottom: 0;
   height: 2px;
   width: 30px;
-  background-color: #f37002;
+  background-color: #059669;
   border-radius: 2px;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .info_info:hover {
-  color: #f37002;
+  color: #059669;
   transform: translateX(6px);
 }
 

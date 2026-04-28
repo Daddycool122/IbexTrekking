@@ -58,7 +58,7 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
         amount: Math.round(price * no_of_people * 1.18) * 100,
         key: RAZORPAY_LIVE_KEY_ID,
         description: "Rafting Booking",
-        themeColor: "#f37002",
+        themeColor: "#059669",
         prefill: {
           name: p_name,
           email: email,
@@ -170,7 +170,7 @@ export default function RaftingForm({ open_form, setOpen_form, name, price }) {
         {no_of_people >= 1 && (
           <div className={styles.mobile_pay_summary}>
             <div style={{ fontWeight: 700 }}>Total Amount</div>
-            <div style={{ fontWeight: 700, color: "#f37002" }}>
+            <div style={{ fontWeight: 700, color: "#059669" }}>
               ₹{price.toLocaleString()} x {no_of_people} = ₹{(price * no_of_people).toLocaleString()}
               <span style={{ fontSize: "12px", color: "#666", display: "block" }}>
                 (Including 18% GST: ₹{Math.round(price * no_of_people * 1.18).toLocaleString()})

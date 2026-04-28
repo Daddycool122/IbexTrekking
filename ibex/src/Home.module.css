@@ -16,7 +16,7 @@
   display: block;
   height: 4px;
   width: 80px;
-  background-color: #f37002;
+  background-color: #059669;
   border-radius: 100px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .rating {
-  color: #f37002;
+  color: #059669;
 }
 
 .ad_cd_title {
@@ -161,7 +161,7 @@
 .ad_cd_call {
   height: 50px;
   width: 50px;
-  border: 2px solid #f37002;
+  border: 2px solid #059669;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -171,9 +171,9 @@
 .ad_cd_book_book {
   height: 50px;
   width: 80%;
-  border: 2px solid #f37002;
+  border: 2px solid #059669;
   border-radius: 4px;
-  background-color: #f37002;
+  background-color: #059669;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +279,17 @@
   display: flex;
   justify-content: space-between;
 }
+/* Premium Page Headers for Routes */
+.header_trekking {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 90px !important;
+  padding: 0 40px !important;
+  background: #0f172a !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
 
 .back_section {
   height: 100%;
@@ -338,7 +349,7 @@
     display: block;
     height: 4px;
     width: 40px;
-    background-color: #f37002;
+    background-color: #059669;
     border-radius: 100px;
   }
 
@@ -534,7 +545,7 @@
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(243, 112, 2, 0.12);
+  border: 1px solid rgba(5, 150, 105, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -602,7 +613,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #f37002;
+  color: #059669;
 }
 
 .section_title {
@@ -616,7 +627,7 @@
 
 .section_title span {
   display: block;
-  background: linear-gradient(90deg, #f37002 0%, #ff9344 100%);
+  background: linear-gradient(90deg, #059669 0%, #ff9344 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -627,7 +638,7 @@
   height: 4px;
   width: clamp(72px, 8vw, 110px);
   border-radius: 999px;
-  background: linear-gradient(90deg, #f37002 0%, #ff9a4e 100%);
+  background: linear-gradient(90deg, #059669 0%, #ff9a4e 100%);
   margin-top: 0.3rem;
 }
 
@@ -651,9 +662,9 @@
   min-height: 140px;
   height: clamp(140px, 16vw, 190px);
   border-radius: 16px;
-  border: 1px solid rgba(243, 112, 2, 0.16);
+  border: 1px solid rgba(5, 150, 105, 0.16);
   background:
-    radial-gradient(circle at top right, rgba(243, 112, 2, 0.08), transparent 45%),
+    radial-gradient(circle at top right, rgba(5, 150, 105, 0.08), transparent 45%),
     #ffffff;
   box-shadow: 0 14px 28px rgba(21, 21, 21, 0.08);
   padding: clamp(0.7rem, 1.2vw, 0.9rem);
@@ -679,4 +690,31 @@
   .section_title span {
     display: inline;
   }
+}
+
+/* Intersection Observer Animations */
+.indi_adventure_card,
+.section_intro,
+.trr_indi {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.trr_indi:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.indi_adventure_card:nth-child(even) {
+  transition-delay: 0.1s;
+}
+
+.show_on_scroll {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Added Global Styling */
+body {
+  font-family: 'Outfit', sans-serif;
 }

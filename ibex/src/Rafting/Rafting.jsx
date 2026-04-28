@@ -20,6 +20,8 @@ import Footer from "../footer/Footer";
 import RaftingForm from "../Trekking/RaftingForm";
 import { useSearchParams } from "react-router-dom";
 import Videos from "./Video";
+import { motion } from "framer-motion";
+
 export default function Rafting() {
   const [searchParams] = useSearchParams();
   const id = searchParams.get("id");
