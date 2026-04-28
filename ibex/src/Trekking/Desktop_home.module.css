@@ -368,12 +368,12 @@
 
   .content_section_home {
     flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem;
+    justify-content: flex-start;
+    padding: 130px 2rem 2rem 2rem;
   }
 
   .text_content_home {
-    margin-top: 10vh;
+    margin-top: 0;
   }
 
   .tag_line {
