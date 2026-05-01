@@ -136,13 +136,10 @@ export default function Home() {
               loop
               playsInline
               controls={false}
+              preload="metadata"
               poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
             >
               <source src={trekking_video} type="video/mp4" />
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
-                alt="Himalayan Trekking"
-              />
             </video>
           </div>
         </div>
@@ -1005,13 +1002,10 @@ export default function Home() {
               loop
               playsInline
               controls={false}
+              preload="metadata"
               poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
             >
               <source src={rafting_video} type="video/mp4" />
-              <img
-                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
-                alt="River Rafting Adventure"
-              />
             </video>
           </div>
         </div>
