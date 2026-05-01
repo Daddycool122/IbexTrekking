@@ -124,7 +124,52 @@ export default function Home() {
         <span className={styles.section_divider}></span>
       </div>
 
-      <div className={styles.adventure_card_section}>
+      <div className={styles.featured_section}>
+        <div className={styles.featured_left}>
+          <div className={styles.video_container}>
+            <video
+              className={styles.featured_video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
+            >
+              <source src="/src/assets/videos/trekking.mp4" type="video/mp4" />
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
+                alt="Himalayan Trekking"
+              />
+            </video>
+          </div>
+        </div>
+        <div className={styles.featured_right}>
+          <div className={styles.badge}>🏔️ MOUNTAIN ADVENTURES</div>
+          <h3 className={styles.featured_title}>Experience the Himalayas</h3>
+          <p className={styles.featured_description}>
+            Embark on unforgettable trekking adventures through the majestic Himalayan ranges. From serene meadows to snow-capped peaks, discover trails that will take your breath away. Our expert guides will lead you through breathtaking landscapes, hidden valleys, and stunning vistas that showcase the raw beauty of nature.
+          </p>
+          <ul className={styles.features_list}>
+            <li>Expert local guides</li>
+            <li>Well-planned itineraries</li>
+            <li>Safety-first approach</li>
+            <li>Stunning viewpoints</li>
+          </ul>
+          <button 
+            className={styles.featured_button}
+            onClick={() => navigate("/trekking")}
+          >
+            <span>EXPLORE TREKS</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Hidden: Original trekking cards section */}
+      <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
           <img src={img2} className={styles.ad_cd_img} alt="" />
           <div className={styles.date_night_rating}>
@@ -926,7 +971,52 @@ export default function Home() {
         <span className={styles.section_divider}></span>
       </div>
 
-      <div className={styles.adventure_card_section}>
+      <div className={styles.featured_section}>
+        <div className={styles.featured_right}>
+          <div className={styles.badge}>🌊 WATER SPORTS</div>
+          <h3 className={styles.featured_title}>Thrill of the Rapids</h3>
+          <p className={styles.featured_description}>
+            Experience heart-pumping river rafting adventures on crystal-clear Himalayan rivers. Navigate through exhilarating rapids, enjoy peaceful stretches with stunning mountain views, and create memories that will last a lifetime. Perfect for both beginners seeking adventure and experienced thrill-seekers looking for an adrenaline rush.
+          </p>
+          <ul className={styles.features_list}>
+            <li>Professional safety gear</li>
+            <li>Certified instructors</li>
+            <li>Multiple difficulty levels</li>
+            <li>Scenic river routes</li>
+          </ul>
+          <button 
+            className={styles.featured_button}
+            onClick={() => navigate("/river-rafting")}
+          >
+            <span>BOOK RAFTING TRIPS</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div className={styles.featured_left}>
+          <div className={styles.video_container}>
+            <video
+              className={styles.featured_video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
+            >
+              <source src="/src/assets/videos/rafting.mp4" type="video/mp4" />
+              <img
+                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
+                alt="River Rafting Adventure"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      {/* Hidden: Original rafting cards section */}
+      <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
           <img src={rafting1} className={styles.ad_cd_img} alt="" />
           <div className={styles.date_night_rating}>
