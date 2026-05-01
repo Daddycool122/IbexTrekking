@@ -19,6 +19,8 @@ import img12 from "./assets/hike/kunjapuri/img4.jpeg";
 import rafting1 from "./assets/Rafting/img6.jpg";
 import rafting2 from "./assets/Rafting/img7.jpg";
 import rafting3 from "./assets/Rafting/img8.jpg";
+import trekking_video from "./assets/videos/trekking.mp4";
+import rafting_video from "./assets/videos/rafting.mp4";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
 import trust_1 from "./assets/home/img2.png";
@@ -136,7 +138,7 @@ export default function Home() {
               controls={false}
               poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
             >
-              <source src="/src/assets/videos/trekking.mp4" type="video/mp4" />
+              <source src={trekking_video} type="video/mp4" />
               <img
                 src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
                 alt="Himalayan Trekking"
@@ -1005,7 +1007,7 @@ export default function Home() {
               controls={false}
               poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
             >
-              <source src="/src/assets/videos/rafting.mp4" type="video/mp4" />
+              <source src={rafting_video} type="video/mp4" />
               <img
                 src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
                 alt="River Rafting Adventure"
