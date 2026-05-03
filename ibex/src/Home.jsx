@@ -21,6 +21,7 @@ import rafting2 from "./assets/Rafting/img7.jpg";
 import rafting3 from "./assets/Rafting/img8.jpg";
 import trekking_video from "./assets/videos/trekking.mp4";
 import rafting_video from "./assets/videos/rafting.mp4";
+import tour_video from "./assets/videos/tour.mp4";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
 import WhyChooseUs from "./WhyChooseUs";
@@ -30,6 +31,7 @@ export default function Home() {
   const navigate = useNavigate();
   const trekking_ref = useRef(null);
   const rafting_ref = useRef(null);
+  const tours_ref = useRef(null);
   const review_ref = useRef(null);
 
   useEffect(() => {
@@ -54,6 +56,10 @@ export default function Home() {
 
   const scrollToRafting = () => {
     rafting_ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToTours = () => {
+    tours_ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToReviw = () => {
@@ -98,6 +104,18 @@ export default function Home() {
             <div className={styles.trr_des}>
               Ride the rapids with our thrilling rafting adventures. Perfect for
               adrenaline seekers and water lovers.
+            </div>
+          </div>
+        </div>
+        <div
+          className={styles.trr_indi}
+          onClick={() => navigate("/tours")}
+        >
+          <img src={img12} className={styles.trr_img} alt="" />
+          <div className={styles.trr_blur}>
+            <div className={styles.trr_title}>Tours</div>
+            <div className={styles.trr_des}>
+              Discover cultural, spiritual, and adventure tours that will leave you spellbound. Perfect for family and friends.
             </div>
           </div>
         </div>
@@ -1212,6 +1230,55 @@ export default function Home() {
               BOOK NOW
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={`${styles.section_intro} ${styles.section_intro_alt}`} ref={tours_ref}>
+        <p className={styles.section_kicker}>Cultural & Spiritual Journeys</p>
+        <h2 className={styles.section_title}>
+          Explore Our <span>Tours</span>
+        </h2>
+        <span className={styles.section_divider}></span>
+      </div>
+
+      <div className={styles.featured_section}>
+        <div className={styles.featured_left}>
+          <div className={styles.video_container}>
+            <video
+              className={styles.featured_video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?w=800&h=450&fit=crop"
+            >
+              <source src={tour_video} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className={styles.featured_right}>
+          <div className={styles.badge}>🏔️ CULTURAL TOURS</div>
+          <h3 className={styles.featured_title}>Discover Hidden Gems</h3>
+          <p className={styles.featured_description}>
+            Embark on a journey through rich culture, spirituality, and stunning nature. From peaceful temple visits to scenic hikes, our carefully curated tours offer an authentic Himalayan experience that caters to all ages and preferences.
+          </p>
+          <ul className={styles.features_list}>
+            <li>Local expert guides</li>
+            <li>Cultural immersion</li>
+            <li>Family-friendly options</li>
+            <li>Comfortable transport</li>
+          </ul>
+          <button 
+            className={styles.featured_button}
+            onClick={() => navigate("/tours")}
+          >
+            <span>EXPLORE TOURS</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </div>
       </div>
 

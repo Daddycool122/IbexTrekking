@@ -16,6 +16,7 @@ const Brahmatal = lazy(() => import("./Trekking/Brahmatal"));
 const Rafting = lazy(() => import("./Rafting/Rafting"));
 const Review = lazy(() => import("./Review.jsx"));
 const Trekking = lazy(() => import("./Trekking.jsx"));
+const Tours = lazy(() => import("./Tours.jsx"));
 const RiverRafting = lazy(() => import("./Rafting.jsx"));
 const About = lazy(() => import("./About.jsx"));
 const Contact = lazy(() => import("./Contact.jsx"));
@@ -27,6 +28,7 @@ const RefundAndCancelationPolicy = lazy(() =>
 const Kunjapuri = lazy(() => import("./Trekking/KunjapuriHike.jsx"));
 const AliBedniBugyal = lazy(() => import("./Trekking/AliBedniBugyal.jsx"));
 const DyaraBugyal = lazy(() => import("./Trekking/DyaraBugyal.jsx"));
+const AdiKailash = lazy(() => import("./Trekking/AdiKailash.jsx"));
 const Payment = lazy(() => import("./Payment.jsx"));
 const BookingConfirmed = lazy(() => import("./Trekking/BookingConfirmed.jsx"));
 import FloatingContact from "./FloatingContact.jsx";
@@ -59,6 +61,8 @@ function App() {
 
           {/* tarekking */}
           <Route path="/Trekking" element={<Trekking />} />
+          <Route path="/Tours" element={<Tours />} />
+          <Route path="/tours" element={<Tours />} />
           <Route path="/valley-of-flower" element={<Valley_of_flower />} />
           <Route
             path="/chopta-chandrashilla-trek"
@@ -87,6 +91,7 @@ function App() {
 
           {/* hike */}
           <Route path="/kunjapuri-hike" element={<Kunjapuri />} />
+          <Route path="/adi-kailash-tour" element={<AdiKailash />} />
 
           {/* about and legal */}
           <Route path="/about" element={<About />} />

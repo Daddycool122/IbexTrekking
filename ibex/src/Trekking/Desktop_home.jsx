@@ -41,6 +41,7 @@ export default function Desktop_home({
 
           <nav className={styles.links_section}>
             <div className={styles.links} onClick={() => navigate("/")}>Home</div>
+            <div className={styles.links} onClick={() => navigate("/tours")}>Tours</div>
             <div className={styles.links} onClick={() => navigate("/trekking")}>Trekking</div>
             <div className={styles.links} onClick={() => navigate("/river-rafting")}>Rafting</div>
           </nav>
@@ -84,7 +85,6 @@ export default function Desktop_home({
                 { name: 'Valley Of Flower', path: '/valley-of-flower' },
                 { name: 'Chopta Chandrashilla', path: '/chopta-chandrashilla-trek' },
                 { name: 'Pangarchulla Peak', path: '/pangarchulla-peak-trek' },
-                { name: 'Panch Kedar', path: '/panch-kedar-trek' },
                 { name: 'Kuari Pass', path: '/kuari-pass-trek' },
                 { name: 'Gaumukh Tapovan', path: '/gaumukh-tapovan-trek' },
                 { name: 'Brahmatal', path: '/brahmatal-trek' },
@@ -97,8 +97,15 @@ export default function Desktop_home({
                 </div>
               ))}
 
-              <div className={styles.options_title} style={{ marginTop: 20 }}>Hike</div>
-              <div className={styles.options} onClick={() => { setOpen_options(false); navigate("/kunjapuri-hike"); }}>Kunjapuri Hike</div>
+              <div className={styles.options_title} style={{ marginTop: 20 }}>Tours</div>
+              {[
+                { name: 'Panch Kedar', path: '/panch-kedar-trek' },
+                { name: 'Kunjapuri Hike', path: '/kunjapuri-hike' }
+              ].map(tour => (
+                <div key={tour.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(tour.path); }}>
+                  {tour.name}
+                </div>
+              ))}
 
               <div className={styles.options_title} style={{ marginTop: 20 }}>Rafting</div>
               {[16, 25, 35].map(km => (
