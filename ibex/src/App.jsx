@@ -29,6 +29,7 @@ const AliBedniBugyal = lazy(() => import("./Trekking/AliBedniBugyal.jsx"));
 const DyaraBugyal = lazy(() => import("./Trekking/DyaraBugyal.jsx"));
 const Payment = lazy(() => import("./Payment.jsx"));
 const BookingConfirmed = lazy(() => import("./Trekking/BookingConfirmed.jsx"));
+import FloatingContact from "./FloatingContact.jsx";
 
 function App() {
   return (
@@ -102,6 +103,7 @@ function App() {
           <Route path="/booking-confirmed" element={<BookingConfirmed />} />
         </Routes>
       </Suspense>
+      <FloatingContact />
     </Router>
   );
 }

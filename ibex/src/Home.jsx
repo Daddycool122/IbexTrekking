@@ -23,8 +23,8 @@ import trekking_video from "./assets/videos/trekking.mp4";
 import rafting_video from "./assets/videos/rafting.mp4";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
-import trust_1 from "./assets/home/img2.png";
-import trust_2 from "./assets/home/img3.jpg";
+import WhyChooseUs from "./WhyChooseUs";
+import TrustedReviews from "./TrustedReviews";
 import { useReviews } from "./hooks/useReviews";
 export default function Home() {
   const navigate = useNavigate();
@@ -103,22 +103,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.section_intro} ref={trekking_ref}>
-        <p className={styles.section_kicker}>Recognized and Recommended</p>
-        <h2 className={styles.section_title}>We are trusted by</h2>
-        <span className={styles.section_divider}></span>
-      </div>
-
-      <div className={styles.trusted_by}>
-        <div className={styles.tb_img_section}>
-          <img src={trust_1} alt="" className={styles.tb_img} />
-        </div>
-        <div className={styles.tb_img_section}>
-          <img src={trust_2} alt="" className={styles.tb_img} />
-        </div>
-      </div>
-
-      <div className={`${styles.section_intro} ${styles.section_intro_alt}`}>
+      <div className={`${styles.section_intro} ${styles.section_intro_alt}`} ref={trekking_ref}>
         <p className={styles.section_kicker}>Curated Himalayan Experiences</p>
         <h2 className={styles.section_title}>
           Your Trekking Journey <span>Begins</span>
@@ -1230,156 +1215,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.title} ref={review_ref}>
-        Trusted by over 200 clients, <br />
-        who chose adventure with us.
-        <span className={styles.title_border}></span>
+      <div ref={review_ref}>
+        <TrustedReviews />
       </div>
-
-      <div className={styles.review_section}>
-        {(Array.isArray(all_reviews) ? all_reviews : []).map((item, index) => {
-          return (
-            <div
-              key={`${item.id || item.name || "review"}-${index}`}
-              className={styles.indi_review}
-            >
-              <div className={styles.review}>{item.review}</div>
-              <div className={styles.line}>
-                <div className={styles.main_line}></div>
-              </div>
-              <div className={styles.review_name}>{item.name}</div>
-              <div className={styles.des}>{item.adventureType}</div>
-            </div>
-          );
-        })}
-        {/* <div className={styles.indi_review}>
-          <div className={styles.review}>
-            If you’re looking for a balanced adventure, the 25 km rafting
-            stretch is the way to go! It includes some challenging rapids along
-            with calm stretches where you can soak in the natural beauty around
-            you. The journey keeps your adrenaline pumping while giving you
-            enough time to enjoy the mesmerizing views of the river valley.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Priya Sharma, Mumbai</div>
-          <div className={styles.des}>25 KM River Rafting</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            An unforgettable experience for true adventure seekers! The 35 km
-            rafting stretch is packed with powerful rapids, twists, and turns
-            that will keep your heart racing from start to finish. It’s a long,
-            exhilarating ride through stunning landscapes, making it perfect for
-            thrill-lovers who want a full-day action-packed adventure
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Vikram Singh, Bangalore</div>
-          <div className={styles.des}>35 KM River Rafting</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            Walking through the Valley of Flowers feels like stepping into a
-            dream. The trail is filled with vibrant blooms of every color, set
-            against the backdrop of towering snow-capped peaks. Every turn
-            surprises you with breathtaking views, making this trek a paradise
-            for nature lovers and photographers. A truly unforgettable
-            experience that blends beauty and serenity
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Ananya Joshi, Pune</div>
-          <div className={styles.des}>Valley of Flower Trek</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            This trek is a treat for mountain lovers! The trail winds through
-            serene forests and charming meadows, leading to the Chandrashilla
-            summit. From the top, you get a panoramic view of some of the
-            highest Himalayan peaks. The sunrise from here is nothing short of
-            magical, making the climb absolutely worth it.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Rohit Verma, Lucknow</div>
-          <div className={styles.des}>Chopta Chandrashilla Trek</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            If you want to experience the magic of winter, the Brahmatal trek is
-            for you. Snow-covered trails, frozen lakes, and views of majestic
-            peaks like Trishul and Nanda Ghunti make this trek extraordinary.
-            It’s a perfect combination of adventure and breathtaking beauty,
-            ideal for both beginners and seasoned trekkers
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Neha Kapoor, Chandigarh</div>
-          <div className={styles.des}>Brahmatal Trek</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            A spiritual and adventurous journey to the source of the Ganga! This
-            trek takes you through rugged terrains, glaciers, and breathtaking
-            Himalayan views. Tapovan offers surreal landscapes, and the sight of
-            towering peaks like Shivling is simply mesmerizing. A must-do for
-            those who love high-altitude treks with a sense of spirituality.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Saurabh Patel, Ahmedabad</div>
-          <div className={styles.des}>Gaumukh Tapovan Trek</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            Known as one of the best winter treks in India, Kedarkantha is pure
-            magic. The trek offers stunning snow-laden forests, charming
-            campsites, and a summit view that will leave you speechless. Perfect
-            for beginners, this trek promises adventure and beauty in equal
-            measure, with clear starry skies adding to its charm.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Kedarkantha Trek</div>
-          <div className={styles.des}>Meera Iyer, Hyderabad</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            Famous for its spectacular views of the Garhwal Himalayas, Kuari
-            Pass is a scenic delight. The trail passes through oak and
-            rhododendron forests, beautiful meadows, and offers one of the best
-            vantage points for Nanda Devi and other peaks. A moderate trek that
-            rewards you with unforgettable Himalayan panoramas.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Arjun Malhotra, Delhi</div>
-          <div className={styles.des}>Kuari Pass Trek</div>
-        </div>
-        <div className={styles.indi_review}>
-          <div className={styles.review}>
-            A challenging yet rewarding trek for adventure enthusiasts! The
-            Pangarchulla Peak trek offers thrilling ascents and mesmerizing
-            summit views of snow-clad Himalayan giants. The experience of
-            standing at the top, surrounded by endless peaks, makes every effort
-            worthwhile. Ideal for trekkers looking to push their limits.
-          </div>
-          <div className={styles.line}>
-            <div className={styles.main_line}></div>
-          </div>
-          <div className={styles.review_name}>Ankit Pundir</div>
-          <div className={styles.des}>25 KM River Rafting</div>
-        </div> */}
-      </div>
+      <WhyChooseUs />
       <Footer />
     </>
   );
