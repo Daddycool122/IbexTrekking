@@ -24,7 +24,6 @@ import rafting_video from "./assets/videos/rafting.mp4";
 import tour_video from "./assets/videos/tour.mp4";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
-import WhyChooseUs from "./WhyChooseUs";
 import TrustedReviews from "./TrustedReviews";
 import { useReviews } from "./hooks/useReviews";
 export default function Home() {
@@ -1285,7 +1284,6 @@ export default function Home() {
       <div ref={review_ref}>
         <TrustedReviews />
       </div>
-      <WhyChooseUs />
       <Footer />
     </>
   );
