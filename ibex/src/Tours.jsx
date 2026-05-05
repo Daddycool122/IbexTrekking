@@ -92,7 +92,7 @@ export default function Tours() {
             </div>
           </div>
           <div className={styles.ad_cd_title}>
-            Panch Kedar Trek - A sacred journey in the Himalayas
+            Panch Kedar Tour - A sacred journey in the Himalayas
           </div>
           <div className={styles.ad_cd_book}>
             <a href="tel://+916396518778" className={styles.ad_cd_call}>
@@ -264,7 +264,6 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <div className={styles.expedition_tag}>Expedition</div>
           <img src={imgChardham} className={styles.ad_cd_img} alt="Chardham Yatra" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>10 Days & 9 Nights</div>
@@ -297,7 +296,7 @@ export default function Tours() {
             </div>
           </div>
           <div className={styles.ad_cd_title}>
-            Chardham Yatra 2026 Complete Expedition
+            Chardham Yatra 2026
           </div>
           <div className={styles.ad_cd_book}>
             <a href="tel://+916396518778" className={styles.ad_cd_call}>

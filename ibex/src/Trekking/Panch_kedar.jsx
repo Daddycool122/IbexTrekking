@@ -29,7 +29,7 @@ export default function PanchKedar() {
     <>
       <Desktop_intro_section
         img={img1}
-        title={"Panch Kedar Trek & Drive"}
+        title={"Panch Kedar Tour & Drive"}
         open_form={setOpen_form}
         des={"A sacred journey through the heart of the Himalayas"}
       />
@@ -50,7 +50,7 @@ export default function PanchKedar() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Panch Kedar Trek & Drive</div>
+          <div className={styles.title}>Panch Kedar Tour & Drive</div>
           <div className={styles.tag_line}>
             An Epic Spiritual & Scenic Journey through the Himalayas.
           </div>
@@ -309,7 +309,7 @@ export default function PanchKedar() {
         <FormNP
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Panch Kedar Trek"}
+          name={"Panch Kedar Tour"}
           price={34999}
         />
       </div>

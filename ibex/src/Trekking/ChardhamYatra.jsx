@@ -31,7 +31,7 @@ export default function ChardhamYatra() {
       <Photos photos={[img1, img2, img3, img4, img5, img6, img7]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Chardham Yatra 2026 Complete Expedition</div>
+          <div className={styles.title}>Chardham Yatra 2026</div>
           <div className={styles.tag_line}>
             A sacred journey covering Yamunotri, Gangotri, Kedarnath, and Badrinath. Ex-Haridwar/Dehradun.
           </div>
@@ -122,89 +122,7 @@ export default function ChardhamYatra() {
             </ul>
           </div>
 
-          <Title text={"Tour Cost - Deluxe Package"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}><strong>2 Pax:</strong> Innova/Crysta ₹30,999 | Tempo Traveller: NA</li>
-              <li className={styles.li}><strong>4 Pax:</strong> Innova/Crysta ₹42,999 | Tempo Traveller: NA</li>
-              <li className={styles.li}><strong>6 Pax:</strong> Innova/Crysta ₹48,999 | Tempo Traveller: NA</li>
-              <li className={styles.li}><strong>8 Pax:</strong> Innova/Crysta NA | Tempo Traveller: ₹45,999</li>
-              <li className={styles.li}><strong>10 Pax:</strong> Innova/Crysta NA | Tempo Traveller: ₹47,999</li>
-              <li className={styles.li}><strong>12 Pax:</strong> Innova/Crysta NA | Tempo Traveller: ₹48,999</li>
-            </ul>
-          </div>
 
-          <Title text={"Tour Cost - Regular Package"} />
-          <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}><strong>2 Pax:</strong> ₹48,999</li>
-              <li className={styles.li}><strong>4 Pax:</strong> ₹30,999</li>
-              <li className={styles.li}><strong>6 Pax:</strong> ₹35,999</li>
-              <li className={styles.li}><strong>8 Pax:</strong> ₹34,999</li>
-              <li className={styles.li}><strong>10 Pax:</strong> ₹36,999</li>
-              <li className={styles.li}><strong>12 Pax:</strong> ₹37,999</li>
-            </ul>
-          </div>
-
-          <Title text={"List of Hotels"} />
-          <div className={styles.ul_section}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '10px' }}>
-              <thead>
-                <tr style={{ background: '#059669', color: 'white', textAlign: 'left' }}>
-                  <th style={{ padding: '8px', border: '1px solid #ddd' }}>S.N</th>
-                  <th style={{ padding: '8px', border: '1px solid #ddd' }}>Destination</th>
-                  <th style={{ padding: '8px', border: '1px solid #ddd' }}>Night Stay</th>
-                  <th style={{ padding: '8px', border: '1px solid #ddd' }}>Deluxe Package</th>
-                  <th style={{ padding: '8px', border: '1px solid #ddd' }}>Regular Package</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>1</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Barkot</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>02</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Rajvansh Cottage / Similar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Camp Veda / Similar</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>2</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Uttarkashi</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>02</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Yamuna Retreat / Similar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Yamuna Resort / Similar</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>3</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Guptkashi/Sersi</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>02</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Nirvana Cottage / Similar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Omkar Comfort / Similar</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>4</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Kedarnath</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>01</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>New Himachal Guest House</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>New Himachal Guest House</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>5</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Badrinath</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>01</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Hotel Snow Crest / Similar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Hotel Dronagiri / Similar</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>6</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Srinagar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>01</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Riverside Resort / Similar</td>
-                  <td style={{ padding: '8px', border: '1px solid #ddd' }}>Chauhan Resort / Similar</td>
-                </tr>
-              </tbody>
-            </table>
-            <p style={{ marginTop: '10px', fontSize: '14px', color: '#555' }}><strong>Note:</strong> Due to non-availability of Rooms on above indicative hotels, similar/alternate hotels shall be provided.</p>
-          </div>
 
           <Title text={"Inclusion & Facilities"} />
           <div className={styles.ul_section}>
@@ -248,7 +166,7 @@ export default function ChardhamYatra() {
         <FormNP
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Chardham Yatra 2026 Complete Expedition"}
+          name={"Chardham Yatra 2026"}
           price={"₹30,999 (Starting)"}
         />
       </div>
