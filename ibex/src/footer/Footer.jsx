@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
+  
+  const handleNavigation = (path) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
   return (
     <div className={styles.des_footer}>
       <div className={styles.watermark}>IBEX ICEAXE</div>
@@ -61,34 +66,43 @@ export default function Footer() {
         <div className={styles.links_grid}>
           <div className={styles.link_column}>
             <div className={styles.info_title}>Quick Links</div>
-            <a href="/about" className={styles.info_info}>About Us</a>
-            <a href="/contact-us" className={styles.info_info}>Contact Us</a>
-            <a href="/terms-and-condition" className={styles.info_info}>Terms & Condition</a>
-            <a href="/privacy-policy" className={styles.info_info}>Privacy Policy</a>
-            <a href="/refund-and-cancellation" className={styles.info_info}>Refund Policy</a>
+            <div className={styles.info_info} onClick={() => handleNavigation("/about")}>About Us</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/contact-us")}>Contact Us</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/terms-and-condition")}>Terms & Condition</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/privacy-policy")}>Privacy Policy</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/refund-and-cancellation")}>Refund Policy</div>
           </div>
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>Top Treks</div>
-            <div className={styles.info_info} onClick={() => navigate("/valley-of-flower")}>Valley of Flower</div>
-            <div className={styles.info_info} onClick={() => navigate("/kedarkantha-trek")}>Kedarkantha Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/chopta-chandrashilla-trek")}>Chopta Chandrashilla</div>
-            <div className={styles.info_info} onClick={() => navigate("/brahmatal-trek")}>Brahmatal Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/kuari-pass-trek")}>Kuari Pass Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/panch-kedar-trek")}>Panch Kedar Trek</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/valley-of-flower")}>Valley of Flower</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/kedarkantha-trek")}>Kedarkantha Trek</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/chopta-chandrashilla-trek")}>Chopta Chandrashilla</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/brahmatal-trek")}>Brahmatal Trek</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/kuari-pass-trek")}>Kuari Pass Trek</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/panch-kedar-trek")}>Panch Kedar Trek</div>
           </div>
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>More Treks & Rafting</div>
-            <div className={styles.info_info} onClick={() => navigate("/ali-bedni-bugyal-trek")}>Ali Bedni Bugyal</div>
-            <div className={styles.info_info} onClick={() => navigate("/dayara-bugyal-trek")}>Dayara Bugyal</div>
-            <div className={styles.info_info} onClick={() => navigate("/pangarchulla-peak-trek")}>Pangarchulla Peak</div>
-            <div className={styles.info_info} onClick={() => navigate("/gaumukh-tapovan-trek")}>Gaumukh Tapovan</div>
-            <div className={styles.info_info} onClick={() => navigate("/rafting?id=16")}>16 KM River Rafting</div>
-            <div className={styles.info_info} onClick={() => navigate("/rafting?id=35")}>35 KM River Rafting</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/ali-bedni-bugyal-trek")}>Ali Bedni Bugyal</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/dayara-bugyal-trek")}>Dayara Bugyal</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/pangarchulla-peak-trek")}>Pangarchulla Peak</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/gaumukh-tapovan-trek")}>Gaumukh Tapovan</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/rafting?id=16")}>16 KM River Rafting</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/rafting?id=35")}>35 KM River Rafting</div>
+          </div>
+
+          <div className={styles.link_column}>
+            <div className={styles.info_title}>Tours & Expeditions</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/panch-kedar-trek")}>Panch Kedar Trek</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/kunjapuri-hike")}>Kunjapuri One Day Hike</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/adi-kailash-tour")}>Adi Kailash & Om Parvat</div>
+            <div className={styles.info_info} onClick={() => handleNavigation("/chardham-yatra-2026")}>Chardham Yatra 2026</div>
           </div>
         </div>
-      </div>
+
+        </div>
 
       <div className={styles.cr}>
         <span>Copyright © 2025 IBEX ICEAXE. All Rights Reserved.</span>

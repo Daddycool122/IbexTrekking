@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy, useEffect } from "react";
 import Lenis from "lenis";
+import ScrollToTop from "./ScrollToTop";
 
 // Lazy load components
 const Home = lazy(() => import("./Home"));
@@ -32,6 +33,7 @@ const DyaraBugyal = lazy(() => import("./Trekking/DyaraBugyal.jsx"));
 const AdiKailash = lazy(() => import("./Trekking/AdiKailash.jsx"));
 const Payment = lazy(() => import("./Payment.jsx"));
 const BookingConfirmed = lazy(() => import("./Trekking/BookingConfirmed.jsx"));
+const ChardhamYatra = lazy(() => import("./Trekking/ChardhamYatra.jsx"));
 import FloatingContact from "./FloatingContact.jsx";
 
 function App() {
@@ -62,6 +64,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Suspense
         fallback={
           <div
@@ -118,6 +121,7 @@ function App() {
           {/* hike */}
           <Route path="/kunjapuri-hike" element={<Kunjapuri />} />
           <Route path="/adi-kailash-tour" element={<AdiKailash />} />
+          <Route path="/chardham-yatra-2026" element={<ChardhamYatra />} />
 
           {/* about and legal */}
           <Route path="/about" element={<About />} />

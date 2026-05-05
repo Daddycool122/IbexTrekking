@@ -547,6 +547,30 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(5, 150, 105, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.expedition_tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.expedition_tag::before {
+  content: '★';
+  font-size: 14px;
 }
 
 .indi_adventure_card:hover {
