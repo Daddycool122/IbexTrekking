@@ -2,7 +2,7 @@ import styles from "./Desktop_home.module.css";
 import rating_img2 from "../assets/Rating/img2.jpg";
 import rating_img4 from "../assets/Rating/img4.jpg";
 import rating_img5 from "../assets/Rating/img5.jpg";
-import logo from "../assets/home/logo.jpeg";
+import logo from "../assets/home/logo.PNG";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
