@@ -178,7 +178,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/valley-of-flower")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/chopta-chandrashilla-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -322,7 +322,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/brahmatal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -394,7 +394,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/gaumukh-tapovan-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -466,7 +466,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kedarkantha-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -538,7 +538,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kuari-pass-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -612,7 +612,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/pangarchulla-peak-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -684,7 +684,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/ali-bedni-bugyal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -756,7 +756,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/dayara-bugyal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -838,7 +838,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/rafting?id=16")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -910,7 +910,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/rafting?id=25")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -982,7 +982,7 @@ export default function Trekking() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/rafting?id=35")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>

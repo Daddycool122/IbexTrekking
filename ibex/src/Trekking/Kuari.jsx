@@ -17,7 +17,6 @@ import img9 from "../assets/Trek/kuari/img9.jpeg";
 import img10 from "../assets/Trek/kuari/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function WinterKuariPass() {
   const [open_form, setOpen_form] = useState(false);
@@ -37,7 +36,7 @@ export default function WinterKuariPass() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Winter Kuari Pass Trek</div>
+          <div className={styles.title}>Winter Kuari Pass Trek · ₹12,499 + 5% GST</div>
           <div className={styles.tag_line}>
             A Classic Himalayan Winter Trek with Panoramic Mountain Views.
           </div>
@@ -250,11 +249,11 @@ export default function WinterKuariPass() {
           />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"winter kauri pass trek"}
-          price={9999}
+          name={"Winter Kuari Pass Trek"}
+          price={12499}
         />
       </div>
       <Footer />

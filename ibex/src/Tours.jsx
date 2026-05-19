@@ -122,7 +122,7 @@ export default function Tours() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/panch-kedar-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function Tours() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kunjapuri-hike")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ export default function Tours() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/adi-kailash-tour")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ export default function Tours() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/chardham-yatra-2026")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>

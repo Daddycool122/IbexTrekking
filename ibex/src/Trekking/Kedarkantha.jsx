@@ -15,7 +15,6 @@ import img9 from "../assets/Trek/kedarkantha/img9.jpeg";
 import img10 from "../assets/Trek/kedarkantha/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function Kedarkantha() {
   const [open_form, setOpen_form] = useState(false);
@@ -237,11 +236,11 @@ export default function Kedarkantha() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
           name={"Kedarkantha Trek"}
-          price={8999}
+          price={12499}
         />
       </div>
       <Footer />

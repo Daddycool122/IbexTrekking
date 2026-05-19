@@ -17,7 +17,6 @@ import img9 from "../assets/Trek/gaumukh/img9.jpeg";
 import img10 from "../assets/Trek/gaumukh/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function Gaumukh_Tapovan() {
   const [open_form, setOpen_form] = useState(false);
@@ -35,7 +34,7 @@ export default function Gaumukh_Tapovan() {
       <Photos photos={[img2, img3, img5, img6, img7, img8, img9, img10]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Gaumukh Tapovan Trek</div>
+          <div className={styles.title}>Gaumukh Tapovan Trek · ₹18,999 + 5% GST</div>
           <div className={styles.tag_line}>
             To the Source of the Ganges and Beyond.
           </div>
@@ -290,11 +289,11 @@ export default function Gaumukh_Tapovan() {
             { question: "Is camping allowed in Gaumukh area?", answer: "Camping is only allowed at designated campsites like Chirbasa, Bhojbasa, and Tapovan. No camping is permitted near the actual Gaumukh glacier snout." }
           ]} />
 
-          <FormNP
+          <Form
             open_form={open_form}
             setOpen_form={setOpen_form}
             name={"Gaumukh Tapovan Trek"}
-            price={15999}
+            price={18999}
           />
         </div>
       </div>

@@ -16,7 +16,6 @@ import img8 from "../assets/Trek/brahmataal/img8.jpeg";
 import img9 from "../assets/Trek/brahmataal/img9.jpeg";
 import img10 from "../assets/Trek/brahmataal/img10.jpeg";
 import { useState, useEffect } from "react";
-import FormNP from "./FormNP";
 import Footer from "../footer/Footer";
 
 export default function Brahmatal() {
@@ -37,7 +36,7 @@ export default function Brahmatal() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Brahmatal Trek</div>
+          <div className={styles.title}>Brahmatal Trek · ₹11,999 + 5% GST</div>
           <div className={styles.tag_line}>
             A Snowy Wonderland for Every Trekker.
           </div>
@@ -252,11 +251,11 @@ export default function Brahmatal() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Brahmataal Trek"}
-          price={9999}
+          name={"Brahmatal Trek"}
+          price={11999}
         />
       </div>
       <Footer />

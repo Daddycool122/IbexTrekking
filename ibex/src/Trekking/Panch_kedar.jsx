@@ -18,7 +18,6 @@ import img10 from "../assets/Trek/panch_kedar/img10.jpeg";
 import img11 from "../assets/Trek/panch_kedar/img11.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function PanchKedar() {
   const [open_form, setOpen_form] = useState(false);
@@ -50,7 +49,7 @@ export default function PanchKedar() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Panch Kedar Tour & Drive</div>
+          <div className={styles.title}>Panch Kedar Trek & Tour · ₹69,999 + 5% GST</div>
           <div className={styles.tag_line}>
             An Epic Spiritual & Scenic Journey through the Himalayas.
           </div>
@@ -306,11 +305,11 @@ export default function PanchKedar() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Panch Kedar Tour"}
-          price={34999}
+          name={"Panch Kedar Trek & Tour"}
+          price={69999}
         />
       </div>
       <Footer />

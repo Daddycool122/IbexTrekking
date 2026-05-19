@@ -24,7 +24,6 @@ import img16 from "../assets/Trek/dyarabugyal/img16.jpeg";
 import img17 from "../assets/Trek/dyarabugyal/img17.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function Kedarkantha() {
   const [open_form, setOpen_form] = useState(false);
@@ -62,7 +61,7 @@ export default function Kedarkantha() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Dayara Bugyal Trek</div>
+          <div className={styles.title}>Dayara Bugyal Trek · ₹10,999 + 5% GST</div>
           <div className={styles.tag_line}>
             Step into endless meadows, closer to the peaks.
           </div>
@@ -292,11 +291,11 @@ export default function Kedarkantha() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
           name={"Dayara Bugyal Trek"}
-          price={9999}
+          price={10999}
         />
       </div>
       <Footer />

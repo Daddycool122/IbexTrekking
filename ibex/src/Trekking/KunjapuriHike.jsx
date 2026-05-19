@@ -13,7 +13,6 @@ import img5 from "../assets/hike/kunjapuri/img5.jpeg";
 import img6 from "../assets/hike/kunjapuri/img6.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function KunjapuriHike() {
   const [open_form, setOpen_form] = useState(false);
@@ -31,7 +30,7 @@ export default function KunjapuriHike() {
       <Photos photos={[img1, img2, img3, img4, img5, img6]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Kunjapuri One Day Hike</div>
+          <div className={styles.title}>Kunjapuri One Day Hike · ₹2,999 + 5% GST</div>
           <div className={styles.tag_line}>
             Kunjapuri One Day Hike – Sunrise, Spirituality & Nature
           </div>
@@ -229,11 +228,11 @@ export default function KunjapuriHike() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Kunjapuri Hike"}
-          price={2499}
+          name={"Kunjapuri One Day Hike"}
+          price={2999}
         />
       </div>
       <Footer />

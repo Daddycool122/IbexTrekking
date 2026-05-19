@@ -16,7 +16,6 @@ import img9 from "../assets/Trek/pangarchulla/img9.jpeg";
 import img10 from "../assets/Trek/pangarchulla/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function PangarchullaPeak() {
   const [open_form, setOpen_form] = useState(false);
@@ -36,7 +35,7 @@ export default function PangarchullaPeak() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Pangarchulla Peak Trek</div>
+          <div className={styles.title}>Pangarchulla Peak Trek · ₹13,999 + 5% GST</div>
           <div className={styles.tag_line}>
             A Challenging Summit Trek with Stunning Views of Nanda Devi and
             Hathi Ghoda Peaks.
@@ -269,11 +268,11 @@ export default function PangarchullaPeak() {
           </div>
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Pangarchulla Trek"}
-          price={12999}
+          name={"Pangarchulla Peak Trek"}
+          price={13999}
         />
       </div>
       <Footer />

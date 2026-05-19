@@ -12,7 +12,7 @@ import img6 from "../assets/hike/adikailash/img6.jpeg";
 import img7 from "../assets/hike/adikailash/img7.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
+import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
 
 export default function AdiKailash() {
@@ -31,7 +31,7 @@ export default function AdiKailash() {
       <Photos photos={[img1, img2, img3, img4, img5, img6, img7]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Adi Kailash & Om Parvat Tour</div>
+          <div className={styles.title}>Adi Kailash & Om Parvat Tour · With Bike ₹60,000 + 5% GST</div>
           <div className={styles.tag_line}>
             Experience the divine presence of Shiva at Adi Kailash and witness the sacred "ॐ" formation at Om Parvat.
           </div>
@@ -177,11 +177,11 @@ export default function AdiKailash() {
 
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
           name={"Adi Kailash & Om Parvat Tour"}
-          price={25000}
+          price={60000}
         />
       </div>
       <Footer />

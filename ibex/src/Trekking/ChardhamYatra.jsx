@@ -5,7 +5,7 @@ import Title from "./Title";
 import Itinerary from "./Itinerary";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
+import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
 import img1 from "../assets/hike/chardham/img1.jpg";
 import img2 from "../assets/hike/chardham/img2.webp";
@@ -31,7 +31,7 @@ export default function ChardhamYatra() {
       <Photos photos={[img1, img2, img3, img4, img5, img6, img7]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Chardham Yatra 2026</div>
+          <div className={styles.title}>Chardham Yatra 2026 · ₹30,999 + 5% GST</div>
           <div className={styles.tag_line}>
             A sacred journey covering Yamunotri, Gangotri, Kedarnath, and Badrinath. Ex-Haridwar/Dehradun.
           </div>
@@ -163,11 +163,11 @@ export default function ChardhamYatra() {
 
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
           name={"Chardham Yatra 2026"}
-          price={"₹30,999 (Starting)"}
+          price={30999}
         />
       </div>
       <Footer />

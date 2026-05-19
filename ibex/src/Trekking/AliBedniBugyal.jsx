@@ -14,7 +14,6 @@ import img6 from "../assets/Trek/alibedni/img6.jpg";
 import img7 from "../assets/Trek/alibedni/img7.jpg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 
 export default function AliBedniBugyal() {
   const [open_form, setOpen_form] = useState(false);
@@ -34,7 +33,7 @@ export default function AliBedniBugyal() {
       <Photos photos={[img1, img2, img3, img4, img5, img6, img7]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Ali Bedni Bugyal Trek</div>
+          <div className={styles.title}>Ali Bedni Bugyal Trek · ₹11,499 + 5% GST</div>
           <div className={styles.tag_line}>
             Walk through meadows, touch the sky, and witness the Himalayas up
             close
@@ -295,11 +294,11 @@ export default function AliBedniBugyal() {
           ]} />
         </div>
 
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
           name={"Ali Bedni Bugyal Trek"}
-          price={8999}
+          price={11499}
         />
       </div>
       <Footer />

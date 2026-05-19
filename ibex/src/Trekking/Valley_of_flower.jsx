@@ -18,7 +18,6 @@ import img9 from "../assets/Trek/Valley_of_flower/img9.jpeg";
 import img10 from "../assets/Trek/Valley_of_flower/img10.jpeg";
 import img11 from "../assets/Trek/Valley_of_flower/img11.jpeg";
 import Footer from "../footer/Footer";
-import FormNP from "./FormNP";
 import { useState, useEffect } from "react";
 export default function Valley_of_flower() {
   const [open_form, setOpen_form] = useState(false);
@@ -38,7 +37,7 @@ export default function Valley_of_flower() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Valley of Flower</div>
+          <div className={styles.title}>Valley of Flower · ₹12,999 + 5% GST</div>
           <div className={styles.tag_line}>
             A Trail of Flowers, A Journey to
             <br />
@@ -304,11 +303,11 @@ export default function Valley_of_flower() {
             { question: "Is the Valley of Flowers trek famous?", answer: "Yes, it is one of India’s most famous Himalayan treks and a UNESCO World Heritage Site known for its alpine flowers and natural beauty." }
           ]} />
         </div>
-        <FormNP
+        <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Valley of flower Trek"}
-          price={10999}
+          name={"Valley of Flower Trek"}
+          price={12999}
         />
       </div>
       <Footer />

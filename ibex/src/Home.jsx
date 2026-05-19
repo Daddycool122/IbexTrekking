@@ -238,7 +238,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/valley-of-flower")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/chopta-chandrashilla-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -382,7 +382,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/brahmatal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -454,7 +454,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/gaumukh-tapovan-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -526,7 +526,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kedarkantha-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -598,7 +598,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kuari-pass-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -670,7 +670,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/panch-kedar-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -742,7 +742,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/pangarchulla-peak-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -814,7 +814,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/ali-bedni-bugyal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -886,7 +886,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/dayara-bugyal-trek")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
@@ -958,7 +958,7 @@ export default function Home() {
               className={styles.ad_cd_book_book}
               onClick={() => navigate("/kunjapuri-hike")}
             >
-              ENQUIRE NOW
+              VIEW DETAILS
             </div>
           </div>
         </div>
