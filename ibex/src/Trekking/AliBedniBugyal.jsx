@@ -14,6 +14,7 @@ import img6 from "../assets/Trek/alibedni/img6.jpg";
 import img7 from "../assets/Trek/alibedni/img7.jpg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function AliBedniBugyal() {
   const [open_form, setOpen_form] = useState(false);
@@ -22,6 +23,7 @@ export default function AliBedniBugyal() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Ali Bedni Bugyal Trek"}

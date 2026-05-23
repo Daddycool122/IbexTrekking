@@ -18,6 +18,7 @@ import img9 from "../assets/Trek/Valley_of_flower/img9.jpeg";
 import img10 from "../assets/Trek/Valley_of_flower/img10.jpeg";
 import img11 from "../assets/Trek/Valley_of_flower/img11.jpeg";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 import { useState, useEffect } from "react";
 export default function Valley_of_flower() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +27,7 @@ export default function Valley_of_flower() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img10}
         title={"Valley of Flower"}

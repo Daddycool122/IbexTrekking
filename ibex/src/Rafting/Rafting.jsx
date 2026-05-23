@@ -21,6 +21,7 @@ import RaftingForm from "../Trekking/RaftingForm";
 import { useSearchParams } from "react-router-dom";
 import Videos from "./Video";
 import { motion } from "framer-motion";
+import Header from "../../Header";
 
 export default function Rafting() {
   const [searchParams] = useSearchParams();
@@ -33,6 +34,7 @@ export default function Rafting() {
   const [price, setPrice] = useState(0);
   return (
     <>
+      <Header />
       <Intro_section
         title={"River Rafting"}
         img={img1}

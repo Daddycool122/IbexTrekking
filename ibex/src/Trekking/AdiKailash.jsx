@@ -14,6 +14,7 @@ import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
+import Header from "../Header";
 
 export default function AdiKailash() {
   const [open_form, setOpen_form] = useState(false);
@@ -22,6 +23,7 @@ export default function AdiKailash() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Adi Kailash & Om Parvat Tour"}

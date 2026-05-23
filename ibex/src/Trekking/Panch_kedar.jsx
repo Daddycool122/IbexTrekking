@@ -18,6 +18,7 @@ import img10 from "../assets/Trek/panch_kedar/img10.jpeg";
 import img11 from "../assets/Trek/panch_kedar/img11.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function PanchKedar() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +27,7 @@ export default function PanchKedar() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Panch Kedar Tour & Drive"}

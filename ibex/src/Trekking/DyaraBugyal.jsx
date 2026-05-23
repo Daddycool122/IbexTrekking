@@ -24,6 +24,7 @@ import img16 from "../assets/Trek/dyarabugyal/img16.jpeg";
 import img17 from "../assets/Trek/dyarabugyal/img17.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function Kedarkantha() {
   const [open_form, setOpen_form] = useState(false);
@@ -32,6 +33,7 @@ export default function Kedarkantha() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img8}
         title={"Dayara Bugyal Trek"}

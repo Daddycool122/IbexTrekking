@@ -13,6 +13,7 @@ import img5 from "../assets/hike/kunjapuri/img5.jpeg";
 import img6 from "../assets/hike/kunjapuri/img6.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function KunjapuriHike() {
   const [open_form, setOpen_form] = useState(false);
@@ -21,6 +22,7 @@ export default function KunjapuriHike() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Kunjapuri One Day Hike"}

@@ -18,6 +18,7 @@ import img9 from "../assets/Trek/chopta/img9.jpeg";
 import img10 from "../assets/Trek/chopta/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function Chopta_Chandrashila() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +27,7 @@ export default function Chopta_Chandrashila() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img4}
         title={"Chopta Chandrashila"}

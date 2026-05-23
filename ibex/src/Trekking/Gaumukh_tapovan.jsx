@@ -17,6 +17,7 @@ import img9 from "../assets/Trek/gaumukh/img9.jpeg";
 import img10 from "../assets/Trek/gaumukh/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function Gaumukh_Tapovan() {
   const [open_form, setOpen_form] = useState(false);
@@ -25,6 +26,7 @@ export default function Gaumukh_Tapovan() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img10}
         title={"Gaumukh Tapovan Trek"}

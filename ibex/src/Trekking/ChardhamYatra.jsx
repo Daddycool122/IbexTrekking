@@ -5,6 +5,7 @@ import Title from "./Title";
 import Itinerary from "./Itinerary";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
 import img1 from "../assets/hike/chardham/img1.jpg";
@@ -22,6 +23,7 @@ export default function ChardhamYatra() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Chardham Yatra 2026"}

@@ -15,6 +15,7 @@ import img9 from "../assets/Trek/kedarkantha/img9.jpeg";
 import img10 from "../assets/Trek/kedarkantha/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function Kedarkantha() {
   const [open_form, setOpen_form] = useState(false);
@@ -23,6 +24,7 @@ export default function Kedarkantha() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img8}
         title={"Kedarkantha Trek"}

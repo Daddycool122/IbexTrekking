@@ -16,6 +16,7 @@ import img9 from "../assets/Trek/pangarchulla/img9.jpeg";
 import img10 from "../assets/Trek/pangarchulla/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
+import Header from "../Header";
 
 export default function PangarchullaPeak() {
   const [open_form, setOpen_form] = useState(false);
@@ -24,6 +25,7 @@ export default function PangarchullaPeak() {
   }, []);
   return (
     <>
+      <Header />
       <Desktop_intro_section
         img={img1}
         title={"Pangarchulla Peak Trek"}
