@@ -21,7 +21,7 @@ import RaftingForm from "../Trekking/RaftingForm";
 import { useSearchParams } from "react-router-dom";
 import Videos from "./Video";
 import { motion } from "framer-motion";
-import Header from "../../Header";
+import Header from "../Header";
 
 export default function Rafting() {
   const [searchParams] = useSearchParams();
