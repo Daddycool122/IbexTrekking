@@ -6,6 +6,7 @@ import imgAdikailash from "./assets/hike/adikailash/img1.jpeg";
 import imgChardham from "./assets/hike/chardham/img1.jpg";
 import { useEffect } from "react";
 import Footer from "./footer/Footer";
+import Header from "./Header";
 
 export default function Tours() {
   const navigate = useNavigate();
@@ -28,35 +29,7 @@ export default function Tours() {
 
   return (
     <>
-      <div className={styles.header_trekking}>
-        <a className={styles.back_section} href="/">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={styles.back_arrow}
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              {" "}
-              <path
-                d="M6 12H18M6 12L11 7M6 12L11 17"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>{" "}
-            </g>
-          </svg>
-        </a>
-        <div className={styles.trek_title_section}>Tours</div>
-        <div className={styles.empty_section}></div>
-      </div>
+      <Header />
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>

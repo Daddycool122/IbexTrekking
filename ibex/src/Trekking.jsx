@@ -11,6 +11,7 @@ import img10 from "./assets/Trek/alibedni/img1.jpg";
 import img11 from "./assets/Trek/dyarabugyal/img1.jpeg";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
+import Header from "./Header";
 export default function Trekking() {
   const navigate = useNavigate();
   const trekking_ref = useRef(null);
@@ -47,63 +48,7 @@ export default function Trekking() {
 
   return (
     <>
-      {/* <Desktop_home
-        img={img1}
-        title={"Trek, Raft, Ride"}
-        des={"Ride Waves, Climb Peaks, \nExplore"}
-        scrollToTrekking={scrollToTrekking}
-        scrollToReviw={scrollToReviw}
-      /> */}
-      {/* <div className={styles.title}>
-        Find your perfect <br />
-        Escape
-        <span className={styles.title_border}></span>
-      </div> */}
-
-
-      {/* <div className={styles.title} ref={trekking_ref}>
-        We are trusted by
-        <span className={styles.title_border}></span>
-      </div> */}
-
-      {/* <div className={styles.trusted_by}>
-        <div className={styles.tb_img_section}>
-          <img src={trust_1} alt="" className={styles.tb_img} />
-        </div>
-        <div className={styles.tb_img_section}>
-          <img src={trust_2} alt="" className={styles.tb_img} />
-        </div>
-      </div> */}
-
-      <div className={styles.header_trekking}>
-        <a className={styles.back_section} href="/">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={styles.back_arrow}
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              {" "}
-              <path
-                d="M6 12H18M6 12L11 7M6 12L11 17"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>{" "}
-            </g>
-          </svg>
-        </a>
-        <div className={styles.trek_title_section}>Trekking</div>
-        <div className={styles.empty_section}></div>
-      </div>
+      <Header />
 
       {/* <div className={styles.title} ref={trekking_ref}>
         Trekking
