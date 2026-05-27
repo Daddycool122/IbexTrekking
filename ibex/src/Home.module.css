@@ -72,113 +72,204 @@
 
 .adventure_card_section {
   height: fit-content;
-  width: fit-content;
+  width: 100%;
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 50px;
+  justify-content: center;
+  gap: 32px;
 }
 
 .indi_adventure_card {
-  height: 450px;
   width: 350px;
-  /* background-color: red; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 24px 16px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(250, 250, 250, 0.85) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.08);
+  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.indi_adventure_card:hover {
+  transform: translateY(-6px) scale(1.005);
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .ad_cd_img {
-  height: 50%;
+  height: 200px;
   width: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 16px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.indi_adventure_card:hover .ad_cd_img {
+  transform: scale(1.03);
 }
 
 .date_night_rating {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
 }
 
 .date_night {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.696);
-  letter-spacing: 0.7px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #047857;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(16, 185, 129, 0.06);
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(16, 185, 129, 0.08);
 }
 
 .dn_rating_Section {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   align-items: center;
-  font-size: 14px;
-  letter-spacing: 0.7px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #d97706;
+  background: rgba(245, 158, 11, 0.06);
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(245, 158, 11, 0.08);
+}
+
+.dn_rating_Section svg path {
+  fill: currentColor !important;
 }
 
 .rating {
-  color: #059669;
+  color: #d97706;
+  font-weight: 700;
 }
 
 .ad_cd_title {
-  letter-spacing: 0.7px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 8px;
-  line-height: 1.35;
+  letter-spacing: 0.3px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 12px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.indi_adventure_card:hover .ad_cd_title {
+  color: #059669;
 }
 
 .ad_cd_price {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
   align-items: center;
 }
 
 .ad_cd_price_main {
   font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
+  font-weight: 700;
+  color: #059669;
+  letter-spacing: -0.2px;
 }
 
 .ad_cd_price_cut {
-  font-size: 16px;
-  letter-spacing: 0.7px;
+  font-size: 13px;
   text-decoration: line-through;
-  color: rgba(0, 0, 0, 0.712);
+  color: #94a3b8;
 }
 
 .ad_cd_book {
-  margin-top: 6px;
-  height: 50px;
+  margin-top: auto;
+  padding-top: 14px;
+  height: 48px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .ad_cd_title+.ad_cd_book {
-  margin-top: 4px;
+  margin-top: auto;
+  padding-top: 14px;
 }
 
 .ad_cd_call {
-  height: 50px;
-  width: 50px;
-  border: 2px solid #059669;
-  border-radius: 4px;
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(16, 185, 129, 0.04);
+  color: #059669;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.ad_cd_call svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ad_cd_call svg path {
+  fill: currentColor !important;
+  transition: fill 0.3s ease;
+}
+
+.ad_cd_call:hover {
+  background: #059669;
+  color: #ffffff !important;
+  border-color: #059669;
+  transform: scale(1.05);
 }
 
 .ad_cd_book_book {
-  height: 50px;
-  width: 80%;
-  border: 2px solid #059669;
-  border-radius: 4px;
-  background-color: #059669;
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ad_cd_book_book:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+  transform: translateY(-2px);
+}
+
+.ad_cd_book_book:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
 }
 
 .review_section {
@@ -400,7 +491,7 @@
   }
 
   .indi_adventure_card {
-    height: 450px;
+    height: auto;
     width: 98%;
     /* background-color: red; */
   }
@@ -453,7 +544,7 @@
 .indi_adventure_card {
   width: min(100%, 350px);
   height: auto;
-  min-height: 450px;
+  min-height: auto;
 }
 
 .ad_cd_book_book {
@@ -509,7 +600,7 @@
 
   .indi_adventure_card {
     width: 100%;
-    min-height: 420px;
+    min-height: auto;
   }
 
   .date_night_rating {
@@ -530,23 +621,26 @@
 /* Card consistency + visual polish */
 .adventure_card_section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
   align-items: stretch;
 }
 
 .indi_adventure_card {
   width: 100%;
   max-width: 360px;
-  min-height: auto;
+  height: auto;
   justify-self: center;
   display: flex;
   flex-direction: column;
-  padding: 0.75rem;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(5, 150, 105, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 16px 16px 24px 16px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(250, 250, 250, 0.85) 100%);
+  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(16, 185, 129, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
   position: relative;
 }
 
@@ -554,69 +648,79 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
   color: white;
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 .expedition_tag::before {
   content: '★';
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .indi_adventure_card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13);
+  transform: translateY(-6px) scale(1.005);
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .ad_cd_img {
-  height: auto;
-  aspect-ratio: 16 / 10;
-  border-radius: 12px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .date_night_rating {
-  margin-top: 0.7rem;
-  min-height: 24px;
+  margin-top: 14px;
 }
 
 .ad_cd_title {
   min-height: 0;
-  line-height: 1.35;
+  line-height: 1.4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
 }
 
 .ad_cd_price {
   min-height: 0;
+  margin-top: auto;
 }
 
 .ad_cd_book {
-  margin-top: 6px;
-  gap: 10px;
+  margin-top: auto;
+  gap: 12px;
 }
 
 @media screen and (max-width: 600px) {
   .adventure_card_section {
     grid-template-columns: 1fr;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .indi_adventure_card {
     max-width: 100%;
+    height: auto;
     min-height: auto;
-    padding: 0.65rem;
+    padding: 12px 12px 20px 12px;
+  }
+
+  .ad_cd_img {
+    height: 180px;
   }
 }
 

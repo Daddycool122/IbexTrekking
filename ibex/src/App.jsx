@@ -35,6 +35,7 @@ const Payment = lazy(() => import("./Payment.jsx"));
 const BookingConfirmed = lazy(() => import("./Trekking/BookingConfirmed.jsx"));
 const ChardhamYatra = lazy(() => import("./Trekking/ChardhamYatra.jsx"));
 import FloatingContact from "./FloatingContact.jsx";
+import LoadingScreen from "./LoadingScreen";
 
 function App() {
   useEffect(() => {
@@ -65,26 +66,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Suspense
-        fallback={
-          <div
-            style={{
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              position: "absolute",
-              textAlign: "center",
-              fontSize: "16px",
-              fontWeight: 400,
-            }}
-          >
-            🚀 Hang tight! <br />
-            We’re loading your adventure...
-          </div>
-        }
-      >
+      <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<Home />} />
 
