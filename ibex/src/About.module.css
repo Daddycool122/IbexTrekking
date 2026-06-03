@@ -113,9 +113,24 @@
 }
 
 .symbolIcon {
-  font-size: 60px;
   margin-bottom: 20px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbolImage {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 3px solid #059669;
+  transition: transform 0.3s ease;
+}
+
+.symbolCard:hover .symbolImage {
+  transform: scale(1.1);
 }
 
 .symbolCard h3 {

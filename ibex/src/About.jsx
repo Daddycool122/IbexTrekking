@@ -3,6 +3,8 @@ import styles from "./About.module.css"; // keep CSS separate for clarity
 import { useNavigate } from "react-router-dom";
 import team1 from "./team1.PNG";
 import team2 from "./team2.PNG";
+import ibexBadge from "./assets/ibex_badge.png";
+import iceAxeBadge from "./assets/ice_axe_badge.png";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -91,14 +93,18 @@ const AboutUs = () => {
         <h2 className={styles.sectionHeading}>The Name "Ibex Ice Axe"</h2>
         <div className={styles.symbolsGrid}>
           <div className={styles.symbolCard}>
-            <div className={styles.symbolIcon}>🐐</div>
+            <div className={styles.symbolIcon}>
+              <img src={ibexBadge} alt="The Ibex" className={styles.symbolImage} />
+            </div>
             <h3>The Ibex</h3>
             <p>
               A fearless mountain goat, symbolizing strength, balance, and the spirit of climbing higher against all odds. Native to these magnificent mountains for centuries.
             </p>
           </div>
           <div className={styles.symbolCard}>
-            <div className={styles.symbolIcon}>⛏️</div>
+            <div className={styles.symbolIcon}>
+              <img src={iceAxeBadge} alt="The Ice Axe" className={styles.symbolImage} />
+            </div>
             <h3>The Ice Axe</h3>
             <p>
               A quintessential mountaineering tool representing resilience and survival in the harshest terrains, symbolizing preparation and support.
