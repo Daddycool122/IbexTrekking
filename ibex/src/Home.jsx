@@ -25,6 +25,7 @@ import tour_video from "./assets/videos/tour.mp4";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
 import TrustedReviews from "./TrustedReviews";
+import Instagram from "./Instagram";
 import { useReviews } from "./hooks/useReviews";
 export default function Home() {
   const navigate = useNavigate();
@@ -1284,6 +1285,7 @@ export default function Home() {
       <div ref={review_ref}>
         <TrustedReviews />
       </div>
+      <Instagram />
       <Footer />
     </>
   );
