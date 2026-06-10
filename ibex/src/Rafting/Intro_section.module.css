@@ -337,7 +337,7 @@
 }
 
 .links:hover {
-  color: #059669;
+  color: #1a1a1a;
 }
 
 .login_section {
@@ -490,7 +490,7 @@
   .mis_btn_section {
     height: 50px;
     width: 210px;
-    background-color: #059669;
+    background-color: #1a1a1a;
     position: absolute;
     bottom: 20px;
     right: 0px;
@@ -613,7 +613,7 @@
     align-items: flex-end;
     font-size: 18px;
     letter-spacing: 0.7px;
-    color: #059669;
+    color: #1a1a1a;
     flex-shrink: 0;
   }
 
@@ -621,7 +621,7 @@
     flex-shrink: 0;
     height: 60px;
     width: 90%;
-    background-color: #059669;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;

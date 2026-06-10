@@ -16,7 +16,7 @@
   display: block;
   height: 4px;
   width: 80px;
-  background-color: #059669;
+  background-color: #1a1a1a;
   border-radius: 100px;
 }
 
@@ -90,8 +90,8 @@
   padding: 16px 16px 24px 16px;
   border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(250, 250, 250, 0.85) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.08);
-  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(75, 85, 99, 0.08);
+  box-shadow: 0 10px 30px rgba(26, 26, 26, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
@@ -101,8 +101,8 @@
 
 .indi_adventure_card:hover {
   transform: translateY(-6px) scale(1.005);
-  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
-  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 20px 40px rgba(26, 26, 26, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-color: rgba(75, 85, 99, 0.3);
 }
 
 .ad_cd_img {
@@ -127,13 +127,13 @@
 .date_night {
   font-size: 11px;
   font-weight: 600;
-  color: #047857;
+  color: #000000;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: rgba(16, 185, 129, 0.06);
+  background: rgba(75, 85, 99, 0.06);
   padding: 5px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(75, 85, 99, 0.08);
 }
 
 .dn_rating_Section {
@@ -174,7 +174,7 @@
 }
 
 .indi_adventure_card:hover .ad_cd_title {
-  color: #059669;
+  color: #1a1a1a;
 }
 
 .ad_cd_price {
@@ -188,7 +188,7 @@
 .ad_cd_price_main {
   font-size: 18px;
   font-weight: 700;
-  color: #059669;
+  color: #1a1a1a;
   letter-spacing: -0.2px;
 }
 
@@ -216,13 +216,13 @@
 .ad_cd_call {
   height: 48px;
   width: 48px;
-  border: 1px solid rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(75, 85, 99, 0.15);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(16, 185, 129, 0.04);
-  color: #059669;
+  background: rgba(75, 85, 99, 0.04);
+  color: #1a1a1a;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   flex-shrink: 0;
 }
@@ -238,9 +238,9 @@
 }
 
 .ad_cd_call:hover {
-  background: #059669;
+  background: #1a1a1a;
   color: #ffffff !important;
-  border-color: #059669;
+  border-color: #1a1a1a;
   transform: scale(1.05);
 }
 
@@ -249,7 +249,7 @@
   width: 100%;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #4b5563 0%, #1a1a1a 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,19 +257,19 @@
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.8px;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 12px rgba(75, 85, 99, 0.2);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ad_cd_book_book:hover {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  box-shadow: 0 6px 16px rgba(26, 26, 26, 0.35);
   transform: translateY(-2px);
 }
 
 .ad_cd_book_book:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.2);
 }
 
 .review_section {
@@ -379,7 +379,7 @@
   height: 90px !important;
   padding: 0 40px !important;
   background: #0f172a !important;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-bottom: 1px solid rgba(75, 85, 99, 0.2) !important;
 }
 
 .back_section {
@@ -440,7 +440,7 @@
     display: block;
     height: 4px;
     width: 40px;
-    background-color: #059669;
+    background-color: #1a1a1a;
     border-radius: 100px;
   }
 
@@ -636,8 +636,8 @@
   padding: 16px 16px 24px 16px;
   border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(250, 250, 250, 0.85) 100%);
-  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
-  border: 1px solid rgba(16, 185, 129, 0.08);
+  box-shadow: 0 10px 30px rgba(26, 26, 26, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(75, 85, 99, 0.08);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
@@ -648,7 +648,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #f59e0b 0%, #6b7280 100%);
   color: white;
   padding: 5px 12px;
   border-radius: 20px;
@@ -669,8 +669,8 @@
 
 .indi_adventure_card:hover {
   transform: translateY(-6px) scale(1.005);
-  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
-  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 20px 40px rgba(26, 26, 26, 0.1), 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-color: rgba(75, 85, 99, 0.3);
 }
 
 .ad_cd_img {
@@ -741,7 +741,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #059669;
+  color: #1a1a1a;
 }
 
 .section_title {
@@ -755,7 +755,7 @@
 
 .section_title span {
   display: block;
-  background: linear-gradient(90deg, #059669 0%, #ff9344 100%);
+  background: linear-gradient(90deg, #1a1a1a 0%, #ff9344 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -766,7 +766,7 @@
   height: 4px;
   width: clamp(72px, 8vw, 110px);
   border-radius: 999px;
-  background: linear-gradient(90deg, #059669 0%, #ff9a4e 100%);
+  background: linear-gradient(90deg, #1a1a1a 0%, #ff9a4e 100%);
   margin-top: 0.3rem;
 }
 
@@ -790,9 +790,9 @@
   min-height: 140px;
   height: clamp(140px, 16vw, 190px);
   border-radius: 16px;
-  border: 1px solid rgba(5, 150, 105, 0.16);
+  border: 1px solid rgba(26, 26, 26, 0.16);
   background:
-    radial-gradient(circle at top right, rgba(5, 150, 105, 0.08), transparent 45%),
+    radial-gradient(circle at top right, rgba(26, 26, 26, 0.08), transparent 45%),
     #ffffff;
   box-shadow: 0 14px 28px rgba(21, 21, 21, 0.08);
   padding: clamp(0.7rem, 1.2vw, 0.9rem);
@@ -849,11 +849,11 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 
-    0 8px 16px rgba(5, 150, 105, 0.12),
+    0 8px 16px rgba(26, 26, 26, 0.12),
     0 20px 48px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(5, 150, 105, 0.2);
-  background: linear-gradient(135deg, rgba(5, 150, 105, 0.05), rgba(255, 147, 68, 0.05));
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.05), rgba(255, 147, 68, 0.05));
   transform: perspective(1200px) rotateX(0deg);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
   display: flex;
@@ -863,7 +863,7 @@
 
 .video_container:hover {
   box-shadow: 
-    0 12px 24px rgba(5, 150, 105, 0.16),
+    0 12px 24px rgba(26, 26, 26, 0.16),
     0 32px 64px rgba(0, 0, 0, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   transform: perspective(1200px) rotateX(2deg) translateY(-8px);
@@ -911,12 +911,12 @@
 .play_icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #1a1a1a, #4b5563);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 28px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 12px 28px rgba(26, 26, 26, 0.4);
   opacity: 1;
   transform: scale(1);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
@@ -956,14 +956,14 @@
   display: inline-flex;
   align-items: center;
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(255, 147, 68, 0.1));
-  border: 1px solid rgba(5, 150, 105, 0.3);
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.1), rgba(255, 147, 68, 0.1));
+  border: 1px solid rgba(26, 26, 26, 0.3);
   border-radius: 50px;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #059669;
+  color: #1a1a1a;
   width: fit-content;
   backdrop-filter: blur(10px);
 }
@@ -975,7 +975,7 @@
   margin: 0;
   color: #0f172a;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #059669 0%, #0f172a 50%, #059669 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #0f172a 50%, #1a1a1a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1016,7 +1016,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #1a1a1a, #4b5563);
   border-radius: 50%;
   color: white;
   font-size: 0.75rem;
@@ -1026,7 +1026,7 @@
 .featured_button {
   align-self: flex-start;
   padding: clamp(0.85rem, 1.5vw, 1.1rem) clamp(1.8rem, 3vw, 2.2rem);
-  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #059669 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #4b5563 50%, #1a1a1a 100%);
   color: white;
   border: none;
   border-radius: 12px;
@@ -1036,7 +1036,7 @@
   cursor: pointer;
   transition: all 0.35s cubic-bezier(0.23, 1, 0.320, 1);
   box-shadow: 
-    0 8px 20px rgba(5, 150, 105, 0.3),
+    0 8px 20px rgba(26, 26, 26, 0.3),
     0 1px 3px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   display: flex;
@@ -1062,7 +1062,7 @@
 .featured_button:hover {
   transform: translateY(-4px);
   box-shadow: 
-    0 14px 32px rgba(5, 150, 105, 0.4),
+    0 14px 32px rgba(26, 26, 26, 0.4),
     0 4px 8px rgba(0, 0, 0, 0.15);
 }
 

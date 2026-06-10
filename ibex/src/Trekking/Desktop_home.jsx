@@ -63,7 +63,7 @@ export default function Desktop_home({
                 <span className={styles.book_now_text}>Start Your Adventure</span>
                 <div className={styles.book_now_arrow}>
                   <svg viewBox="0 0 24 24" fill="none" width="20px" height="20px">
-                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#059669" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#1a1a1a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>

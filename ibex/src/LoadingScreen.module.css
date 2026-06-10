@@ -19,7 +19,7 @@
   position: absolute;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.035) 0%, rgba(16, 185, 129, 0) 70%);
+  background: radial-gradient(circle, rgba(75, 85, 99, 0.035) 0%, rgba(75, 85, 99, 0) 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -64,7 +64,7 @@
   width: 180px;
   height: 100px;
   overflow: visible;
-  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.2));
+  filter: drop-shadow(0 0 8px rgba(75, 85, 99, 0.2));
 }
 
 /* Animated Path styles */
@@ -104,7 +104,7 @@
 
 .microBarProgress {
   height: 100%;
-  background: #10b981;
+  background: #4b5563;
   position: absolute;
   left: 0;
   top: 0;

@@ -72,7 +72,7 @@ export default function LoadingScreen() {
           <motion.path
             d="M 15 45 L 45 15 L 75 45"
             fill="none"
-            stroke="#10b981"
+            stroke="#4b5563"
             strokeWidth="1.2"
             className={styles.linePath}
             initial={{ pathLength: 0 }}
@@ -84,7 +84,7 @@ export default function LoadingScreen() {
           <motion.path
             d="M 40 45 L 65 20 L 90 45"
             fill="none"
-            stroke="#34d399"
+            stroke="#9ca3af"
             strokeWidth="1.2"
             className={styles.linePath}
             initial={{ pathLength: 0 }}

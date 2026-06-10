@@ -27,9 +27,9 @@
 }
 
 .tab.activeTab {
-  background: #059669;
+  background: #1a1a1a;
   color: white;
-  border-color: #059669;
+  border-color: #1a1a1a;
 }
 
 .tabIcon {
@@ -138,7 +138,7 @@
 }
 
 .reviewDate {
-  color: #059669;
+  color: #1a1a1a;
   font-size: 0.85rem;
   margin-top: 0.25rem;
 }

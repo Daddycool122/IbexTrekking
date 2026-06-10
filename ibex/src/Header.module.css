@@ -64,7 +64,7 @@
   letter-spacing: 2px;
   color: #fff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(135deg, #fff 0%, #10B981 100%);
+  background: linear-gradient(135deg, #fff 0%, #4b5563 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -88,12 +88,12 @@
 }
 
 .links:hover {
-  color: #10B981;
+  color: #4b5563;
 }
 
 .contact_btn {
   padding: 12px 28px;
-  background: #059669;
+  background: #1a1a1a;
   color: #fff;
   border-radius: 50px;
   font-size: 15px;
@@ -102,13 +102,13 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 4px 20px rgba(26, 26, 26, 0.4);
 }
 
 .contact_btn:hover {
-  background: #10B981;
+  background: #4b5563;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+  box-shadow: 0 8px 25px rgba(75, 85, 99, 0.6);
 }
 
 .hamburger {
@@ -157,7 +157,7 @@
 }
 
 .options_title {
-  color: #10B981;
+  color: #4b5563;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -177,8 +177,8 @@
 }
 
 .options:hover {
-  background: rgba(16, 185, 129, 0.2);
-  color: #10B981;
+  background: rgba(75, 85, 99, 0.2);
+  color: #4b5563;
 }
 
 /* Hover Preview Styles */
@@ -205,11 +205,11 @@
 .previewTitle {
   font-size: 14px;
   font-weight: 700;
-  color: #059669;
+  color: #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 12px;
-  border-bottom: 2px solid #ecfdf5;
+  border-bottom: 2px solid #f3f4f6;
 }
 
 .previewGrid {
@@ -219,7 +219,7 @@
   padding-bottom: 8px;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #059669 #ecfdf5;
+  scrollbar-color: #1a1a1a #f3f4f6;
 }
 
 .previewGrid::-webkit-scrollbar {
@@ -227,17 +227,17 @@
 }
 
 .previewGrid::-webkit-scrollbar-track {
-  background: #ecfdf5;
+  background: #f3f4f6;
   border-radius: 10px;
 }
 
 .previewGrid::-webkit-scrollbar-thumb {
-  background: #059669;
+  background: #1a1a1a;
   border-radius: 10px;
 }
 
 .previewGrid::-webkit-scrollbar-thumb:hover {
-  background: #047857;
+  background: #000000;
 }
 
 .previewItem {
@@ -261,9 +261,9 @@
 }
 
 .previewItem:hover {
-  background: #ecfdf5;
-  border-color: #059669;
-  color: #059669;
+  background: #f3f4f6;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
   transform: translateY(-4px);
 }
 

@@ -21,7 +21,7 @@
 
 .header h1 {
   font-size: clamp(1.8rem, 1.25rem + 2vw, 2.5rem);
-  color: #1b5e20;
+  color: #111111;
   margin-bottom: 12px;
 }
 

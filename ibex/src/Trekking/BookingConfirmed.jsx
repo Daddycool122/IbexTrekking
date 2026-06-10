@@ -40,7 +40,7 @@ const styles = {
   title: {
     fontSize: "28px",
     marginBottom: "20px",
-    color: "#2E7D32",
+    color: "#222222",
   },
   message: {
     fontSize: "16px",

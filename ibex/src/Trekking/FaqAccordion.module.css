@@ -16,12 +16,12 @@
 }
 
 .faq_item:hover {
-    border-color: #059669;
-    box-shadow: 0 4px 10px rgba(5, 150, 105, 0.1);
+    border-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(26, 26, 26, 0.1);
 }
 
 .faq_item.open {
-    border-color: #059669;
+    border-color: #1a1a1a;
 }
 
 .question {
@@ -37,13 +37,13 @@
 }
 
 .open .question {
-    color: #059669;
+    color: #1a1a1a;
 }
 
 .icon {
     font-size: 24px;
     line-height: 1;
-    color: #059669;
+    color: #1a1a1a;
     transition: transform 0.3s ease;
 }
 

@@ -8,7 +8,7 @@
 .hero {
   position: relative;
   height: 400px;
-  background: linear-gradient(135deg, #059669 0%, #047857 50%, #065f46 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #333333 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +85,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: #059669;
+  background: #1a1a1a;
   border-radius: 2px;
 }
 
@@ -108,8 +108,8 @@
 
 .symbolCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(5, 150, 105, 0.2);
-  border-color: #059669;
+  box-shadow: 0 12px 30px rgba(26, 26, 26, 0.2);
+  border-color: #1a1a1a;
 }
 
 .symbolIcon {
@@ -125,7 +125,7 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border: 3px solid #059669;
+  border: 3px solid #1a1a1a;
   transition: transform 0.3s ease;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .accordionItem:hover {
-  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.15);
+  box-shadow: 0 6px 20px rgba(26, 26, 26, 0.15);
 }
 
 .accordionHeader {
@@ -188,11 +188,11 @@
 
 .accordionHeader:hover {
   background: #f9fafb;
-  color: #059669;
+  color: #1a1a1a;
 }
 
 .accordionHeader.active {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
   color: #fff;
 }
 
@@ -217,7 +217,7 @@
 .accordionIcon {
   font-size: 24px;
   font-weight: 300;
-  color: #059669;
+  color: #1a1a1a;
   transition: color 0.3s ease;
 }
 
@@ -307,7 +307,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(5, 150, 105, 0.8) 0%, rgba(4, 120, 87, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +334,7 @@
 }
 
 .memberRole {
-  color: #059669;
+  color: #1a1a1a;
   font-size: 14px;
   font-weight: 600;
   margin: 0 0 15px 0;
@@ -350,8 +350,8 @@
 
 .badge {
   display: inline-block;
-  background: #ecfdf5;
-  color: #059669;
+  background: #f3f4f6;
+  color: #1a1a1a;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
@@ -366,7 +366,7 @@
   max-width: 1200px;
   margin: 60px auto;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
 }
 
 .statCard {
@@ -412,7 +412,7 @@
 }
 
 .ctaButton {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
   color: #fff;
   border: none;
   padding: 16px 48px;
@@ -421,12 +421,12 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+  box-shadow: 0 4px 15px rgba(26, 26, 26, 0.3);
 }
 
 .ctaButton:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 25px rgba(26, 26, 26, 0.4);
 }
 
 .ctaButton:active {
