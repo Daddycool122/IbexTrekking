@@ -27,6 +27,7 @@ app.use(require("./createOrder"));
 app.use(require("./getReviews"));
 app.use(require("./submitReview"));
 app.use(require("./verifyOrder"));
+app.use(require("./submitEnquiry"));
 
 const port = process.env.PORT || 5000;
 

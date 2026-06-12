@@ -35,6 +35,7 @@ const Payment = lazy(() => import("./Payment.jsx"));
 const BookingConfirmed = lazy(() => import("./Trekking/BookingConfirmed.jsx"));
 const ChardhamYatra = lazy(() => import("./Trekking/ChardhamYatra.jsx"));
 import FloatingContact from "./FloatingContact.jsx";
+import EnquiryWidget from "./components/EnquiryWidget.jsx";
 import LoadingScreen from "./LoadingScreen";
 
 function App() {
@@ -121,6 +122,7 @@ function App() {
         </Routes>
       </Suspense>
       <FloatingContact />
+      <EnquiryWidget />
     </Router>
   );
 }
