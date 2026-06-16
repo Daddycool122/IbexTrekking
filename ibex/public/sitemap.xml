@@ -1,9 +1,20 @@
-/
- /valley-of-flower
- /kedarkantha-trek
- /chopta-chandrashilla-trek
- /brahmatal-trek
- /kuari-pass-trek
- /river-rafting
- /about
- /contact-us
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://ibexiceaxe.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://ibexiceaxe.com/kedarkantha-trek</loc>
+  </url>
+
+  <url>
+    <loc>https://ibexiceaxe.com/valley-of-flowers-trek</loc>
+  </url>
+
+  <url>
+    <loc>https://ibexiceaxe.com/dayara-bugyal-trek</loc>
+  </url>
+
+</urlset>
