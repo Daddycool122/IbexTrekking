@@ -25,14 +25,78 @@ import img17 from "../assets/Trek/dyarabugyal/img17.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-export default function Kedarkantha() {
+export default function DyaraBugyal() {
   const [open_form, setOpen_form] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Dayara Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex Ice
+          Axe
+        </title>
+
+        <meta
+          name="description"
+          content="Book Dayara Bugyal Trek 2026 with Ibex Ice Axe. Explore one of India's most beautiful alpine meadows with stunning views of Bandarpoonch, Gangotri Range, and Himalayan peaks. Beginner-friendly trek in Uttarakhand."
+        />
+
+        <meta
+          name="keywords"
+          content="Dayara Bugyal Trek, Dayara Bugyal Trek 2026, Dayara Bugyal Trek Uttarakhand, Dayara Bugyal package, best meadow trek India, beginner trek Uttarakhand, Dayara Bugyal itinerary, Dayara Bugyal booking, Dayara Bugyal cost, Himalayan meadow trek"
+        />
+
+        <link
+          rel="canonical"
+          href="https://ibexiceaxe.com/dayara-bugyal-trek"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Dayara Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand"
+        />
+        <meta
+          property="og:description"
+          content="Experience the stunning Dayara Bugyal Trek with endless meadows, forests, and breathtaking Himalayan views."
+        />
+        <meta
+          property="og:url"
+          content="https://ibexiceaxe.com/dayara-bugyal-trek"
+        />
+        <meta property="og:image" content={img8} />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: "Dayara Bugyal Trek",
+            description:
+              "Dayara Bugyal Trek is one of the most beautiful alpine meadow treks in Uttarakhand, offering panoramic Himalayan views and beginner-friendly trails.",
+            touristType: "Trekking",
+            provider: {
+              "@type": "Organization",
+              name: "Ibex Ice Axe",
+              url: "https://ibexiceaxe.com",
+            },
+            itinerary: {
+              "@type": "ItemList",
+              numberOfItems: 5,
+            },
+            offers: {
+              "@type": "Offer",
+              price: "10999",
+              priceCurrency: "INR",
+              availability: "https://schema.org/InStock",
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img8}
@@ -63,12 +127,39 @@ export default function Kedarkantha() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Dayara Bugyal Trek · ₹10,999 + 5% GST</div>
+          <h1 className={styles.title}>
+            Dayara Bugyal Trek 2026 · ₹10,999 + 5% GST
+          </h1>
           <div className={styles.tag_line}>
             Step into endless meadows, closer to the peaks.
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>5D/4N</div>
+          </div>
+
+          <Title text={"About Dayara Bugyal Trek"} />
+
+          <div className={styles.ul_section}>
+            <p>
+              Dayara Bugyal Trek is one of the most beautiful alpine meadow
+              treks in Uttarakhand. Located in the Uttarkashi district, this
+              trek takes you through dense oak forests, picturesque campsites,
+              and vast rolling meadows that stretch endlessly beneath the
+              Himalayan sky.
+            </p>
+
+            <p>
+              The trek offers stunning views of Bandarpoonch, Srikanth, Jaonli,
+              Draupadi Ka Danda, and the Gangotri range. Dayara Bugyal remains
+              attractive throughout the year, transforming from lush green
+              meadows in summer to a snow-covered paradise during winter.
+            </p>
+
+            <p>
+              With a short duration, moderate altitude, and rewarding scenery,
+              Dayara Bugyal is widely regarded as one of the best
+              beginner-friendly treks in India.
+            </p>
           </div>
 
           <Itinerary
@@ -277,20 +368,129 @@ export default function Kedarkantha() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>Waterproof trekking shoes</li>
+              <li className={styles.li}>Warm jackets and thermals</li>
+              <li className={styles.li}>Raincoat or poncho</li>
+              <li className={styles.li}>Water bottles (2 litres)</li>
+              <li className={styles.li}>Sunglasses with UV protection</li>
+              <li className={styles.li}>Sunscreen and lip balm</li>
+              <li className={styles.li}>Personal medicines</li>
+              <li className={styles.li}>Torch or headlamp</li>
+              <li className={styles.li}>Woolen gloves and cap</li>
+            </ul>
+          </div>
+
+          <Title text={"Best Time To Visit Dayara Bugyal Trek"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>
+                January–March: Snow-covered meadows and winter trekking
+                experience.
+              </li>
+
+              <li className={styles.li}>
+                April–June: Lush green meadows, pleasant weather, and blooming
+                flowers.
+              </li>
+
+              <li className={styles.li}>
+                July–August: Monsoon greenery with vibrant landscapes.
+              </li>
+
+              <li className={styles.li}>
+                September–December: Crystal-clear Himalayan views and excellent
+                photography opportunities.
+              </li>
+            </ul>
+          </div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <FaqAccordion faqs={[
-            { question: "What kind of accommodation will we get?", answer: "At Natin Village (base camp), trekkers stay in guest houses (triple/quad sharing) with separate male & female arrangements. During the trek, camping is in twin-sharing all-season tents with sleeping bags, mattresses, and other equipment provided." },
-            { question: "Are tents and sleeping bags provided?", answer: "Yes, all central equipment including sleeping bags, mattresses, and tents are provided." },
-            { question: "What’s the reporting time and place?", answer: "Reporting is at Prince Chowk, Dehradun (near railway station) at 6:00 AM." },
-            { question: "Can you arrange stay if we arrive early?", answer: "No, we don’t provide early accommodation but we can suggest nearby hotels like Hotel Star Wood, Hotel Vishnu Inn, and Hotel Aashrya." },
-            { question: "How many trekkers are there in one group?", answer: "Minimum 6 trekkers are required to run a batch, and maximum group size is 24–26." },
-            { question: "Is this trek suitable for beginners?", answer: "Yes, Dayara Bugyal is considered one of the best beginner-friendly treks." },
-            { question: "What are some alternative treks?", answer: "Alternatives include Chopta Chandrashila, Kuari Pass (Winter), Brahmatal, Ali Bedni Bugyal, and Kedarkantha." },
-            { question: "What food is served on the trek?", answer: "Nutritious vegetarian food is served with occasional eggs. Meals typically include dal, sabzi, roti, rice, daliya, poha, sandwiches, and tea." },
-            { question: "Is drinking water available?", answer: "Yes, trekkers must carry 2 x 1L bottles which can be refilled at campsites." },
-            { question: "What kind of shoes should we wear?", answer: "Shoes with good grip, ankle support, and water-resistant layers are recommended (e.g., Quechua Trek 100, MH 500, MH 100)." },
-            { question: "Is a trekking pole necessary?", answer: "Yes, it is highly recommended for balance and reducing strain during the trek." }
-          ]} />
+          <FaqAccordion
+            faqs={[
+              {
+                question: "What kind of accommodation will we get?",
+                answer:
+                  "At Natin Village (base camp), trekkers stay in guest houses (triple/quad sharing) with separate male & female arrangements. During the trek, camping is in twin-sharing all-season tents with sleeping bags, mattresses, and other equipment provided.",
+              },
+              {
+                question: "Are tents and sleeping bags provided?",
+                answer:
+                  "Yes, all central equipment including sleeping bags, mattresses, and tents are provided.",
+              },
+              {
+                question: "What’s the reporting time and place?",
+                answer:
+                  "Reporting is at Prince Chowk, Dehradun (near railway station) at 6:00 AM.",
+              },
+              {
+                question: "Can you arrange stay if we arrive early?",
+                answer:
+                  "No, we don’t provide early accommodation but we can suggest nearby hotels like Hotel Star Wood, Hotel Vishnu Inn, and Hotel Aashrya.",
+              },
+              {
+                question: "How many trekkers are there in one group?",
+                answer:
+                  "Minimum 6 trekkers are required to run a batch, and maximum group size is 24–26.",
+              },
+              {
+                question: "Is this trek suitable for beginners?",
+                answer:
+                  "Yes, Dayara Bugyal is considered one of the best beginner-friendly treks.",
+              },
+              {
+                question: "What are some alternative treks?",
+                answer:
+                  "Alternatives include Chopta Chandrashila, Kuari Pass (Winter), Brahmatal, Ali Bedni Bugyal, and Kedarkantha.",
+              },
+              {
+                question: "What food is served on the trek?",
+                answer:
+                  "Nutritious vegetarian food is served with occasional eggs. Meals typically include dal, sabzi, roti, rice, daliya, poha, sandwiches, and tea.",
+              },
+              {
+                question: "Is drinking water available?",
+                answer:
+                  "Yes, trekkers must carry 2 x 1L bottles which can be refilled at campsites.",
+              },
+              {
+                question: "What kind of shoes should we wear?",
+                answer:
+                  "Shoes with good grip, ankle support, and water-resistant layers are recommended (e.g., Quechua Trek 100, MH 500, MH 100).",
+              },
+              {
+                question: "Is a trekking pole necessary?",
+                answer:
+                  "Yes, it is highly recommended for balance and reducing strain during the trek.",
+              },
+            ]}
+          />
+        </div>
+
+        <Title text={"Related Treks"} />
+
+        <div className={styles.ul_section}>
+          <ul>
+            <li className={styles.li}>
+              <Link to="/ali-bedni-bugyal-trek">Ali Bedni Bugyal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/brahmatal-trek">Brahmatal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kedarkantha-trek">Kedarkantha Trek</Link>
+            </li>
+          </ul>
         </div>
 
         <Form

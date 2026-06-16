@@ -18,6 +18,8 @@ import img10 from "../assets/Trek/kuari/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function WinterKuariPass() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +28,35 @@ export default function WinterKuariPass() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Kuari Pass Trek 2026 | Lord Curzon Trail | Ibex Ice Axe</title>
+
+        <meta
+          name="description"
+          content="Book Kuari Pass Trek 2026 with Ibex Ice Axe. Explore the famous Lord Curzon Trail, snow-covered forests, Himalayan views, detailed itinerary, cost, and booking information."
+        />
+
+        <meta
+          name="keywords"
+          content="Kuari Pass Trek, Kuari Pass Trek 2026, Lord Curzon Trail, Kuari Pass Trek Cost, Winter Trek Uttarakhand, Kuari Pass Package"
+        />
+
+        <link rel="canonical" href="https://ibexiceaxe.com/kuari-pass-trek" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: "Kuari Pass Trek",
+            description:
+              "Kuari Pass Trek on the famous Lord Curzon Trail in Uttarakhand.",
+            provider: {
+              "@type": "Organization",
+              name: "Ibex Ice Axe",
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img1}
@@ -38,12 +69,36 @@ export default function WinterKuariPass() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Winter Kuari Pass Trek · ₹12,499 + 5% GST</div>
+          <h1 className={styles.title}>
+            Kuari Pass Trek 2026 · ₹12,499 + 5% GST
+          </h1>
           <div className={styles.tag_line}>
             A Classic Himalayan Winter Trek with Panoramic Mountain Views.
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>6D/5N</div>
+          </div>
+
+          <Title text={"About Kuari Pass Trek"} />
+
+          <div className={styles.ul_section}>
+            <p>
+              Kuari Pass Trek, also known as the famous Lord Curzon Trail, is
+              one of the most scenic Himalayan treks in Uttarakhand. The trek
+              takes you through dense forests, alpine meadows, snow-covered
+              trails, and breathtaking mountain viewpoints.
+            </p>
+
+            <p>
+              Standing at an altitude of approximately 12,500 feet, Kuari Pass
+              offers magnificent views of Nanda Devi, Dronagiri, Chaukhamba,
+              Hathi Ghoda, and several other Himalayan peaks.
+            </p>
+
+            <p>
+              The trek is ideal for beginners as well as experienced trekkers
+              looking for a classic Himalayan adventure in the Garhwal region.
+            </p>
           </div>
 
           <Itinerary
@@ -219,6 +274,39 @@ export default function WinterKuariPass() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>Waterproof trekking shoes</li>
+              <li className={styles.li}>Thermal innerwear</li>
+              <li className={styles.li}>Down jacket</li>
+              <li className={styles.li}>Raincoat or poncho</li>
+              <li className={styles.li}>Water bottle</li>
+              <li className={styles.li}>Woolen gloves</li>
+              <li className={styles.li}>Sunglasses</li>
+              <li className={styles.li}>Personal medicines</li>
+            </ul>
+          </div>
+
+          <Title text={"Best Time To Visit Kuari Pass Trek"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>
+                December–March: Snow-covered winter trekking experience
+              </li>
+
+              <li className={styles.li}>
+                April–June: Pleasant weather and green landscapes
+              </li>
+
+              <li className={styles.li}>
+                September–November: Crystal-clear Himalayan views
+              </li>
+            </ul>
+          </div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
           <FaqAccordion
             faqs={[
@@ -249,6 +337,30 @@ export default function WinterKuariPass() {
               },
             ]}
           />
+        </div>
+
+        <Title text={"Related Treks"} />
+
+        <div className={styles.ul_section}>
+          <ul>
+            <li className={styles.li}>
+              <Link to="/brahmatal-trek">Brahmatal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kedarkantha-trek">Kedarkantha Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/chopta-chandrashilla-trek">
+                Chopta Chandrashila Trek
+              </Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/valley-of-flower">Valley of Flowers Trek</Link>
+            </li>
+          </ul>
         </div>
 
         <Form

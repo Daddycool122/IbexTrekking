@@ -18,6 +18,8 @@ import img10 from "../assets/Trek/brahmataal/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function Brahmatal() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +28,37 @@ export default function Brahmatal() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Brahmatal Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe
+        </title>
+
+        <meta
+          name="description"
+          content="Book Brahmatal Trek 2026 with Ibex Ice Axe. Explore frozen lakes, snow-covered trails, Himalayan summit views, detailed itinerary, trek cost, and booking information."
+        />
+
+        <meta
+          name="keywords"
+          content="Brahmatal Trek, Brahmatal Trek 2026, Brahmatal Trek Cost, Snow Trek Uttarakhand, Winter Trek India, Brahmatal Package"
+        />
+
+        <link rel="canonical" href="https://ibexiceaxe.com/brahmatal-trek" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: "Brahmatal Trek",
+            description:
+              "Brahmatal Trek with frozen lakes and Himalayan summit views.",
+            provider: {
+              "@type": "Organization",
+              name: "Ibex Ice Axe",
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img4}
@@ -38,12 +71,37 @@ export default function Brahmatal() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Brahmatal Trek · ₹11,999 + 5% GST</div>
+          <h1 className={styles.title}>
+            Brahmatal Trek 2026 · ₹11,999 + 5% GST
+          </h1>
           <div className={styles.tag_line}>
             A Snowy Wonderland for Every Trekker.
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>6D/5N</div>
+          </div>
+
+          <Title text={"About Brahmatal Trek"} />
+
+          <div className={styles.ul_section}>
+            <p>
+              Brahmatal Trek is one of India's most beautiful winter treks,
+              located in the Chamoli district of Uttarakhand. Famous for its
+              frozen lakes, snow-covered forests, and panoramic Himalayan views,
+              it is a perfect trek for beginners and experienced trekkers alike.
+            </p>
+
+            <p>
+              Standing at an altitude of 12,300 feet, Brahmatal offers
+              breathtaking views of Mt. Trishul, Nanda Ghunti, Mrigthuni, and
+              several other Himalayan peaks. During winter, the trail transforms
+              into a snowy wonderland.
+            </p>
+
+            <p>
+              The trek is known for the frozen Brahmatal Lake and Bekaltal Lake,
+              making it one of the most scenic snow treks in India.
+            </p>
           </div>
 
           <Itinerary
@@ -243,14 +301,91 @@ export default function Brahmatal() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>Waterproof trekking shoes</li>
+              <li className={styles.li}>Thermal innerwear</li>
+              <li className={styles.li}>Down jacket</li>
+              <li className={styles.li}>Woolen gloves</li>
+              <li className={styles.li}>Woolen cap</li>
+              <li className={styles.li}>Water bottle</li>
+              <li className={styles.li}>Sunglasses</li>
+              <li className={styles.li}>Personal medicines</li>
+            </ul>
+          </div>
+
+          <Title text={"Best Time To Visit Brahmatal Trek"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>
+                December–March: Best snow trekking season
+              </li>
+
+              <li className={styles.li}>
+                January–February: Peak snowfall and frozen lakes
+              </li>
+
+              <li className={styles.li}>
+                October–November: Clear mountain views and pleasant weather
+              </li>
+            </ul>
+          </div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <FaqAccordion faqs={[
-            { question: "When is the best time for Brahmatal trek?", answer: "December to March is the best time for snow lovers. It is also open in autumn for clear skies." },
-            { question: "Is Brahmatal trek safe for solo trekkers?", answer: "Yes, it is safe when done with a certified trekking organization. Avoid solo trekking in winter due to snow." },
-            { question: "Will we see snow during the trek?", answer: "Yes, from late December to March, the trail is covered with snow, making it a perfect winter trek." },
-            { question: "Do we need prior experience for this trek?", answer: "No prior experience is needed, but you should be physically fit as the altitude reaches 12,200 ft." },
-            { question: "What peaks are visible from Brahmatal summit?", answer: "You can see Mt. Trishul, Nanda Ghunti, and other Himalayan peaks clearly from the summit." }
-          ]} />
+          <FaqAccordion
+            faqs={[
+              {
+                question: "When is the best time for Brahmatal trek?",
+                answer:
+                  "December to March is the best time for snow lovers. It is also open in autumn for clear skies.",
+              },
+              {
+                question: "Is Brahmatal trek safe for solo trekkers?",
+                answer:
+                  "Yes, it is safe when done with a certified trekking organization. Avoid solo trekking in winter due to snow.",
+              },
+              {
+                question: "Will we see snow during the trek?",
+                answer:
+                  "Yes, from late December to March, the trail is covered with snow, making it a perfect winter trek.",
+              },
+              {
+                question: "Do we need prior experience for this trek?",
+                answer:
+                  "No prior experience is needed, but you should be physically fit as the altitude reaches 12,200 ft.",
+              },
+              {
+                question: "What peaks are visible from Brahmatal summit?",
+                answer:
+                  "You can see Mt. Trishul, Nanda Ghunti, and other Himalayan peaks clearly from the summit.",
+              },
+            ]}
+          />
+        </div>
+
+        <Title text={"Related Treks"} />
+
+        <div className={styles.ul_section}>
+          <ul>
+            <li className={styles.li}>
+              <Link to="/kedarkantha-trek">Kedarkantha Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/dayara-bugyal-trek">Dayara Bugyal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/valley-of-flower">Valley of Flowers Trek</Link>
+            </li>
+          </ul>
         </div>
 
         <Form

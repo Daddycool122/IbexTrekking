@@ -17,6 +17,9 @@ import img10 from "../assets/Trek/pangarchulla/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import FaqAccordion from "./FaqAccordion";
 
 export default function PangarchullaPeak() {
   const [open_form, setOpen_form] = useState(false);
@@ -25,6 +28,67 @@ export default function PangarchullaPeak() {
   }, []);
   return (
     <>
+    <Helmet>
+  <title>
+    Pangarchulla Peak Trek 2026 | Summit Trek in Uttarakhand | Ibex Ice Axe
+  </title>
+
+  <meta
+    name="description"
+    content="Book Pangarchulla Peak Trek 2026 with Ibex Ice Axe. Conquer the thrilling 15,100 ft summit and witness breathtaking views of Nanda Devi, Chaukhamba, Hathi Ghoda, and the Garhwal Himalayas."
+  />
+
+  <meta
+    name="keywords"
+    content="Pangarchulla Peak Trek, Pangarchulla Trek 2026, Pangarchulla Peak Uttarakhand, Pangarchulla Summit Trek, Pangarchulla Trek Cost, Pangarchulla Trek Package, Pangarchulla Trek Booking, Uttarakhand Summit Trek"
+  />
+
+  <link
+    rel="canonical"
+    href="https://ibexiceaxe.com/pangarchulla-peak-trek"
+  />
+
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Pangarchulla Peak Trek 2026 | Summit Trek in Uttarakhand"
+  />
+  <meta
+    property="og:description"
+    content="Experience one of the most thrilling summit treks in Uttarakhand with stunning Himalayan panoramas."
+  />
+  <meta
+    property="og:url"
+    content="https://ibexiceaxe.com/pangarchulla-peak-trek"
+  />
+  <meta property="og:image" content={img1} />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: "Pangarchulla Peak Trek",
+      description:
+        "Pangarchulla Peak Trek is a challenging summit trek in Uttarakhand offering panoramic Himalayan views and an exciting summit climb.",
+      touristType: "Trekking",
+      provider: {
+        "@type": "Organization",
+        name: "Ibex Ice Axe",
+        url: "https://ibexiceaxe.com",
+      },
+      itinerary: {
+        "@type": "ItemList",
+        numberOfItems: 7,
+      },
+      offers: {
+        "@type": "Offer",
+        price: "13999",
+        priceCurrency: "INR",
+        availability: "https://schema.org/InStock",
+      },
+    })}
+  </script>
+</Helmet>
       <Header />
       <Desktop_intro_section
         img={img1}
@@ -37,7 +101,9 @@ export default function PangarchullaPeak() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Pangarchulla Peak Trek · ₹13,999 + 5% GST</div>
+          <h1 className={styles.title}>
+  Pangarchulla Peak Trek 2026 · ₹13,999 + 5% GST
+</h1>
           <div className={styles.tag_line}>
             A Challenging Summit Trek with Stunning Views of Nanda Devi and
             Hathi Ghoda Peaks.
@@ -45,6 +111,31 @@ export default function PangarchullaPeak() {
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>7D/6N</div>
           </div>
+
+
+          <Title text={"About Pangarchulla Peak Trek"} />
+
+<div className={styles.ul_section}>
+  <p>
+    Pangarchulla Peak Trek is one of the most exciting summit treks in
+    Uttarakhand. Situated in the Garhwal Himalayas near Joshimath, the trek
+    combines beautiful forests, high-altitude campsites, snow-covered slopes,
+    and a thrilling summit climb.
+  </p>
+
+  <p>
+    Standing at an altitude of 15,100 ft, Pangarchulla Peak offers spectacular
+    views of Nanda Devi, Chaukhamba, Hathi Ghoda, Dronagiri, Neelkanth, and
+    several Himalayan giants. The summit push is challenging and highly
+    rewarding for adventure seekers.
+  </p>
+
+  <p>
+    Ideal for experienced trekkers, Pangarchulla Peak Trek 2026 is among the
+    best summit treks in India and provides a true Himalayan mountaineering
+    experience.
+  </p>
+</div>
 
           <Itinerary
             all_days={[1, 2, 3, 4, 5, 6, 7]}
@@ -233,42 +324,108 @@ export default function PangarchullaPeak() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>High-ankle waterproof trekking shoes</li>
+    <li className={styles.li}>Down jacket and thermals</li>
+    <li className={styles.li}>Fleece layers</li>
+    <li className={styles.li}>Woollen cap and gloves</li>
+    <li className={styles.li}>Sunglasses with UV protection</li>
+    <li className={styles.li}>Sunscreen SPF 50+</li>
+    <li className={styles.li}>Personal medicines</li>
+    <li className={styles.li}>Headlamp or torch</li>
+    <li className={styles.li}>Water bottles (2 litres)</li>
+    <li className={styles.li}>Rain cover and poncho</li>
+  </ul>
+</div>
+
+
+          <Title text={"Best Time To Visit Pangarchulla Peak Trek"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      April–June: Best season with snow sections and clear summit views.
+    </li>
+
+    <li className={styles.li}>
+      May: Most popular month for the Pangarchulla Peak summit climb.
+    </li>
+
+    <li className={styles.li}>
+      September–November: Stable weather and crystal-clear Himalayan panoramas.
+    </li>
+
+    <li className={styles.li}>
+      Winter months are generally avoided due to heavy snowfall and harsh
+      summit conditions.
+    </li>
+  </ul>
+</div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
           <div className={styles.ul_section}>
-            <ul>
-              <li className={styles.li}>
-                What is the difficulty level of Pangarchulla Peak trek?
-                <br />
-                It is a difficult trek and requires high endurance and prior
-                experience in high-altitude treks.
-              </li>
-              <li className={styles.li}>
-                Do we need prior trekking experience?
-                <br />
-                Yes, previous high-altitude trekking experience is strongly
-                recommended as the summit climb is steep and challenging.
-              </li>
-              <li className={styles.li}>
-                What is the best season for the trek?
-                <br />
-                April to June and September to November are the best seasons for
-                Pangarchulla Peak.
-              </li>
-              <li className={styles.li}>
-                Can we rent trekking gear from the base?
-                <br />
-                Yes, trekking gear such as shoes, poles, and jackets can be
-                rented from Joshimath.
-              </li>
-              <li className={styles.li}>
-                Is Pangarchulla trek safe in April?
-                <br />
-                Yes, April is a good time with snow on higher sections, but
-                proper gear and acclimatization are essential.
-              </li>
-            </ul>
+           <FaqAccordion
+  faqs={[
+    {
+      question: "How difficult is Pangarchulla Peak Trek?",
+      answer:
+        "Pangarchulla is a difficult trek and is recommended for trekkers with prior high-altitude trekking experience."
+    },
+    {
+      question: "What is the altitude of Pangarchulla Peak?",
+      answer:
+        "The summit stands at approximately 15,100 ft (4,590 m) above sea level."
+    },
+    {
+      question: "What is the best time for Pangarchulla Peak Trek?",
+      answer:
+        "April to June and September to November are considered the best months."
+    },
+    {
+      question: "Do I need prior trekking experience?",
+      answer:
+        "Yes. Previous trekking experience is highly recommended due to the challenging summit climb."
+    },
+    {
+      question: "Can beginners do Pangarchulla Trek?",
+      answer:
+        "This trek is not recommended for complete beginners. Good fitness and previous trekking experience are advised."
+    },
+    {
+      question: "Will there be snow on the trek?",
+      answer:
+        "Yes, especially during April, May, and early June when snow remains on the upper sections."
+    }
+  ]}
+/>
           </div>
         </div>
+
+
+        <Title text={"Related Treks"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/kedarkantha-trek">Kedarkantha Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/brahmatal-trek">Brahmatal Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/ali-bedni-bugyal-trek">Ali Bedni Bugyal Trek</Link>
+    </li>
+  </ul>
+</div>
 
         <Form
           open_form={open_form}

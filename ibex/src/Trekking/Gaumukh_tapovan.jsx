@@ -18,6 +18,8 @@ import img10 from "../assets/Trek/gaumukh/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function Gaumukh_Tapovan() {
   const [open_form, setOpen_form] = useState(false);
@@ -26,6 +28,67 @@ export default function Gaumukh_Tapovan() {
   }, []);
   return (
     <>
+    <Helmet>
+  <title>
+    Gaumukh Tapovan Trek 2026 | Source of Ganga & Mt. Shivling Views | Ibex Ice Axe
+  </title>
+
+  <meta
+    name="description"
+    content="Book Gaumukh Tapovan Trek 2026 with Ibex Ice Axe. Trek to the source of the Ganga at Gaumukh Glacier and witness breathtaking views of Mt. Shivling, Bhagirathi Peaks, and Tapovan meadows."
+  />
+
+  <meta
+    name="keywords"
+    content="Gaumukh Tapovan Trek, Gaumukh Trek, Tapovan Trek, Gaumukh Tapovan Trek 2026, Gangotri Glacier Trek, Source of Ganga Trek, Mt Shivling Trek, Uttarakhand Himalayan Trek"
+  />
+
+  <link
+    rel="canonical"
+    href="https://ibexiceaxe.com/gaumukh-tapovan-trek"
+  />
+
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Gaumukh Tapovan Trek 2026 | Source of Ganga & Mt. Shivling Views"
+  />
+  <meta
+    property="og:description"
+    content="Experience the legendary Gaumukh Tapovan Trek and witness the source of the Ganga along with majestic Himalayan peaks."
+  />
+  <meta
+    property="og:url"
+    content="https://ibexiceaxe.com/gaumukh-tapovan-trek"
+  />
+  <meta property="og:image" content={img10} />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: "Gaumukh Tapovan Trek",
+      description:
+        "Gaumukh Tapovan Trek is one of the most iconic Himalayan treks leading to the source of the Ganga River and the stunning Tapovan meadows.",
+      touristType: "Trekking",
+      provider: {
+        "@type": "Organization",
+        name: "Ibex Ice Axe",
+        url: "https://ibexiceaxe.com",
+      },
+      itinerary: {
+        "@type": "ItemList",
+        numberOfItems: 8,
+      },
+      offers: {
+        "@type": "Offer",
+        price: "18999",
+        priceCurrency: "INR",
+        availability: "https://schema.org/InStock",
+      },
+    })}
+  </script>
+</Helmet>
       <Header />
       <Desktop_intro_section
         img={img10}
@@ -36,13 +99,37 @@ export default function Gaumukh_Tapovan() {
       <Photos photos={[img2, img3, img5, img6, img7, img8, img9, img10]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Gaumukh Tapovan Trek · ₹18,999 + 5% GST</div>
+          <h1 className={styles.title}>Gaumukh Tapovan Trek · ₹18,999 + 5% GST</h1>
           <div className={styles.tag_line}>
             To the Source of the Ganges and Beyond.
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>8D/7N</div>
           </div>
+
+          <Title text={"About Gaumukh Tapovan Trek"} />
+
+<div className={styles.ul_section}>
+  <p>
+    Gaumukh Tapovan Trek is one of the most iconic Himalayan adventures in
+    Uttarakhand. Starting from the sacred town of Gangotri, the trail follows
+    the Bhagirathi River to Gaumukh Glacier, the revered source of the Ganga.
+  </p>
+
+  <p>
+    The trek combines spiritual significance with breathtaking Himalayan
+    landscapes. Trekkers walk through Chirbasa and Bhojwasa before reaching
+    Gaumukh and the magnificent Tapovan meadows.
+  </p>
+
+  <p>
+    Tapovan offers unmatched views of Mt. Shivling, Bhagirathi Peaks, Meru,
+    and several towering Himalayan summits, making it one of the most rewarding
+    treks in India.
+  </p>
+</div>
+
+
           <Itinerary
             all_days={[1, 2, 3, 4, 5, 6, 7, 8]}
             info={[
@@ -191,7 +278,7 @@ export default function Gaumukh_Tapovan() {
             </ul>
           </div>
 
-          <Title text={"How To Reach"} />
+          <Title text={"Options to Reach Dehradun"} />
           <div className={styles.ul_section}>
             <ul>
               <li className={styles.li}>
@@ -282,6 +369,45 @@ export default function Gaumukh_Tapovan() {
             </ul>
           </div>
 
+
+
+          <Title text={"Things To Carry"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>High ankle trekking shoes</li>
+    <li className={styles.li}>Down jacket and fleece layers</li>
+    <li className={styles.li}>Thermal innerwear</li>
+    <li className={styles.li}>Raincoat or poncho</li>
+    <li className={styles.li}>Sunglasses with UV protection</li>
+    <li className={styles.li}>Water bottles (2 litres)</li>
+    <li className={styles.li}>Torch or headlamp</li>
+    <li className={styles.li}>Personal medicines and toiletries</li>
+  </ul>
+</div>
+
+<Title text={"Best Time To Visit Gaumukh Tapovan Trek"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      May–June: Pleasant temperatures with clear mountain views.
+    </li>
+
+    <li className={styles.li}>
+      September–October: Crystal-clear skies and excellent visibility of peaks.
+    </li>
+
+    <li className={styles.li}>
+      Monsoon months are generally avoided due to landslides and trail risks.
+    </li>
+
+    <li className={styles.li}>
+      Winter season remains inaccessible due to heavy snowfall.
+    </li>
+  </ul>
+</div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
           <FaqAccordion faqs={[
             { question: "What is the best season for Gaumukh Tapovan trek?", answer: "May to June and September to early October are the best months for this trek. Monsoon and heavy snow make it unsafe in other months." },
@@ -291,13 +417,37 @@ export default function Gaumukh_Tapovan() {
             { question: "Is camping allowed in Gaumukh area?", answer: "Camping is only allowed at designated campsites like Chirbasa, Bhojbasa, and Tapovan. No camping is permitted near the actual Gaumukh glacier snout." }
           ]} />
 
-          <Form
+
+          <Title text={"Related Treks"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      <Link to="/kedartal-trek">Kedartal Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/valley-of-flower">Valley of Flowers Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/pangarchulla-peak-trek">Pangarchulla Peak Trek</Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+    </li>
+  </ul>
+</div>
+
+          
+        </div>
+        <Form
             open_form={open_form}
             setOpen_form={setOpen_form}
             name={"Gaumukh Tapovan Trek"}
             price={18999}
           />
-        </div>
       </div>
       <Footer />
     </>

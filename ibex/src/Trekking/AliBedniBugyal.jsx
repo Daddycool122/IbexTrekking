@@ -15,6 +15,8 @@ import img7 from "../assets/Trek/alibedni/img7.jpg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function AliBedniBugyal() {
   const [open_form, setOpen_form] = useState(false);
@@ -23,6 +25,41 @@ export default function AliBedniBugyal() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Ali Bedni Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex
+          Ice Axe
+        </title>
+
+        <meta
+          name="description"
+          content="Book Ali Bedni Bugyal Trek 2026 with Ibex Ice Axe. Explore India's most beautiful alpine meadows, Bedni Kund, Trishul views, complete itinerary, trek cost, and booking details."
+        />
+
+        <meta
+          name="keywords"
+          content="Ali Bedni Bugyal Trek, Ali Bugyal Trek, Bedni Bugyal Trek, Ali Bedni Bugyal Trek 2026, Meadow Trek Uttarakhand, Best Trek in Uttarakhand"
+        />
+
+        <link
+          rel="canonical"
+          href="https://ibexiceaxe.com/ali-bedni-bugyal-trek"
+        />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: "Ali Bedni Bugyal Trek",
+            description:
+              "Ali Bedni Bugyal Trek through India's most beautiful alpine meadows.",
+            provider: {
+              "@type": "Organization",
+              name: "Ibex Ice Axe",
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img1}
@@ -35,13 +72,39 @@ export default function AliBedniBugyal() {
       <Photos photos={[img1, img2, img3, img4, img5, img6, img7]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Ali Bedni Bugyal Trek · ₹11,499 + 5% GST</div>
+          <h1 className={styles.title}>
+            Ali Bedni Bugyal Trek 2026 · ₹11,499 + 5% GST
+          </h1>
           <div className={styles.tag_line}>
             Walk through meadows, touch the sky, and witness the Himalayas up
             close
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>6D/5N</div>
+          </div>
+
+          <Title text={"About Ali Bedni Bugyal Trek"} />
+
+          <div className={styles.ul_section}>
+            <p>
+              Ali Bedni Bugyal Trek is one of the most beautiful meadow treks in
+              India. Located in the Chamoli district of Uttarakhand, the trek
+              takes you across the stunning Ali Bugyal and Bedni Bugyal, two of
+              the largest alpine meadows in Asia.
+            </p>
+
+            <p>
+              The trek offers spectacular views of Mt. Trishul, Nanda Ghunti,
+              Chaukhamba, and several Himalayan peaks. The rolling grasslands,
+              dense oak forests, rhododendron trees, and Bedni Kund make this
+              trek a paradise for nature lovers and photographers.
+            </p>
+
+            <p>
+              Suitable for beginners as well as experienced trekkers, Ali Bedni
+              Bugyal is often considered one of the best Himalayan treks in
+              Uttarakhand.
+            </p>
           </div>
 
           <Itinerary
@@ -286,14 +349,98 @@ export default function AliBedniBugyal() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>Waterproof trekking shoes</li>
+              <li className={styles.li}>Warm jacket</li>
+              <li className={styles.li}>Raincoat or poncho</li>
+              <li className={styles.li}>Water bottle</li>
+              <li className={styles.li}>Sunglasses</li>
+              <li className={styles.li}>Sunscreen</li>
+              <li className={styles.li}>Personal medicines</li>
+              <li className={styles.li}>Torch or headlamp</li>
+            </ul>
+          </div>
+
+          <Title text={"Best Time To Visit Ali Bedni Bugyal Trek"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>
+                April–June: Best season for Ali Bedni Bugyal Trek with lush
+                green meadows and wildflowers.
+              </li>
+
+              <li className={styles.li}>
+                July–August: Monsoon greenery and blooming flowers
+              </li>
+
+              <li className={styles.li}>
+                September–November: Ideal for clear Himalayan mountain views and
+                photography.
+              </li>
+
+              <li className={styles.li}>
+                December–March: Perfect for trekkers looking for a snow-covered
+                Ali Bedni Bugyal Trek experience.
+              </li>
+            </ul>
+          </div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <FaqAccordion faqs={[
-            { question: "What is the total distance of the trek?", answer: "The trek covers about 35–40 km over 5 days, spread across forests, meadows, and descents." },
-            { question: "Is Ali Bedni Bugyal suitable for beginners?", answer: "Yes, it’s a beginner-friendly trek if you prepare fitness-wise. Prior trekking experience helps but is not mandatory." },
-            { question: "What is the best time to do the trek?", answer: "April–June: Green meadows & wildflowers. <br /> September–November: Crystal-clear mountain views. <br /> December–March: Snow trek." },
-            { question: "How difficult is the trek?", answer: "Rated Easy to Moderate. Long trekking hours (6–8 hrs on some days), but manageable with preparation." },
-            { question: "Will I get mobile network on the trek?", answer: "Limited or no network during the trek. Network is available in Lohajung." }
-          ]} />
+          <FaqAccordion
+            faqs={[
+              {
+                question: "What is the total distance of the trek?",
+                answer:
+                  "The trek covers about 35–40 km over 5 days, spread across forests, meadows, and descents.",
+              },
+              {
+                question: "Is Ali Bedni Bugyal suitable for beginners?",
+                answer:
+                  "Yes, it’s a beginner-friendly trek if you prepare fitness-wise. Prior trekking experience helps but is not mandatory.",
+              },
+              {
+                question: "What is the best time to do the trek?",
+                answer:
+                  "April–June: Green meadows & wildflowers. <br /> September–November: Crystal-clear mountain views. <br /> December–March: Snow trek.",
+              },
+              {
+                question: "How difficult is the trek?",
+                answer:
+                  "Rated Easy to Moderate. Long trekking hours (6–8 hrs on some days), but manageable with preparation.",
+              },
+              {
+                question: "Will I get mobile network on the trek?",
+                answer:
+                  "Limited or no network during the trek. Network is available in Lohajung.",
+              },
+            ]}
+          />
+        </div>
+
+        <Title text={"Related Treks"} />
+
+        <div className={styles.ul_section}>
+          <ul>
+            <li className={styles.li}>
+              <Link to="/brahmatal-trek">Brahmatal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kedarkantha-trek">Kedarkantha Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/valley-of-flower">Valley of Flowers Trek</Link>
+            </li>
+          </ul>
         </div>
 
         <Form
