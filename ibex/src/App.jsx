@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Suspense, lazy, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";import { Suspense, lazy, useEffect } from "react";
 import Lenis from "lenis";
 import ScrollToTop from "./ScrollToTop";
 
@@ -75,7 +74,12 @@ function App() {
           <Route path="/Trekking" element={<Trekking />} />
           <Route path="/Tours" element={<Tours />} />
           <Route path="/tours" element={<Tours />} />
-          <Route path="/valley-of-flower" element={<Valley_of_flower />} />
+          <Route
+            path="/valley-of-flower"
+            element={<Valley_of_flower />}
+          />
+
+          
           <Route
             path="/chopta-chandrashilla-trek"
             element={<Chopta_Chandrashila />}

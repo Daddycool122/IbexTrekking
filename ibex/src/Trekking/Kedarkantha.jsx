@@ -16,6 +16,8 @@ import img10 from "../assets/Trek/kedarkantha/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function Kedarkantha() {
   const [open_form, setOpen_form] = useState(false);
@@ -24,6 +26,37 @@ export default function Kedarkantha() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Kedarkantha Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe
+        </title>
+
+        <meta
+          name="description"
+          content="Book Kedarkantha Trek 2026 with Ibex Ice Axe. Experience India's most popular winter trek with snow-covered trails, summit views, itinerary, cost, and booking details."
+        />
+
+        <meta
+          name="keywords"
+          content="Kedarkantha Trek, Kedarkantha Trek 2026, Kedarkantha Trek Cost, Kedarkantha Package, Snow Trek Uttarakhand, Winter Trek India"
+        />
+
+        <link rel="canonical" href="https://ibexiceaxe.com/kedarkantha-trek" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: "Kedarkantha Trek",
+            description:
+              "Kedarkantha Trek in Uttarakhand with snow-covered trails and summit views.",
+            provider: {
+              "@type": "Organization",
+              name: "Ibex Ice Axe",
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img8}
@@ -34,7 +67,9 @@ export default function Kedarkantha() {
       <Photos photos={[img1, img4, img7, img8, img9, img10]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Kedarkantha Trek</div>
+          <h1 className={styles.title}>
+            Kedarkantha Trek 2026 · ₹12,499 + 5% GST
+          </h1>
           <div className={styles.tag_line}>
             The Most Popular Winter Trek in India.
           </div>
@@ -42,6 +77,29 @@ export default function Kedarkantha() {
             <div className={styles.indi_date}>6D/5N</div>
           </div>
 
+          <Title text={"About Kedarkantha Trek"} />
+
+          <div className={styles.ul_section}>
+            <p>
+              Kedarkantha Trek is one of the most popular winter treks in India,
+              located in the Govind Wildlife Sanctuary of Uttarakhand. Famous
+              for its snow-covered trails, dense pine forests, frozen lakes, and
+              breathtaking summit views, it attracts thousands of trekkers every
+              year.
+            </p>
+
+            <p>
+              Standing at an altitude of 12,500 feet, Kedarkantha offers
+              stunning views of Swargarohini, Bandarpoonch, Black Peak, and
+              other Himalayan ranges. The trek is beginner-friendly and ideal
+              for those looking for their first snow trekking experience.
+            </p>
+
+            <p>
+              The best time to do the Kedarkantha Trek is from December to April
+              when the entire trail is covered in fresh snow.
+            </p>
+          </div>
           <Itinerary
             all_days={[1, 2, 3, 4, 5, 6]}
             info={[
@@ -228,16 +286,95 @@ export default function Kedarkantha() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>Waterproof trekking shoes</li>
+              <li className={styles.li}>Thermal innerwear</li>
+              <li className={styles.li}>Down jacket</li>
+              <li className={styles.li}>Woolen gloves</li>
+              <li className={styles.li}>Woolen cap</li>
+              <li className={styles.li}>Sunglasses</li>
+              <li className={styles.li}>Water bottle</li>
+              <li className={styles.li}>Personal medicines</li>
+            </ul>
+          </div>
+
+          <Title text={"Best Time To Visit Kedarkantha Trek"} />
+
+          <div className={styles.ul_section}>
+            <ul>
+              <li className={styles.li}>December – Fresh snowfall begins</li>
+
+              <li className={styles.li}>
+                January – Peak winter snow conditions
+              </li>
+
+              <li className={styles.li}>
+                February – Deep snow and clear views
+              </li>
+
+              <li className={styles.li}>
+                March–April – Pleasant weather with snow patches
+              </li>
+            </ul>
+          </div>
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <FaqAccordion faqs={[
-            { question: "Why is Kedarkantha called the best winter trek?", answer: "It is known for its accessible summit, breathtaking snow views, and well-marked trails even in heavy snow." },
-            { question: "When can I find snow on Kedarkantha trek?", answer: "From mid-December to mid-April, the trek is covered in snow." },
-            { question: "Is Kedarkantha trek suitable for beginners?", answer: "Yes, it is an easy to moderate trek and perfect for first-time trekkers." },
-            { question: "What is the maximum altitude of Kedarkantha?", answer: "The summit is at 12,500 ft (3,800 m)." },
-            { question: "Are there network signals on the trek?", answer: "Mobile network is available up to Sankri, but not beyond the base village." }
-          ]} />
+          <FaqAccordion
+            faqs={[
+              {
+                question: "Why is Kedarkantha called the best winter trek?",
+                answer:
+                  "It is known for its accessible summit, breathtaking snow views, and well-marked trails even in heavy snow.",
+              },
+              {
+                question: "When can I find snow on Kedarkantha trek?",
+                answer:
+                  "From mid-December to mid-April, the trek is covered in snow.",
+              },
+              {
+                question: "Is Kedarkantha trek suitable for beginners?",
+                answer:
+                  "Yes, it is an easy to moderate trek and perfect for first-time trekkers.",
+              },
+              {
+                question: "What is the maximum altitude of Kedarkantha?",
+                answer: "The summit is at 12,500 ft (3,800 m).",
+              },
+              {
+                question: "Are there network signals on the trek?",
+                answer:
+                  "Mobile network is available up to Sankri, but not beyond the base village.",
+              },
+            ]}
+          />
         </div>
 
+        <Title text={"Related Treks"} />
+
+        <div className={styles.ul_section}>
+          <ul>
+            <li className={styles.li}>
+              <Link to="/brahmatal-trek">Brahmatal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/kuari-pass-trek">Kuari Pass Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/dayara-bugyal-trek">Dayara Bugyal Trek</Link>
+            </li>
+
+            <li className={styles.li}>
+              <Link to="/chopta-chandrashilla-trek">
+                Chopta Chandrashila Trek
+              </Link>
+            </li>
+          </ul>
+        </div>
         <Form
           open_form={open_form}
           setOpen_form={setOpen_form}

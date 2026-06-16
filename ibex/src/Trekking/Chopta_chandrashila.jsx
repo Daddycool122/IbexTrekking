@@ -19,6 +19,8 @@ import img10 from "../assets/Trek/chopta/img10.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export default function Chopta_Chandrashila() {
   const [open_form, setOpen_form] = useState(false);
@@ -27,6 +29,40 @@ export default function Chopta_Chandrashila() {
   }, []);
   return (
     <>
+    <Helmet>
+  <title>
+    Chopta Chandrashila Trek 2026 | Tungnath Trek Package | Ibex Ice Axe
+  </title>
+
+  <meta
+    name="description"
+    content="Book Chopta Chandrashila Trek 2026 with Ibex Ice Axe. Visit Tungnath Temple, Chandrashila Summit, enjoy Himalayan views, itinerary, cost, and booking details."
+  />
+
+  <meta
+    name="keywords"
+    content="Chopta Chandrashila Trek, Tungnath Trek, Chandrashila Trek 2026, Chopta Trek Package, Tungnath Temple Trek, Weekend Trek Uttarakhand"
+  />
+
+  <link
+    rel="canonical"
+    href="https://ibexiceaxe.com/chopta-chandrashilla-trek"
+  />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: "Chopta Chandrashila Trek",
+      description:
+        "Chopta Chandrashila Trek with Tungnath Temple and Himalayan summit views.",
+      provider: {
+        "@type": "Organization",
+        name: "Ibex Ice Axe",
+      },
+    })}
+  </script>
+</Helmet>
       <Header />
       <Desktop_intro_section
         img={img4}
@@ -39,13 +75,40 @@ export default function Chopta_Chandrashila() {
       />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Chopta Chandrashila Trek · ₹10,999 + 5% GST</div>
+          <h1 className={styles.title}>
+  Chopta Chandrashila Trek 2026 · ₹10,999 + 5% GST
+</h1>
           <div className={styles.tag_line}>
             Mini Switzerland of India – Chopta Awaits You!
           </div>
           <div className={styles.all_dates}>
             <div className={styles.indi_date}>3D/2N</div>
           </div>
+
+          <Title text={"About Chopta Chandrashila Trek"} />
+
+<div className={styles.ul_section}>
+  <p>
+    Chopta Chandrashila Trek is one of the most scenic short treks in
+    Uttarakhand. The trek takes you through beautiful forests, alpine
+    meadows, the famous Tungnath Temple, and finally to Chandrashila
+    Summit at an altitude of around 12,000 feet.
+  </p>
+
+  <p>
+    Tungnath is the highest Shiva temple in the world and an important
+    part of the Panch Kedar pilgrimage. From Chandrashila Peak,
+    trekkers enjoy panoramic views of Nanda Devi, Chaukhamba,
+    Kedarnath, Trishul, and other Himalayan peaks.
+  </p>
+
+  <p>
+    The Chopta Chandrashila Trek is ideal for beginners, families,
+    weekend travelers, and anyone looking for a short Himalayan
+    adventure.
+  </p>
+</div>
+
           <Itinerary
             all_days={[1, 2, 3]}
             info={[
@@ -264,6 +327,40 @@ export default function Chopta_Chandrashila() {
             </ul>
           </div>
 
+          <Title text={"Things To Carry"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>Waterproof trekking shoes</li>
+    <li className={styles.li}>Warm jacket</li>
+    <li className={styles.li}>Raincoat or poncho</li>
+    <li className={styles.li}>Water bottle</li>
+    <li className={styles.li}>Sunglasses</li>
+    <li className={styles.li}>Sunscreen</li>
+    <li className={styles.li}>Personal medicines</li>
+    <li className={styles.li}>Torch or headlamp</li>
+  </ul>
+</div>
+   
+          <Title text={"Best Time To Visit Chopta Chandrashila Trek"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      March–June: Pleasant weather and rhododendron blooms
+    </li>
+
+    <li className={styles.li}>
+      September–November: Clear mountain views
+    </li>
+
+    <li className={styles.li}>
+      December–February: Snow-covered winter landscapes
+    </li>
+  </ul>
+</div>
+
+
           <Title text={"Frequently Asked Questions (FAQ)"} />
           <FaqAccordion faqs={[
             { question: "What is the best time to do Chopta Chandrashila trek?", answer: "The best time is from March to June and September to November for clear skies and pleasant weather. Avoid monsoon due to landslides." },
@@ -273,6 +370,38 @@ export default function Chopta_Chandrashila() {
             { question: "How do I reach Chopta for the trek?", answer: "The trek starts from Sari or Chopta, which can be reached by road from Haridwar or Rishikesh via Rudraprayag and Ukhimath." }
           ]} />
         </div>
+
+
+        
+        <Title text={"Related Treks"} />
+
+<div className={styles.ul_section}>
+  <ul>
+    <li className={styles.li}>
+      <Link to="/kedarkantha-trek">
+        Kedarkantha Trek
+      </Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/panch-kedar-trek">
+        Panch Kedar Trek
+      </Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/kuari-pass-trek">
+        Kuari Pass Trek
+      </Link>
+    </li>
+
+    <li className={styles.li}>
+      <Link to="/valley-of-flowers-trek">
+        Valley of Flowers Trek
+      </Link>
+    </li>
+  </ul>
+</div>
 
         <Form
           open_form={open_form}
