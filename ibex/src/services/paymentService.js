@@ -26,6 +26,20 @@ export async function verifyPaymentOrder(bookingData) {
   return postJson("/verify-order", bookingData);
 }
 
+function loadRazorpayScript() {
+  return new Promise((resolve) => {
+    if (window.Razorpay) {
+      resolve(true);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+}
+
 export async function launchRazorpayPayment({
   amount,
   key,
@@ -39,6 +53,11 @@ export async function launchRazorpayPayment({
 }) {
   try {
     const orderId = await createPaymentOrder(amount);
+
+    const isLoaded = await loadRazorpayScript();
+    if (!isLoaded) {
+      throw new Error("Razorpay SDK failed to load. Are you online?");
+    }
 
     const RazorpayCheckout = window?.Razorpay;
     if (!RazorpayCheckout) {

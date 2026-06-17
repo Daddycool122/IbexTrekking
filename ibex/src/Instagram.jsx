@@ -1,12 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import styles from './Instagram.module.css';
 
 const Instagram = () => {
   const [instagramData, setInstagramData] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef(null);
   const instagramUsername = 'ibex.iceaxe';
   const instagramLink = 'https://www.instagram.com/ibex.iceaxe?igsh=MW42MjhicnNtaThoYw%3D%3D';
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px' }
+    );
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
     // Set default Instagram data
     setInstagramData({
       username: instagramUsername,
@@ -25,10 +45,15 @@ const Instagram = () => {
       }
     };
     document.body.appendChild(script);
-  }, []);
+
+    // Check periodically since the script loads asynchronously
+    const intervalId = setInterval(addTitleToIframe, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [isVisible]);
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} ref={containerRef}>
       <div className={styles.sectionIntro}>
         <p className={styles.sectionKicker}>Follow Our Journey</p>
         <h2 className={styles.sectionTitle}>
@@ -89,38 +114,40 @@ const Instagram = () => {
         )}
 
         {/* Instagram Grid Posts */}
-        <div className={styles.embedWrapper}>
-          <div className={styles.instagramGrid}>
-            <blockquote className="instagram-media" data-instgrm-permalink={instagramLink} data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'16px', boxShadow:'0 4px 20px rgba(0, 0, 0, 0.08)', margin:'0 40px', maxWidth:'none', minWidth:'auto', padding:0, width:'calc(100vw - 80px)'}}>
-              <div style={{padding:'16px', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-                <div style={{flex:1}}>
-                  <a href={instagramLink} target="_blank" rel="noreferrer" style={{background:'#FFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}}>
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <div style={{backgroundColor:'#FFF', borderRadius:'50%', height:'40px', marginRight:'14px', width:'40px'}}></div>
-                      <div style={{display:'flex', flexDirection:'column', flexGrow:1, justifyContent:'center'}}>
-                        <div style={{backgroundColor:'#f4f4f4', borderRadius:'4px', flexGrow:0, height:'14px', marginBottom:'6px', width:'100px'}}></div>
-                        <div style={{backgroundColor:'#f4f4f4', borderRadius:'4px', flexGrow:0, height:'14px', width:'60px'}}></div>
+        {isVisible && (
+          <div className={styles.embedWrapper}>
+            <div className={styles.instagramGrid}>
+              <blockquote className="instagram-media" data-instgrm-permalink={instagramLink} data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'16px', boxShadow:'0 4px 20px rgba(0, 0, 0, 0.08)', margin:'0 40px', maxWidth:'none', minWidth:'auto', padding:0, width:'calc(100vw - 80px)'}}>
+                <div style={{padding:'16px', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                  <div style={{flex:1}}>
+                    <a href={instagramLink} target="_blank" rel="noreferrer" style={{background:'#FFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}}>
+                      <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+                        <div style={{backgroundColor:'#FFF', borderRadius:'50%', height:'40px', marginRight:'14px', width:'40px'}}></div>
+                        <div style={{display:'flex', flexDirection:'column', flexGrow:1, justifyContent:'center'}}>
+                          <div style={{backgroundColor:'#f4f4f4', borderRadius:'4px', flexGrow:0, height:'14px', marginBottom:'6px', width:'100px'}}></div>
+                          <div style={{backgroundColor:'#f4f4f4', borderRadius:'4px', flexGrow:0, height:'14px', width:'60px'}}></div>
+                        </div>
                       </div>
-                    </div>
+                    </a>
+                  </div>
+                  <a 
+                    href={instagramLink}
+                    target="_blank" 
+                    rel="noreferrer"
+                    className={styles.inlineFollowBtn}
+                  >
+                    Follow
                   </a>
                 </div>
-                <a 
-                  href={instagramLink}
-                  target="_blank" 
-                  rel="noreferrer"
-                  className={styles.inlineFollowBtn}
-                >
-                  Follow
-                </a>
-              </div>
-              <div style={{padding:'0 16px 16px 16px'}}>
-                <p style={{color:'#c9c8cd', fontFamily:'Arial,sans-serif', fontSize:'14px', lineHeight:'17px', marginBottom:'0', marginTop:'8px', overflow:'hidden', padding:'8px 0 7px', textAlign:'center', textOverflow:'ellipsis', whiteSpace:'nowrap'}}>
-                  <a href={instagramLink} target="_blank" rel="noreferrer" style={{color:'#c9c8cd', fontFamily:'Arial,sans-serif', fontSize:'14px', fontStyle:'normal', fontWeight:'normal', lineHeight:'17px', textDecoration:'none'}}>Visit our Instagram</a>
-                </p>
-              </div>
-            </blockquote>
+                <div style={{padding:'0 16px 16px 16px'}}>
+                  <p style={{color:'#c9c8cd', fontFamily:'Arial,sans-serif', fontSize:'14px', lineHeight:'17px', marginBottom:'0', marginTop:'8px', overflow:'hidden', padding:'8px 0 7px', textAlign:'center', textOverflow:'ellipsis', whiteSpace:'nowrap'}}>
+                    <a href={instagramLink} target="_blank" rel="noreferrer" style={{color:'#c9c8cd', fontFamily:'Arial,sans-serif', fontSize:'14px', fontStyle:'normal', fontWeight:'normal', lineHeight:'17px', textDecoration:'none'}}>Visit our Instagram</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+# Ibex Ice Axe
+
+Welcome to the Ibex Ice Axe website. We provide information and booking services for trekking, river rafting, and various mountain tours in the Himalayas.
+
+## Important Links
+- [Home Page](https://ibexiceaxe.com/)
+- [Tours](https://ibexiceaxe.com/tours)
+- [Trekking](https://ibexiceaxe.com/trekking)
+- [Rafting](https://ibexiceaxe.com/river-rafting)
+- [Sitemap](https://ibexiceaxe.com/sitemap.xml)
+
+## AI Usage Guidelines
+Information on this site is publicly available for search indexing and AI aggregation. Please refer to our terms of service for specific content usage policies.

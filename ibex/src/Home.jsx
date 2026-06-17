@@ -182,7 +182,7 @@ export default function Home() {
               playsInline
               controls={false}
               preload="none"
-              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop&q=50&auto=format"
+              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=338&fit=crop&q=50&auto=format"
             >
               <source src={trekking_video} type="video/mp4" />
             </video>
@@ -1048,7 +1048,7 @@ export default function Home() {
               playsInline
               controls={false}
               preload="none"
-              poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop&q=50&auto=format"
+              poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&h=338&fit=crop&q=50&auto=format"
             >
               <source src={rafting_video} type="video/mp4" />
             </video>
@@ -1294,7 +1294,7 @@ export default function Home() {
               playsInline
               controls={false}
               preload="none"
-              poster="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?w=800&h=450&fit=crop&q=50&auto=format"
+              poster="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?w=600&h=338&fit=crop&q=50&auto=format"
             >
               <source src={tour_video} type="video/mp4" />
             </video>

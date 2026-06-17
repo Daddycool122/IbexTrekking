@@ -23,19 +23,6 @@ export default function Photos({ photos }) {
                 className={styles.indi_photo}
                 loading="lazy"
                 decoding="async"
-                onClick={() => {
-                  setSelected_img("");
-                  setOpen_img(true);
-                }}
-                src={item}
-                alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
-                className={styles.indi_photo}
-                loading="lazy"
-                decoding="async"
-                onClick={() => {
-                  setSelected_img("");
-                  setOpen_img(true);
-                }}
               />
             </div>
           );
@@ -62,11 +49,11 @@ export default function Photos({ photos }) {
               height={"20px"}
               width={"20px"}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 {" "}
@@ -77,7 +64,7 @@ export default function Photos({ photos }) {
               </g>
             </svg>
           </div>
-          <img loading="lazy" src={selected_img} alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.open_img} onClick={(e) => e.stopPropagation()} />
+          <img loading="lazy" src={selected_img} alt={selected_img ? selected_img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.open_img} onClick={(e) => e.stopPropagation()} />
         </div>
       ) : null}
     </>
