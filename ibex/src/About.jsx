@@ -102,7 +102,7 @@ const AboutUs = () => {
         <div className={styles.symbolsGrid}>
           <div className={styles.symbolCard}>
             <div className={styles.symbolIcon}>
-              <img src={ibexBadge} alt="Ibex Badge" className={styles.symbolImage} />
+              <img loading="lazy" src={ibexBadge} alt="Ibex Badge" className={styles.symbolImage} />
             </div>
             <h3>The Ibex</h3>
             <p>
@@ -111,7 +111,7 @@ const AboutUs = () => {
           </div>
           <div className={styles.symbolCard}>
             <div className={styles.symbolIcon}>
-              <img src={iceAxeBadge} alt="Ice Axe Badge" className={styles.symbolImage} />
+              <img loading="lazy" src={iceAxeBadge} alt="Ice Axe Badge" className={styles.symbolImage} />
             </div>
             <h3>The Ice Axe</h3>
             <p>
@@ -259,7 +259,7 @@ const AboutUs = () => {
         <div className={styles.team_members}>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img src={team2} alt="Team Member" />
+              <img loading="lazy" src={team2} alt="Team Member" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>
@@ -273,7 +273,7 @@ const AboutUs = () => {
           </div>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img src={team1} alt="Team Member" />
+              <img loading="lazy" src={team1} alt="Team Member" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>

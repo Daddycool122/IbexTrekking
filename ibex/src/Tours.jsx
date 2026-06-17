@@ -44,7 +44,7 @@ export default function Tours() {
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />
+          <img loading="lazy" src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>12 Days & 11 Nights</div>
 
@@ -112,7 +112,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img12} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Tour</div>
 
@@ -180,7 +180,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={imgAdikailash} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={imgAdikailash} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -248,7 +248,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={imgChardham} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={imgChardham} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>10 Days & 9 Nights</div>
 

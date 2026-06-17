@@ -77,7 +77,7 @@ export default function Photos({ photos }) {
               </g>
             </svg>
           </div>
-          <img src={selected_img} alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.open_img} onClick={(e) => e.stopPropagation()} />
+          <img loading="lazy" src={selected_img} alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.open_img} onClick={(e) => e.stopPropagation()} />
         </div>
       ) : null}
     </>

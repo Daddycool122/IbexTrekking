@@ -61,9 +61,9 @@ export default function Intro_section({ img, title, open_form, des, book }) {
           )}
           <div className={styles.trust_box}>
             <div className={styles.tb_images_section}>
-              <img src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} />
-              <img src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} />
-              <img src={rating_img2} alt="Img" className={styles.trust_imgs_3} />
+              <img loading="lazy" src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} />
+              <img loading="lazy" src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} />
+              <img loading="lazy" src={rating_img2} alt="Img" className={styles.trust_imgs_3} />
             </div>
             <div className={styles.trust_line}>
               Trusted by 200+ Happy
@@ -155,7 +155,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             <div className={styles.slot_slot_section}>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
+                  <img loading="lazy" src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -167,7 +167,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
+                  <img loading="lazy" src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -179,7 +179,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
+                  <img loading="lazy" src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -203,7 +203,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
+            <img loading="lazy" src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -216,7 +216,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
+            <img loading="lazy" src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -229,7 +229,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
+            <img loading="lazy" src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -242,7 +242,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
+            <img loading="lazy" src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>

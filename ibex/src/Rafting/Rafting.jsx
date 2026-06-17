@@ -185,7 +185,7 @@ export default function Rafting() {
           </div>
 
           <Title text={"Videos that you will love"} />
-          <Videos photos={[vid1, vid2, vid3, vid4, vid5, vid6]} />
+          <video aria-hidden="true" s photos={[vid1, vid2, vid3, vid4, vid5, vid6]} />
           <Title text={"Eligibility Criteria for River Rafting Rishikesh"} />
           <div className={styles.ul_section}>
             <ul>

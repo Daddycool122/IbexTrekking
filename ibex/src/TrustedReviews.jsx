@@ -105,8 +105,8 @@ const TrustedReviews = () => {
 
         {activeTab === 'trusted_by' && (
           <div className={styles.trustedByWrapper}>
-            <img src={trust_1} alt="Img" className={styles.trustImg} />
-            <img src={trust_2} alt="Img" className={styles.trustImg} />
+            <img loading="lazy" src={trust_1} alt="Img" className={styles.trustImg} />
+            <img loading="lazy" src={trust_2} alt="Img" className={styles.trustImg} />
           </div>
         )}
       </div>
