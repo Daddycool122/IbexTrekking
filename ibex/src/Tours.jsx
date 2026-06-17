@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
@@ -29,6 +30,15 @@ export default function Tours() {
 
   return (
     <>
+
+      <Helmet>
+        <title>Adventure Tours & Weekend Getaways | Ibex Ice Axe</title>
+        <meta name="description" content="Explore our curated adventure tours, weekend getaways, and spiritual journeys like Chardham Yatra and Adi Kailash. Book your next vacation with Ibex Ice Axe." />
+        <meta name="keywords" content="Adventure Tours, Chardham Yatra, Adi Kailash Tour, Uttarakhand Tours, Weekend Getaways" />
+        <meta property="og:title" content="Adventure Tours & Weekend Getaways | Ibex Ice Axe" />
+        <meta property="og:description" content="Explore our curated adventure tours, weekend getaways, and spiritual journeys." />
+      </Helmet>
+
       <Header />
 
       <div className={styles.adventure_card_section}>

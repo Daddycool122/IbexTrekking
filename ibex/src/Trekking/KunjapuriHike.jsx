@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
@@ -22,6 +23,12 @@ export default function KunjapuriHike() {
   }, []);
   return (
     <>
+
+      <Helmet>
+        <title>Kunjapuri Sunrise Hike Rishikesh | Day Hike | Ibex Ice Axe</title>
+        <meta name="description" content="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas." />
+      </Helmet>
+
       <Header />
       <Desktop_intro_section
         img={img1}

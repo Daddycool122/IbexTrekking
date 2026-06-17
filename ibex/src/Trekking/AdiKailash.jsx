@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -23,6 +24,12 @@ export default function AdiKailash() {
   }, []);
   return (
     <>
+
+      <Helmet>
+        <title>Adi Kailash Tour Package 2026 | Om Parvat Yatra | Ibex Ice Axe</title>
+        <meta name="description" content="Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey." />
+      </Helmet>
+
       <Header />
       <Desktop_intro_section
         img={img1}

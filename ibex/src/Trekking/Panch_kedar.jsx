@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
@@ -27,6 +28,12 @@ export default function PanchKedar() {
   }, []);
   return (
     <>
+
+      <Helmet>
+        <title>Panch Kedar Trek Package | Himalayan Pilgrimage | Ibex Ice Axe</title>
+        <meta name="description" content="Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure." />
+      </Helmet>
+
       <Header />
       <Desktop_intro_section
         img={img1}

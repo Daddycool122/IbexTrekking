@@ -1,9 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import React from "react";
 import styles from "./ContactUs.module.css";
 
 export default function ContactUs() {
   return (
     <div className={styles.contactWrapper}>
+
+      <Helmet>
+        <title>Contact Us | Ibex Ice Axe</title>
+        <meta name="description" content="Get in touch with Ibex Ice Axe for bookings, trek inquiries, and custom adventure packages. We are here to help you plan your next Himalayan journey." />
+      </Helmet>
+
       <header className={styles.contactHeader}>
         <h1>IBEX ICE AXE - Contact Us</h1>
         <p>

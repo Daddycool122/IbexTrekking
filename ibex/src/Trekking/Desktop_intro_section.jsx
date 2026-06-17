@@ -8,7 +8,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
   return (
     <>
       <div className={styles.main_intro_section}>
-        <img src={img} alt="Ibex Trekking" className={styles.main_img} loading="eager" decoding="async" />
+        <img src={img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.main_img} loading="eager" decoding="async" />
         <div className={styles.dark_section}></div>
         <div className={styles.content_section}>
           <div className={styles.main_name}>{title}</div>
@@ -143,7 +143,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             <div className={styles.slot_slot_section}>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
+                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -155,7 +155,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
+                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -167,7 +167,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
+                  <img src={img1} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -191,7 +191,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
+            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -204,7 +204,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
+            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -217,7 +217,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
+            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -230,7 +230,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
+            <img src={img1} className={styles.mobile_slot_img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>

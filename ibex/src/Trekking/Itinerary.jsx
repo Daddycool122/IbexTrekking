@@ -38,7 +38,7 @@ export default function Itinerary({ all_days, info }) {
               <div className={styles.para}>{item.para1}</div>
               <div className={styles.para}>{item.para2}</div>
               <div className={styles.img_Section}>
-                <img src={item.img} className={styles.img} alt="Ibex Trekking" />
+                <img src={item.img} className={styles.img} alt={item.img ? item.img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} />
               </div>
               {/* <div className={styles.title2}>What we will do in govind ghat</div>
         <div className={styles.ul_section}>

@@ -19,7 +19,7 @@ export default function Photos({ photos }) {
             >
               <img 
                 src={item}
-                alt="Ibex Trekking"
+                alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
                 className={styles.indi_photo}
                 loading="lazy"
                 decoding="async"
@@ -28,7 +28,7 @@ export default function Photos({ photos }) {
                   setOpen_img(true);
                 }}
                 src={item}
-                alt="Ibex Trekking"
+                alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
                 className={styles.indi_photo}
                 loading="lazy"
                 decoding="async"
@@ -77,7 +77,7 @@ export default function Photos({ photos }) {
               </g>
             </svg>
           </div>
-          <img src={selected_img} alt="Ibex Trekking" className={styles.open_img} onClick={(e) => e.stopPropagation()} />
+          <img src={selected_img} alt={item ? item.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.open_img} onClick={(e) => e.stopPropagation()} />
         </div>
       ) : null}
     </>

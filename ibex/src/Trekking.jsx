@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import img2 from "./assets/Trek/Valley_of_flower/valley-of-flower-trek-3.jpeg";
@@ -48,6 +49,15 @@ export default function Trekking() {
 
   return (
     <>
+
+      <Helmet>
+        <title>Himalayan Treks | Best Trekking Packages 2026 | Ibex Ice Axe</title>
+        <meta name="description" content="Browse our extensive list of Himalayan treks. From beginner-friendly hikes to challenging summit climbs like Kedarkantha and Valley of Flowers. Book now!" />
+        <meta name="keywords" content="Himalayan Treks, Trekking Packages, Kedarkantha Trek, Valley of Flowers Trek, High Altitude Treks" />
+        <meta property="og:title" content="Himalayan Treks | Best Trekking Packages 2026" />
+        <meta property="og:description" content="Browse our extensive list of Himalayan treks. From beginner-friendly hikes to challenging summit climbs." />
+      </Helmet>
+
       <Header />
 
       {/* <div className={styles.title} ref={trekking_ref}>
@@ -717,7 +727,7 @@ export default function Trekking() {
 
       {/* <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img src={rafting1} className={styles.ad_cd_img} alt="Ibex Trekking" />
+          <img src={rafting1} className={styles.ad_cd_img} alt="16km river rafting in rishikesh" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -789,7 +799,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={rafting2} className={styles.ad_cd_img} alt="Ibex Trekking" />
+          <img src={rafting2} className={styles.ad_cd_img} alt="25km river rafting in rishikesh" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -861,7 +871,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={rafting3} className={styles.ad_cd_img} alt="Ibex Trekking" />
+          <img src={rafting3} className={styles.ad_cd_img} alt="35km river rafting in rishikesh" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 

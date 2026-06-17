@@ -51,7 +51,7 @@ export default function PreviewGrid({ items, title, onItemClick, type = 'trek' }
           >
             <img 
               src={item.image} 
-              alt="Ibex Trekking"
+              alt={src ? src.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
               className={styles.previewImage}
               loading="lazy"
             />

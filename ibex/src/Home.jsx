@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Desktop_intro_section from "./Trekking/Desktop_intro_section";
 import Desktop_home from "./Trekking/Desktop_home";
 import img1 from "./assets/home/himalayan-trekking-home-1.jpg";
@@ -69,6 +70,26 @@ export default function Home() {
   const { reviews: all_reviews } = useReviews();
   return (
     <>
+
+      <Helmet>
+        <title>Ibex Ice Axe | Premium Himalayan Treks & Rafting Adventures</title>
+        <meta name="description" content="Discover the best Himalayan treks, river rafting in Rishikesh, and curated adventure tours with Ibex Ice Axe. Expert guides, premium safety, and unforgettable experiences." />
+        <meta name="keywords" content="Himalayan Treks, River Rafting Rishikesh, Kedarkantha Trek, Valley of Flowers, Adventure Tours India" />
+        <meta property="og:title" content="Ibex Ice Axe | Premium Himalayan Treks & Rafting Adventures" />
+        <meta property="og:description" content="Discover the best Himalayan treks, river rafting in Rishikesh, and curated adventure tours with Ibex Ice Axe." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ibexiceaxe.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Ibex Ice Axe",
+            "url": "https://ibexiceaxe.com/",
+            "description": "Premium adventure travel agency specializing in Himalayan treks and river rafting."
+          })}
+        </script>
+      </Helmet>
+
       <Desktop_home
         title={"Discover The Untamed"}
         des={`Unleash your spirit in the\nheart of the mountains.`}

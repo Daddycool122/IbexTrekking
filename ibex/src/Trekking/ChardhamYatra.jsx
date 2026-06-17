@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -23,6 +24,12 @@ export default function ChardhamYatra() {
   }, []);
   return (
     <>
+
+      <Helmet>
+        <title>Chardham Yatra 2026 Tour Package | Kedarnath, Badrinath | Ibex Ice Axe</title>
+        <meta name="description" content="Join our comprehensive Chardham Yatra 2026 package covering Yamunotri, Gangotri, Kedarnath, and Badrinath. Premium stay and guided spiritual journey." />
+      </Helmet>
+
       <Header />
       <Desktop_intro_section
         img={img1}
