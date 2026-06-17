@@ -2,7 +2,7 @@ import styles from "./Itinerary.module.css";
 import Para from "./Para";
 import img1 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
 import { useState } from "react";
-export default function ItineraryHike({ all_days, info }) {
+export default function ItineraryTour({ all_days, info }) {
   const [days, setDays] = useState(all_days);
   const [selected_day, setSelected_day] = useState(0);
   return (

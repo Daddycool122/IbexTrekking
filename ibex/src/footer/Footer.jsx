@@ -97,7 +97,7 @@ export default function Footer() {
           <div className={styles.link_column}>
             <div className={styles.info_title}>Tours</div>
             <Link to="/panch-kedar-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Panch Kedar Tour</Link>
-            <Link to="/kunjapuri-hike" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kunjapuri One Day Hike</Link>
+            <Link to="/kunjapuri-tour" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kunjapuri One Day Tour</Link>
             <Link to="/adi-kailash-tour" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Adi Kailash & Om Parvat</Link>
             <Link to="/chardham-yatra-2026" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Chardham Yatra 2026</Link>
           </div>

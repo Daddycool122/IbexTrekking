@@ -14,9 +14,9 @@ import gaumukhImg from "../assets/Trek/gaumukh/gaumukh-trek-1.jpeg";
 
 // Tour data
 import panchkedarImg from "../assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
-import adikailashImg from "../assets/hike/adikailash/adikailash-hike-1.webp";
-import chardhamImg from "../assets/hike/chardham/chardham-yatra-hike-1.jpg";
-import kunjapuriImg from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-1.jpeg";
+import adikailashImg from "../assets/tour/adikailash/adikailash-tour-1.webp";
+import chardhamImg from "../assets/tour/chardham/chardham-yatra-tour-1.jpg";
+import kunjapuriImg from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-1.jpeg";
 
 // Rafting data
 import rafting16Img from "../assets/Rafting/rishikesh-river-rafting-6.webp";
@@ -37,7 +37,7 @@ export const TREKS = [
 
 export const TOURS = [
   { name: 'Panch Kedar Tour', route: '/panch-kedar-trek', image: panchkedarImg },
-  { name: 'Kunjapuri Hike', route: '/kunjapuri-hike', image: kunjapuriImg },
+  { name: 'Kunjapuri Tour', route: '/kunjapuri-tour', image: kunjapuriImg },
   { name: 'Adi Kailash & Om Parvat', route: '/adi-kailash-tour', image: adikailashImg },
   { name: 'Chardham Yatra', route: '/chardham-yatra-2026', image: chardhamImg }
 ];

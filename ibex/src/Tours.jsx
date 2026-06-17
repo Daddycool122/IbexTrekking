@@ -2,9 +2,9 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
-import img12 from "./assets/hike/kunjapuri/kunjapuri-sunrise-hike-4.jpeg";
-import imgAdikailash from "./assets/hike/adikailash/adikailash-hike-1.webp";
-import imgChardham from "./assets/hike/chardham/chardham-yatra-hike-1.jpg";
+import img12 from "./assets/tour/kunjapuri/kunjapuri-sunrise-tour-4.jpeg";
+import imgAdikailash from "./assets/tour/adikailash/adikailash-tour-1.webp";
+import imgChardham from "./assets/tour/chardham/chardham-yatra-tour-1.jpg";
 import { useEffect } from "react";
 import Footer from "./footer/Footer";
 import Header from "./Header";
@@ -114,7 +114,7 @@ export default function Tours() {
         <div className={styles.indi_adventure_card}>
           <img src={img12} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
-            <div className={styles.date_night}>1 Day Hike</div>
+            <div className={styles.date_night}>1 Day Tour</div>
 
             <div className={styles.dn_rating_Section}>
               <svg
@@ -144,7 +144,7 @@ export default function Tours() {
             </div>
           </div>
           <div className={styles.ad_cd_title}>
-            Kunjapuri One Day Hike – Sunrise, Spirituality & Nature
+            Kunjapuri One Day Tour – Sunrise, Spirituality & Nature
           </div>
           <div className={styles.ad_cd_book}>
             <a href="tel://+916396518778" className={styles.ad_cd_call}>
@@ -172,7 +172,7 @@ export default function Tours() {
             </a>
             <div
               className={styles.ad_cd_book_book}
-              onClick={() => navigate("/kunjapuri-hike")}
+              onClick={() => navigate("/kunjapuri-tour")}
             >
               VIEW DETAILS
             </div>

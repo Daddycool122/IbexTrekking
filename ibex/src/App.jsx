@@ -26,7 +26,7 @@ const PrivacyPolicy = lazy(() => import("./Privacypolicy.jsx"));
 const RefundAndCancelationPolicy = lazy(() =>
   import("./Refundandcancellation.jsx")
 );
-const Kunjapuri = lazy(() => import("./Trekking/KunjapuriHike.jsx"));
+const Kunjapuri = lazy(() => import("./Trekking/KunjapuriTour.jsx"));
 const AliBedniBugyal = lazy(() => import("./Trekking/AliBedniBugyal.jsx"));
 const DyaraBugyal = lazy(() => import("./Trekking/DyaraBugyal.jsx"));
 const AdiKailash = lazy(() => import("./Trekking/AdiKailash.jsx"));
@@ -114,7 +114,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
 
           {/* hike */}
-          <Route path="/kunjapuri-hike" element={<Kunjapuri />} />
+          <Route path="/kunjapuri-tour" element={<Kunjapuri />} />
           <Route path="/adi-kailash-tour" element={<AdiKailash />} />
           <Route path="/chardham-yatra-2026" element={<ChardhamYatra />} />
 

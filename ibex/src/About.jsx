@@ -58,7 +58,7 @@ const AboutUs = () => {
       title: "What We Offer",
       content: [
         "Diverse portfolio of adventures: Valley of Flowers, Kedarkantha, Chopta-Chandrashila, Brahmatal, Kuari Pass, Ali Bedni Bugyal, Dayara Bugyal, Pangarchulla Peak, Gaumukh-Tapovan.",
-        "Beginner-friendly day hikes to challenging multi-day treks reaching altitudes over 4000 meters.",
+        "Beginner-friendly day tours to challenging multi-day treks reaching altitudes over 4000 meters.",
         "Thrilling river rafting experiences in the Ganges.",
         "Customized group treks, corporate team-building adventures, and family-friendly trekking options.",
         "Each package includes nutritious meals, comfortable accommodation, safety equipment, expert guidance, and comprehensive support."
@@ -243,7 +243,7 @@ const AboutUs = () => {
       <section className={styles.content}>
         <h2 className={styles.sectionHeading}>What We Offer</h2>
         <p>
-          Ibex Ice Axe offers a diverse portfolio of adventures tailored to different preferences and fitness levels. From beginner-friendly day hikes to challenging multi-day treks reaching altitudes over 4000 meters, we have something for everyone. Our trekking packages include Valley of Flowers, Kedarkantha, Chopta-Chandrashila, Brahmatal, Kuari Pass, Ali Bedni Bugyal, Dayara Bugyal, Pangarchulla Peak, Gaumukh-Tapovan, and many more. We also offer thrilling river rafting experiences in the Ganges, catering to adventure seekers looking for aquatic thrills.
+          Ibex Ice Axe offers a diverse portfolio of adventures tailored to different preferences and fitness levels. From beginner-friendly day tours to challenging multi-day treks reaching altitudes over 4000 meters, we have something for everyone. Our trekking packages include Valley of Flowers, Kedarkantha, Chopta-Chandrashila, Brahmatal, Kuari Pass, Ali Bedni Bugyal, Dayara Bugyal, Pangarchulla Peak, Gaumukh-Tapovan, and many more. We also offer thrilling river rafting experiences in the Ganges, catering to adventure seekers looking for aquatic thrills.
         </p>
         <p>
           Each package is meticulously designed to balance adventure with comfort. We provide nutritious meals prepared by experienced cooks, comfortable accommodation in homestays or camps, all necessary safety equipment, expert guidance, and comprehensive support. Our pre-trek consultations ensure you're adequately prepared, both physically and mentally, for the adventure ahead. We also offer customized group treks, corporate team-building adventures, and family-friendly trekking options.

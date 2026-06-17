@@ -225,7 +225,7 @@ export default function Header() {
                   >
                     {[
                       { name: 'Panch Kedar', path: '/panch-kedar-trek' },
-                      { name: 'Kunjapuri Hike', path: '/kunjapuri-hike' }
+                      { name: 'Kunjapuri Tour', path: '/kunjapuri-tour' }
                     ].map(tour => (
                       <Link key={tour.name} to={tour.path} className={styles.options} onClick={() => setOpen_options(false)} style={{textDecoration: "none", color: "inherit", display: "block"}}>
                         {tour.name}

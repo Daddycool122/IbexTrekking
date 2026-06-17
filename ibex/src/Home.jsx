@@ -16,7 +16,7 @@ import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
 import img9 from "./assets/Trek/pangarchulla/pangarchulla-trek-1.jpeg";
 import img10 from "./assets/Trek/alibedni/alibedni-trek-1.webp";
 import img11 from "./assets/Trek/dyarabugyal/dyarabugyal-trek-1.webp";
-import img12 from "./assets/hike/kunjapuri/kunjapuri-sunrise-hike-4.jpeg";
+import img12 from "./assets/tour/kunjapuri/kunjapuri-sunrise-tour-4.jpeg";
 import rafting1 from "./assets/Rafting/rishikesh-river-rafting-6.webp";
 import rafting2 from "./assets/Rafting/rishikesh-river-rafting-7.webp";
 import rafting3 from "./assets/Rafting/rishikesh-river-rafting-8.webp";
@@ -917,7 +917,7 @@ export default function Home() {
         <div className={styles.indi_adventure_card}>
           <img src={img12} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
-            <div className={styles.date_night}>1 Day Hike</div>
+            <div className={styles.date_night}>1 Day Tour</div>
 
             <div className={styles.dn_rating_Section}>
               <svg
@@ -947,7 +947,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.ad_cd_title}>
-            Kunjapuri One Day Hike – Sunrise, Spirituality & Nature
+            Kunjapuri One Day Tour – Sunrise, Spirituality & Nature
           </div>
           {/* <div className={styles.ad_cd_price}>
             <span className={styles.ad_cd_price_main}>INR 2,499</span>
@@ -979,7 +979,7 @@ export default function Home() {
             </a>
             <div
               className={styles.ad_cd_book_book}
-              onClick={() => navigate("/kunjapuri-hike")}
+              onClick={() => navigate("/kunjapuri-tour")}
             >
               VIEW DETAILS
             </div>
@@ -1284,7 +1284,7 @@ export default function Home() {
           <div className={styles.badge}>🏔️ CULTURAL TOURS</div>
           <h3 className={styles.featured_title}>Discover Hidden Gems</h3>
           <p className={styles.featured_description}>
-            Embark on a journey through rich culture, spirituality, and stunning nature. From peaceful temple visits to scenic hikes, our carefully curated tours offer an authentic Himalayan experience that caters to all ages and preferences.
+            Embark on a journey through rich culture, spirituality, and stunning nature. From peaceful temple visits to scenic tours, our carefully curated tours offer an authentic Himalayan experience that caters to all ages and preferences.
           </p>
           <ul className={styles.features_list}>
             <li>Local expert guides</li>

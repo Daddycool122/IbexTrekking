@@ -5,18 +5,18 @@ import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
 import Title from "./Title";
 import Form from "./Form";
-import ItineraryHike from "./ItineraryHike";
-import img1 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-1.jpeg";
-import img2 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-2.jpeg";
-import img3 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-3.jpeg";
-import img4 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-4.jpeg";
-import img5 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-5.jpeg";
-import img6 from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-6.jpeg";
+import ItineraryTour from "./ItineraryTour";
+import img1 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-1.jpeg";
+import img2 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-2.jpeg";
+import img3 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-3.jpeg";
+import img4 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-4.jpeg";
+import img5 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-5.jpeg";
+import img6 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-6.jpeg";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Header from "../Header";
 
-export default function KunjapuriHike() {
+export default function KunjapuriTour() {
   const [open_form, setOpen_form] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,7 +25,7 @@ export default function KunjapuriHike() {
     <>
 
       <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/kunjapuri-hike" />
+        <link rel="canonical" href="https://ibexiceaxe.com/kunjapuri-tour" />
         <title>Kunjapuri Sunrise Hike Rishikesh | Day Hike | Ibex Ice Axe</title>
         <meta name="description" content="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas." />
       </Helmet>
@@ -33,22 +33,22 @@ export default function KunjapuriHike() {
       <Header />
       <Desktop_intro_section
         img={img1}
-        title={"Kunjapuri One Day Hike"}
+        title={"Kunjapuri One Day Tour"}
         open_form={setOpen_form}
         des={"Kunjapuri Day Hike – Sunrise, Spirituality & Nature"}
       />
       <Photos photos={[img1, img2, img3, img4, img5, img6]} />
       <div className={styles.main_section}>
         <div className={styles.info_section}>
-          <div className={styles.title}>Kunjapuri One Day Hike · ₹2,999 + 5% GST</div>
+          <div className={styles.title}>Kunjapuri One Day Tour · ₹2,999 + 5% GST</div>
           <div className={styles.tag_line}>
-            Kunjapuri One Day Hike – Sunrise, Spirituality & Nature
+            Kunjapuri One Day Tour – Sunrise, Spirituality & Nature
           </div>
           <div className={styles.all_dates}>
-            {/* <div className={styles.indi_date}>One Day Hike</div> */}
+            {/* <div className={styles.indi_date}>One Day Tour</div> */}
           </div>
 
-          <ItineraryHike
+          <ItineraryTour
             all_days={[
               "4:00 AM",
               "4:00 AM - 5:00 AM",
@@ -241,7 +241,7 @@ export default function KunjapuriHike() {
         <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Kunjapuri One Day Hike"}
+          name={"Kunjapuri One Day Tour"}
           price={2999}
         />
       </div>
