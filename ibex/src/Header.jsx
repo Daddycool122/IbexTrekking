@@ -52,8 +52,8 @@ export default function Header() {
           </div>
 
           <nav className={styles.links_section} role="navigation" aria-label="Main navigation">
-            <Link to="/" className={styles.links} style={{textDecoration: "none", color: "inherit"}}>Home</Link>
-            <Link to="/tours" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
+            <Link to="/" className={styles.links} style={{textDecoration: "none"}}>Home</Link>
+            <Link to="/tours" className={styles.links} style={{textDecoration: "none"}}
               onMouseEnter={() => setHoveredMenu('tours')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -63,7 +63,7 @@ export default function Header() {
             >
               Tours
             </Link>
-            <Link to="/trekking" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
+            <Link to="/trekking" className={styles.links} style={{textDecoration: "none"}}
               onMouseEnter={() => setHoveredMenu('treks')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -73,7 +73,7 @@ export default function Header() {
             >
               Treks
             </Link>
-            <Link to="/river-rafting" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
+            <Link to="/river-rafting" className={styles.links} style={{textDecoration: "none"}}
               onMouseEnter={() => setHoveredMenu('rafting')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -83,7 +83,7 @@ export default function Header() {
             >
               Rafting
             </Link>
-            <Link to="/blog" className={styles.links} style={{textDecoration: "none", color: "inherit"}}>Blogs</Link>
+            <Link to="/blog" className={styles.links} style={{textDecoration: "none"}}>Blogs</Link>
           </nav>
 
           {/* Hover Preview */}

@@ -48,7 +48,27 @@ export default function Home() {
     );
     const elements = document.querySelectorAll(`.${styles.indi_adventure_card}, .${styles.section_intro}, .${styles.trr_indi}`);
     elements.forEach((el) => observer.observe(el));
-    return () => elements.forEach((el) => observer.unobserve(el));
+
+    // Video observer to load and play only when in view
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play().catch(e => console.log("Video autoplay prevented:", e));
+          } else {
+            entry.target.pause();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    const videos = document.querySelectorAll('video');
+    videos.forEach(v => videoObserver.observe(v));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+      videos.forEach(v => videoObserver.unobserve(v));
+    };
   }, []);
 
   const scrollToTrekking = () => {
@@ -156,13 +176,13 @@ export default function Home() {
           <div className={styles.video_container}>
             <video aria-hidden="true" 
               className={styles.featured_video}
-              autoPlay
+              
               muted
               loop
               playsInline
               controls={false}
-              preload="metadata"
-              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
+              preload="none"
+              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop&q=50&auto=format"
             >
               <source src={trekking_video} type="video/mp4" />
             </video>
@@ -1022,13 +1042,13 @@ export default function Home() {
           <div className={styles.video_container}>
             <video aria-hidden="true" 
               className={styles.featured_video}
-              autoPlay
+              
               muted
               loop
               playsInline
               controls={false}
-              preload="metadata"
-              poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop"
+              preload="none"
+              poster="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=450&fit=crop&q=50&auto=format"
             >
               <source src={rafting_video} type="video/mp4" />
             </video>
@@ -1268,13 +1288,13 @@ export default function Home() {
           <div className={styles.video_container}>
             <video aria-hidden="true" 
               className={styles.featured_video}
-              autoPlay
+              
               muted
               loop
               playsInline
               controls={false}
-              preload="metadata"
-              poster="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?w=800&h=450&fit=crop"
+              preload="none"
+              poster="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?w=800&h=450&fit=crop&q=50&auto=format"
             >
               <source src={tour_video} type="video/mp4" />
             </video>
