@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./About.module.css"; // keep CSS separate for clarity
 import { useNavigate } from "react-router-dom";
-import team1 from "./team1.PNG";
-import team2 from "./team2.PNG";
-import ibexBadge from "./assets/ibex_badge.png";
-import iceAxeBadge from "./assets/ice_axe_badge.png";
+import team1 from "./team-member-1.webp";
+import team2 from "./team-member-2.webp";
+import ibexBadge from "./assets/ibex-badge.webp";
+import iceAxeBadge from "./assets/ice-axe-badge.webp";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -94,7 +94,7 @@ const AboutUs = () => {
         <div className={styles.symbolsGrid}>
           <div className={styles.symbolCard}>
             <div className={styles.symbolIcon}>
-              <img src={ibexBadge} alt="The Ibex" className={styles.symbolImage} />
+              <img src={ibexBadge} alt="Ibex Badge" className={styles.symbolImage} />
             </div>
             <h3>The Ibex</h3>
             <p>
@@ -103,7 +103,7 @@ const AboutUs = () => {
           </div>
           <div className={styles.symbolCard}>
             <div className={styles.symbolIcon}>
-              <img src={iceAxeBadge} alt="The Ice Axe" className={styles.symbolImage} />
+              <img src={iceAxeBadge} alt="Ice Axe Badge" className={styles.symbolImage} />
             </div>
             <h3>The Ice Axe</h3>
             <p>
@@ -251,7 +251,7 @@ const AboutUs = () => {
         <div className={styles.team_members}>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img src={team2} alt="Paras Rawat" />
+              <img src={team2} alt="Team Member" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>
@@ -265,7 +265,7 @@ const AboutUs = () => {
           </div>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img src={team1} alt="Akshay Panday" />
+              <img src={team1} alt="Team Member" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>

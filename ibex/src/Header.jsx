@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import logo from "./assets/home/logo.PNG";
+import logo from "./assets/home/logo.webp";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,8 +10,13 @@ export default function Header() {
   const [open_options, setOpen_options] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState(null);
+  const [expandedMobileCategory, setExpandedMobileCategory] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const toggleMobileCategory = (category) => {
+    setExpandedMobileCategory(prev => prev === category ? null : category);
+  };
 
   const isHome = location.pathname === "/";
 
@@ -41,7 +46,7 @@ export default function Header() {
         <div className={styles.main_header}>
           <div className={styles.logo_section} onClick={handleLogoClick}>
             <div className={styles.logo_circle}>
-              <img src={logo} alt="IBEX ICEAXE Logo" className={styles.logo} />
+              <img src={logo} alt="Logo" className={styles.logo} />
             </div>
             <div className={styles.logo_name}>IBEX ICEAXE</div>
           </div>
@@ -85,6 +90,12 @@ export default function Header() {
               aria-haspopup="menu"
             >
               Rafting
+            </div>
+            <div 
+              className={styles.links} 
+              onClick={() => navigate("/blog")}
+            >
+              Blogs
             </div>
           </nav>
 
@@ -175,39 +186,100 @@ export default function Header() {
               <div className={styles.close_btn} onClick={() => setOpen_options(false)}>
                 ✕
               </div>
-              <div className={styles.options_title}>Our Treks</div>
-              {[
-                { name: 'Valley Of Flower', path: '/valley-of-flower' },
-                { name: 'Chopta Chandrashilla', path: '/chopta-chandrashilla-trek' },
-                { name: 'Pangarchulla Peak', path: '/pangarchulla-peak-trek' },
-                { name: 'Kuari Pass', path: '/kuari-pass-trek' },
-                { name: 'Gaumukh Tapovan', path: '/gaumukh-tapovan-trek' },
-                { name: 'Brahmatal', path: '/brahmatal-trek' },
-                { name: 'Kedarkantha', path: '/kedarkantha-trek' },
-                { name: 'Dayara Bugyal', path: '/dayara-bugyal-trek' },
-                { name: 'Ali Bedni Bugyal', path: '/ali-bedni-bugyal-trek' },
-              ].map(trek => (
-                <div key={trek.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(trek.path); }}>
-                  {trek.name}
-                </div>
-              ))}
+              <div 
+                className={styles.options_title} 
+                onClick={() => toggleMobileCategory('treks')}
+              >
+                Our Treks
+                <span className={`${styles.dropdown_arrow} ${expandedMobileCategory === 'treks' ? styles.open : ''}`}>▼</span>
+              </div>
+              <AnimatePresence>
+                {expandedMobileCategory === 'treks' && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    style={{ overflow: 'hidden' }}
+                  >
+                    {[
+                      { name: 'Valley Of Flower', path: '/valley-of-flower' },
+                      { name: 'Chopta Chandrashilla', path: '/chopta-chandrashilla-trek' },
+                      { name: 'Pangarchulla Peak', path: '/pangarchulla-peak-trek' },
+                      { name: 'Kuari Pass', path: '/kuari-pass-trek' },
+                      { name: 'Gaumukh Tapovan', path: '/gaumukh-tapovan-trek' },
+                      { name: 'Brahmatal', path: '/brahmatal-trek' },
+                      { name: 'Kedarkantha', path: '/kedarkantha-trek' },
+                      { name: 'Dayara Bugyal', path: '/dayara-bugyal-trek' },
+                      { name: 'Ali Bedni Bugyal', path: '/ali-bedni-bugyal-trek' },
+                    ].map(trek => (
+                      <div key={trek.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(trek.path); }}>
+                        {trek.name}
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
-              <div className={styles.options_title} style={{ marginTop: 20 }}>Tours</div>
-              {[
-                { name: 'Panch Kedar', path: '/panch-kedar-trek' },
-                { name: 'Kunjapuri Hike', path: '/kunjapuri-hike' }
-              ].map(tour => (
-                <div key={tour.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(tour.path); }}>
-                  {tour.name}
-                </div>
-              ))}
+              <div 
+                className={styles.options_title} 
+                style={{ marginTop: 20 }}
+                onClick={() => toggleMobileCategory('tours')}
+              >
+                Tours
+                <span className={`${styles.dropdown_arrow} ${expandedMobileCategory === 'tours' ? styles.open : ''}`}>▼</span>
+              </div>
+              <AnimatePresence>
+                {expandedMobileCategory === 'tours' && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    style={{ overflow: 'hidden' }}
+                  >
+                    {[
+                      { name: 'Panch Kedar', path: '/panch-kedar-trek' },
+                      { name: 'Kunjapuri Hike', path: '/kunjapuri-hike' }
+                    ].map(tour => (
+                      <div key={tour.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(tour.path); }}>
+                        {tour.name}
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
-              <div className={styles.options_title} style={{ marginTop: 20 }}>Rafting</div>
-              {[16, 25, 35].map(km => (
-                <div key={km} className={styles.options} onClick={() => { setOpen_options(false); navigate(`/rafting?id=${km}`); }}>
-                  {km} KM River Rafting
-                </div>
-              ))}
+              <div 
+                className={styles.options_title} 
+                style={{ marginTop: 20 }}
+                onClick={() => toggleMobileCategory('rafting')}
+              >
+                Rafting
+                <span className={`${styles.dropdown_arrow} ${expandedMobileCategory === 'rafting' ? styles.open : ''}`}>▼</span>
+              </div>
+              <AnimatePresence>
+                {expandedMobileCategory === 'rafting' && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    style={{ overflow: 'hidden' }}
+                  >
+                    {[16, 25, 35].map(km => (
+                      <div key={km} className={styles.options} onClick={() => { setOpen_options(false); navigate(`/rafting?id=${km}`); }}>
+                        {km} KM River Rafting
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <div 
+                className={styles.options_title} 
+                style={{ marginTop: 20, cursor: 'pointer', display: 'block' }}
+                onClick={() => { setOpen_options(false); navigate('/blog'); }}
+              >
+                Blogs
+              </div>
             </motion.div>
           </motion.div>
         )}

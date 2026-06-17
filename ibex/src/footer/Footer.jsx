@@ -1,10 +1,10 @@
 import styles from "./Footer.module.css";
 import { useNavigate } from "react-router-dom";
-import team1 from "../team1.PNG";
-import team2 from "../team2.PNG";
-import rating_img2 from "../assets/Rating/img2.jpg";
-import rating_img4 from "../assets/Rating/img4.jpg";
-import rating_img5 from "../assets/Rating/img5.jpg";
+import team1 from "../team-member-1.webp";
+import team2 from "../team-member-2.webp";
+import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
+import rating_img4 from "../assets/Rating/trekker-review-4.jpg";
+import rating_img5 from "../assets/Rating/trekker-review-5.jpg";
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -110,7 +110,7 @@ export default function Footer() {
         <h2 className={styles.experts_heading}>Talk to Experts</h2>
         <div className={styles.experts_grid}>
           <div className={styles.expert_card}>
-            <img src={team2} alt="Paras Rawat" />
+            <img src={team2} alt="Team Member" />
             <div className={styles.expert_info}>
               <h3>Paras Rawat</h3>
               <p className={styles.phone_number}>+91-6396518778</p>
@@ -130,7 +130,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.expert_card}>
-            <img src={team1} alt="Akshay Pandey" />
+            <img src={team1} alt="Team Member" />
             <div className={styles.expert_info}>
               <h3>Akshay Pandey</h3>
               <p className={styles.phone_number}>+91-8006861613</p>
@@ -164,9 +164,9 @@ export default function Footer() {
           whileHover={{ y: -5, scale: 1.02 }}
         >
           <div className={styles.tb_images_section}>
-            <img src={rating_img4} alt="" className={styles.trust_imgs_1} />
-            <img src={rating_img5} alt="" className={styles.trust_imgs_2} />
-            <img src={rating_img2} alt="" className={styles.trust_imgs_3} />
+            <img src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} />
+            <img src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} />
+            <img src={rating_img2} alt="Img" className={styles.trust_imgs_3} />
           </div>
           <div className={styles.trust_text_section}>
             <div className={styles.trust_line}>

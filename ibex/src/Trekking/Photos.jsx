@@ -1,5 +1,5 @@
 import styles from "./Photos.module.css";
-import img1 from "../assets/Trek/Valley_of_flower/img1.jpg";
+import img1 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
 import { useState } from "react";
 export default function Photos({ photos }) {
   const [open_img, setOpen_img] = useState(false);
@@ -17,9 +17,18 @@ export default function Photos({ photos }) {
                 setOpen_img(true);
               }}
             >
-              <img
+              <img 
                 src={item}
-                alt=""
+                alt="Ibex Trekking"
+                className={styles.indi_photo}
+                loading="lazy"
+                decoding="async"
+                onClick={() => {
+                  setSelected_img("");
+                  setOpen_img(true);
+                }}
+                src={item}
+                alt="Ibex Trekking"
                 className={styles.indi_photo}
                 loading="lazy"
                 decoding="async"
@@ -34,10 +43,14 @@ export default function Photos({ photos }) {
       </div>
 
       {open_img ? (
-        <div className={styles.open_img_whole}>
+        <div className={styles.open_img_whole} style={{ zIndex: 1000 }} onClick={() => {
+              setSelected_img("");
+              setOpen_img(false);
+            }}>
           <div
             className={styles.cross_section}
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation();
               setSelected_img("");
               setOpen_img(false);
             }}
@@ -64,7 +77,7 @@ export default function Photos({ photos }) {
               </g>
             </svg>
           </div>
-          <img src={selected_img} alt="" className={styles.open_img} />
+          <img src={selected_img} alt="Ibex Trekking" className={styles.open_img} onClick={(e) => e.stopPropagation()} />
         </div>
       ) : null}
     </>

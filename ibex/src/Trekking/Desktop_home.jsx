@@ -24,7 +24,7 @@ export default function Desktop_home({
           animate={{ scale: 1 }}
           transition={{ duration: 30, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
         >
-          <img src={bgImg} alt="Nature Background" className={styles.main_img} />
+          <img src={bgImg} alt="Ibex Trekking" className={styles.main_img} />
         </motion.div>
 
         <div className={styles.dark_section}></div>

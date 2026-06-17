@@ -1,9 +1,9 @@
 import styles from "./Intro_section.module.css";
-import rating_img1 from "../assets/Rating/img1.jpg";
-import rating_img2 from "../assets/Rating/img2.jpg";
-import rating_img3 from "../assets/Rating/img3.jpg";
-import rating_img4 from "../assets/Rating/img4.jpg";
-import rating_img5 from "../assets/Rating/img5.jpg";
+import rating_img1 from "../assets/Rating/trekker-review-1.jpg";
+import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
+import rating_img3 from "../assets/Rating/trekker-review-3.jpg";
+import rating_img4 from "../assets/Rating/trekker-review-4.jpg";
+import rating_img5 from "../assets/Rating/trekker-review-5.jpg";
 export default function Intro_section({ img, title, open_form, des, book }) {
   if (book == undefined) {
     book = true;
@@ -11,7 +11,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
   return (
     <>
       <div className={styles.main_intro_section}>
-        <img src={img} alt="" className={styles.main_img} />
+        <img src={img} alt="Ibex Trekking" className={styles.main_img} />
         <div className={styles.dark_section}></div>
         <div className={styles.content_section}>
           <div className={styles.main_name}>{title}</div>
@@ -61,9 +61,9 @@ export default function Intro_section({ img, title, open_form, des, book }) {
           )}
           <div className={styles.trust_box}>
             <div className={styles.tb_images_section}>
-              <img src={rating_img4} alt="" className={styles.trust_imgs_1} />
-              <img src={rating_img5} alt="" className={styles.trust_imgs_2} />
-              <img src={rating_img2} alt="" className={styles.trust_imgs_3} />
+              <img src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} />
+              <img src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} />
+              <img src={rating_img2} alt="Img" className={styles.trust_imgs_3} />
             </div>
             <div className={styles.trust_line}>
               Trusted by 200+ Happy
@@ -155,7 +155,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             <div className={styles.slot_slot_section}>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="" className={styles.indi_slot_img} />
+                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -167,7 +167,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="" className={styles.indi_slot_img} />
+                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -179,7 +179,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
               </div>
               <div className={styles.indi_slot}>
                 <div className={styles.indi_slot_img_section}>
-                  <img src={img1} alt="" className={styles.indi_slot_img} />
+                  <img src={img1} alt="Ibex Trekking" className={styles.indi_slot_img} />
                 </div>
                 <div className={styles.slot_content_section}>
                   <div className={styles.slot_date}>20th May 2025</div>
@@ -203,7 +203,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="" />
+            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -216,7 +216,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="" />
+            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -229,7 +229,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="" />
+            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>
@@ -242,7 +242,7 @@ export default function Intro_section({ img, title, open_form, des, book }) {
             </div>
           </div>
           <div className={styles.mis_img_section}>
-            <img src={img1} className={styles.mobile_slot_img} alt="" />
+            <img src={img1} className={styles.mobile_slot_img} alt="Ibex Trekking" />
           </div>
           <div className={styles.mis_btn_section}>Book Now</div>
         </div>

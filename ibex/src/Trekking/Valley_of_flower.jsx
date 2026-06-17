@@ -6,17 +6,17 @@ import Title from "./Title";
 import Para from "./Para";
 import Form from "./Form";
 import Itinerary from "./Itinerary";
-import img1 from "../assets/Trek/Valley_of_flower/img1.jpg";
-import img2 from "../assets/Trek/Valley_of_flower/img2.jpeg";
-import img3 from "../assets/Trek/Valley_of_flower/img3.jpeg";
-import img4 from "../assets/Trek/Valley_of_flower/img4.jpeg";
-import img5 from "../assets/Trek/Valley_of_flower/img5.jpeg";
-import img6 from "../assets/Trek/Valley_of_flower/img6.jpeg";
-import img7 from "../assets/Trek/Valley_of_flower/img7.jpeg";
-import img8 from "../assets/Trek/Valley_of_flower/img8.jpeg";
-import img9 from "../assets/Trek/Valley_of_flower/img9.jpeg";
-import img10 from "../assets/Trek/Valley_of_flower/img10.jpeg";
-import img11 from "../assets/Trek/Valley_of_flower/img11.jpeg";
+import img1 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
+import img2 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-2.jpeg";
+import img3 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-3.jpeg";
+import img4 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-4.jpeg";
+import img5 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-5.jpeg";
+import img6 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-6.jpeg";
+import img7 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-7.jpeg";
+import img8 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-8.jpeg";
+import img9 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-9.jpeg";
+import img10 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-10.jpeg";
+import img11 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-11.jpeg";
 import Footer from "../footer/Footer";
 import Header from "../Header";
 import { useState, useEffect } from "react";
@@ -48,7 +48,7 @@ export default function Valley_of_flower() {
 
         <link
           rel="canonical"
-          href="https://ibexiceaxe.com/valley-of-flowers-trek"
+          href="https://ibexiceaxe.com/valley-of-flower"
         />
 
         <script type="application/ld+json">

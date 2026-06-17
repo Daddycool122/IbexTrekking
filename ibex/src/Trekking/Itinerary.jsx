@@ -1,6 +1,6 @@
 import styles from "./Itinerary.module.css";
 import Para from "./Para";
-import img1 from "../assets/Trek/Valley_of_flower/img1.jpg";
+import img1 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
 import { useState } from "react";
 export default function Itinerary({ all_days, info }) {
   const [days, setDays] = useState(all_days);
@@ -38,7 +38,7 @@ export default function Itinerary({ all_days, info }) {
               <div className={styles.para}>{item.para1}</div>
               <div className={styles.para}>{item.para2}</div>
               <div className={styles.img_Section}>
-                <img src={item.img} className={styles.img} alt="" />
+                <img src={item.img} className={styles.img} alt="Ibex Trekking" />
               </div>
               {/* <div className={styles.title2}>What we will do in govind ghat</div>
         <div className={styles.ul_section}>

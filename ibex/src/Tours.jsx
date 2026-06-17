@@ -1,9 +1,9 @@
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
-import img8 from "./assets/Trek/panch_kedar/img1.jpeg";
-import img12 from "./assets/hike/kunjapuri/img4.jpeg";
-import imgAdikailash from "./assets/hike/adikailash/img1.jpeg";
-import imgChardham from "./assets/hike/chardham/img1.jpg";
+import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
+import img12 from "./assets/hike/kunjapuri/kunjapuri-sunrise-hike-4.jpeg";
+import imgAdikailash from "./assets/hike/adikailash/adikailash-hike-1.webp";
+import imgChardham from "./assets/hike/chardham/chardham-yatra-hike-1.jpg";
 import { useEffect } from "react";
 import Footer from "./footer/Footer";
 import Header from "./Header";
@@ -33,7 +33,7 @@ export default function Tours() {
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img src={img8} className={styles.ad_cd_img} alt="" />
+          <img src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>12 Days & 11 Nights</div>
 
@@ -101,7 +101,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img12} className={styles.ad_cd_img} alt="" />
+          <img src={img12} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Hike</div>
 
@@ -169,7 +169,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={imgAdikailash} className={styles.ad_cd_img} alt="" />
+          <img src={imgAdikailash} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -237,7 +237,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={imgChardham} className={styles.ad_cd_img} alt="Chardham Yatra" />
+          <img src={imgChardham} className={styles.ad_cd_img} alt="Img" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>10 Days & 9 Nights</div>
 

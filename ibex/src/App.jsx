@@ -37,6 +37,10 @@ import FloatingContact from "./FloatingContact.jsx";
 import EnquiryWidget from "./components/EnquiryWidget.jsx";
 import LoadingScreen from "./LoadingScreen";
 
+const BlogList = lazy(() => import("./blogs/BlogList.jsx"));
+const BlogPost = lazy(() => import("./blogs/BlogPost.jsx"));
+const NotFound = lazy(() => import("./NotFound.jsx"));
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -105,6 +109,10 @@ function App() {
           <Route path="/Review" element={<Review />} />
           <Route path="/review" element={<Review />} />
 
+          {/* blogs */}
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+
           {/* hike */}
           <Route path="/kunjapuri-hike" element={<Kunjapuri />} />
           <Route path="/adi-kailash-tour" element={<AdiKailash />} />
@@ -123,6 +131,9 @@ function App() {
           {/* payment */}
           <Route path="/payment" element={<Payment />} />
           <Route path="/booking-confirmed" element={<BookingConfirmed />} />
+
+          {/* 404 Not Found */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <FloatingContact />

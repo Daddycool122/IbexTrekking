@@ -1,14 +1,14 @@
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
-import img2 from "./assets/Trek/Valley_of_flower/img3.jpeg";
-import img3 from "./assets/Trek/brahmataal/img3.jpeg";
-import img4 from "./assets/Trek/chopta/img4.jpeg";
-import img5 from "./assets/Trek/gaumukh/img1.jpeg";
-import img6 from "./assets/Trek/kedarkantha/img1.jpeg";
-import img7 from "./assets/Trek/kuari/img2.jpeg";
-import img9 from "./assets/Trek/pangarchulla/img1.jpeg";
-import img10 from "./assets/Trek/alibedni/img1.jpg";
-import img11 from "./assets/Trek/dyarabugyal/img1.jpeg";
+import img2 from "./assets/Trek/Valley_of_flower/valley-of-flower-trek-3.jpeg";
+import img3 from "./assets/Trek/brahmataal/brahmataal-trek-3.jpeg";
+import img4 from "./assets/Trek/chopta/chopta-trek-4.jpeg";
+import img5 from "./assets/Trek/gaumukh/gaumukh-trek-1.jpeg";
+import img6 from "./assets/Trek/kedarkantha/kedarkantha-trek-1.jpeg";
+import img7 from "./assets/Trek/kuari/kuari-trek-2.jpeg";
+import img9 from "./assets/Trek/pangarchulla/pangarchulla-trek-1.jpeg";
+import img10 from "./assets/Trek/alibedni/alibedni-trek-1.webp";
+import img11 from "./assets/Trek/dyarabugyal/dyarabugyal-trek-1.webp";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
 import Header from "./Header";
@@ -57,7 +57,7 @@ export default function Trekking() {
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img src={img2} className={styles.ad_cd_img} alt="" />
+          <img src={img2} className={styles.ad_cd_img} alt="Valley Of Flower Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -129,7 +129,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img4} className={styles.ad_cd_img} alt="" />
+          <img src={img4} className={styles.ad_cd_img} alt="Chopta Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>3 Days & 2 Nights</div>
 
@@ -201,7 +201,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img3} className={styles.ad_cd_img} alt="" />
+          <img src={img3} className={styles.ad_cd_img} alt="Brahmataal Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -273,7 +273,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img5} className={styles.ad_cd_img} alt="" />
+          <img src={img5} className={styles.ad_cd_img} alt="Gaumukh Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>8 Days & 7 Nights</div>
 
@@ -345,7 +345,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img6} className={styles.ad_cd_img} alt="" />
+          <img src={img6} className={styles.ad_cd_img} alt="Kedarkantha Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -417,7 +417,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img7} className={styles.ad_cd_img} alt="" />
+          <img src={img7} className={styles.ad_cd_img} alt="Kuari Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -491,7 +491,7 @@ export default function Trekking() {
 
 
         <div className={styles.indi_adventure_card}>
-          <img src={img9} className={styles.ad_cd_img} alt="" />
+          <img src={img9} className={styles.ad_cd_img} alt="Pangarchulla Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>7 Days & 6 Nights</div>
 
@@ -563,7 +563,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img10} className={styles.ad_cd_img} alt="" />
+          <img src={img10} className={styles.ad_cd_img} alt="Alibedni Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -635,7 +635,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={img11} className={styles.ad_cd_img} alt="" />
+          <img src={img11} className={styles.ad_cd_img} alt="Dyarabugyal Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>5 Days & 4 Nights</div>
 
@@ -717,7 +717,7 @@ export default function Trekking() {
 
       {/* <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img src={rafting1} className={styles.ad_cd_img} alt="" />
+          <img src={rafting1} className={styles.ad_cd_img} alt="Ibex Trekking" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -789,7 +789,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={rafting2} className={styles.ad_cd_img} alt="" />
+          <img src={rafting2} className={styles.ad_cd_img} alt="Ibex Trekking" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -861,7 +861,7 @@ export default function Trekking() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img src={rafting3} className={styles.ad_cd_img} alt="" />
+          <img src={rafting3} className={styles.ad_cd_img} alt="Ibex Trekking" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 

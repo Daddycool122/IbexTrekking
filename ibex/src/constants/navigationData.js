@@ -2,26 +2,26 @@
 // Images are imported dynamically to keep data clean
 
 // Trek data
-import valleyImg from "../assets/Trek/Valley_of_flower/img1.jpg";
-import kedarkanthaImg from "../assets/Trek/kedarkantha/img1.jpeg";
-import choptaImg from "../assets/Trek/chopta/img1.jpeg";
-import brahmataalImg from "../assets/Trek/brahmataal/img1.jpeg";
-import kuariImg from "../assets/Trek/kuari/img1.jpeg";
-import aliBedniImg from "../assets/Trek/alibedni/img1.jpg";
-import dyaraBugyal from "../assets/Trek/dyarabugyal/img1.jpeg";
-import pangarchullaImg from "../assets/Trek/pangarchulla/img1.jpeg";
-import gaumukhImg from "../assets/Trek/gaumukh/img1.jpeg";
+import valleyImg from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
+import kedarkanthaImg from "../assets/Trek/kedarkantha/kedarkantha-trek-1.jpeg";
+import choptaImg from "../assets/Trek/chopta/chopta-trek-1.jpeg";
+import brahmataalImg from "../assets/Trek/brahmataal/brahmataal-trek-1.jpeg";
+import kuariImg from "../assets/Trek/kuari/kuari-trek-1.jpeg";
+import aliBedniImg from "../assets/Trek/alibedni/alibedni-trek-1.webp";
+import dyaraBugyal from "../assets/Trek/dyarabugyal/dyarabugyal-trek-1.webp";
+import pangarchullaImg from "../assets/Trek/pangarchulla/pangarchulla-trek-1.jpeg";
+import gaumukhImg from "../assets/Trek/gaumukh/gaumukh-trek-1.jpeg";
 
 // Tour data
-import panchkedarImg from "../assets/Trek/panch_kedar/img1.jpeg";
-import adikailashImg from "../assets/hike/adikailash/img1.jpeg";
-import chardhamImg from "../assets/hike/chardham/img1.jpg";
-import kunjapuriImg from "../assets/hike/kunjapuri/img1.jpeg";
+import panchkedarImg from "../assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
+import adikailashImg from "../assets/hike/adikailash/adikailash-hike-1.webp";
+import chardhamImg from "../assets/hike/chardham/chardham-yatra-hike-1.jpg";
+import kunjapuriImg from "../assets/hike/kunjapuri/kunjapuri-sunrise-hike-1.jpeg";
 
 // Rafting data
-import rafting16Img from "../assets/Rafting/img6.jpg";
-import rafting25Img from "../assets/Rafting/img7.jpg";
-import rafting35Img from "../assets/Rafting/img8.jpg";
+import rafting16Img from "../assets/Rafting/rishikesh-river-rafting-6.webp";
+import rafting25Img from "../assets/Rafting/rishikesh-river-rafting-7.webp";
+import rafting35Img from "../assets/Rafting/rishikesh-river-rafting-8.webp";
 
 export const TREKS = [
   { name: 'Valley of Flower', route: '/valley-of-flower', image: valleyImg },

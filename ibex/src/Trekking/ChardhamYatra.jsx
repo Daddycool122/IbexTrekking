@@ -8,13 +8,13 @@ import Footer from "../footer/Footer";
 import Header from "../Header";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
-import img1 from "../assets/hike/chardham/img1.jpg";
-import img2 from "../assets/hike/chardham/img2.webp";
-import img3 from "../assets/hike/chardham/img3.jpg";
-import img4 from "../assets/hike/chardham/img4.webp";
-import img5 from "../assets/hike/chardham/img5.jpg";
-import img6 from "../assets/hike/chardham/img6.jpeg";
-import img7 from "../assets/hike/chardham/img7.jpeg";
+import img1 from "../assets/hike/chardham/chardham-yatra-hike-1.jpg";
+import img2 from "../assets/hike/chardham/chardham-yatra-hike-2.webp";
+import img3 from "../assets/hike/chardham/chardham-yatra-hike-3.jpg";
+import img4 from "../assets/hike/chardham/chardham-yatra-hike-4.webp";
+import img5 from "../assets/hike/chardham/chardham-yatra-hike-5.jpg";
+import img6 from "../assets/hike/chardham/chardham-yatra-hike-6.webp";
+import img7 from "../assets/hike/chardham/chardham-yatra-hike-7.webp";
 
 export default function ChardhamYatra() {
   const [open_form, setOpen_form] = useState(false);

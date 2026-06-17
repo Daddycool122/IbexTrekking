@@ -1,5 +1,5 @@
 import styles from "./Videos.module.css";
-import img1 from "../assets/Trek/Valley_of_flower/img1.jpg";
+import img1 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
 import { useState } from "react";
 export default function Videos({ photos }) {
   const [open_img, setOpen_img] = useState(false);

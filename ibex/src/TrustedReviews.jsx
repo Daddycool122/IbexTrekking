@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './TrustedReviews.module.css';
-import trust_1 from "./assets/home/img2.png";
-import trust_2 from "./assets/home/img3.jpg";
+import trust_1 from "./assets/home/himalayan-trekking-home-2.png";
+import trust_2 from "./assets/home/himalayan-trekking-home-3.jpg";
 
 const TrustedReviews = () => {
   const [activeTab, setActiveTab] = useState("google_reviews");
@@ -105,8 +105,8 @@ const TrustedReviews = () => {
 
         {activeTab === 'trusted_by' && (
           <div className={styles.trustedByWrapper}>
-            <img src={trust_1} alt="Trusted By" className={styles.trustImg} />
-            <img src={trust_2} alt="Trusted By" className={styles.trustImg} />
+            <img src={trust_1} alt="Img" className={styles.trustImg} />
+            <img src={trust_2} alt="Img" className={styles.trustImg} />
           </div>
         )}
       </div>

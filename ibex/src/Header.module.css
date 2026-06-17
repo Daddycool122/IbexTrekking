@@ -164,6 +164,24 @@
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.options_title:hover {
+  color: #fff;
+}
+
+.dropdown_arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown_arrow.open {
+  transform: rotate(180deg);
 }
 
 .options {

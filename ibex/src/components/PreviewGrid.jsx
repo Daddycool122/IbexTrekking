@@ -51,7 +51,7 @@ export default function PreviewGrid({ items, title, onItemClick, type = 'trek' }
           >
             <img 
               src={item.image} 
-              alt={item.name}
+              alt="Ibex Trekking"
               className={styles.previewImage}
               loading="lazy"
             />
