@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import styles from '../Header.module.css';
 
 /**
@@ -35,28 +35,22 @@ export default function PreviewGrid({ items, title, onItemClick, type = 'trek' }
         aria-label={`${title} options`}
       >
         {items.map((item) => (
-          <div
+          <Link
             key={item.name}
+            to={type === 'rafting' ? `/rafting?id=${item.id}` : item.route}
             className={styles.previewItem}
-            role="listitem"
-            tabIndex={0}
-            onClick={() => handleItemClick(item)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                handleItemClick(item);
-              }
-            }}
+            onClick={() => onItemClick?.()}
+            style={{ textDecoration: 'none', color: 'inherit' }}
             aria-label={`${item.name} - Click to view details`}
           >
             <img 
               src={item.image} 
-              alt={src ? src.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
+              alt={item.image ? item.image.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"}
               className={styles.previewImage}
               loading="lazy"
             />
             <span>{item.name}</span>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

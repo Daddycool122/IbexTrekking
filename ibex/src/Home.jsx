@@ -72,6 +72,7 @@ export default function Home() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/" />
         <title>Ibex Ice Axe | Premium Himalayan Treks & Rafting Adventures</title>
         <meta name="description" content="Discover the best Himalayan treks, river rafting in Rishikesh, and curated adventure tours with Ibex Ice Axe. Expert guides, premium safety, and unforgettable experiences." />
         <meta name="keywords" content="Himalayan Treks, River Rafting Rishikesh, Kedarkantha Trek, Valley of Flowers, Adventure Tours India" />

@@ -26,6 +26,7 @@ export default function ChardhamYatra() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/chardham-yatra-2026" />
         <title>Chardham Yatra 2026 Tour Package | Kedarnath, Badrinath | Ibex Ice Axe</title>
         <meta name="description" content="Join our comprehensive Chardham Yatra 2026 package covering Yamunotri, Gangotri, Kedarnath, and Badrinath. Premium stay and guided spiritual journey." />
       </Helmet>

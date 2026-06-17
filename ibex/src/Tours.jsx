@@ -32,6 +32,7 @@ export default function Tours() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/tours" />
         <title>Adventure Tours & Weekend Getaways | Ibex Ice Axe</title>
         <meta name="description" content="Explore our curated adventure tours, weekend getaways, and spiritual journeys like Chardham Yatra and Adi Kailash. Book your next vacation with Ibex Ice Axe." />
         <meta name="keywords" content="Adventure Tours, Chardham Yatra, Adi Kailash Tour, Uttarakhand Tours, Weekend Getaways" />

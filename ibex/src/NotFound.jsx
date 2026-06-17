@@ -10,6 +10,7 @@ export default function NotFound() {
   return (
     <div className={styles.container}>
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/404" />
         <title>404 - Page Not Found | Ibex Iceaxe</title>
       </Helmet>
 

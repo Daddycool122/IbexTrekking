@@ -26,6 +26,7 @@ export default function AdiKailash() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/adi-kailash-tour" />
         <title>Adi Kailash Tour Package 2026 | Om Parvat Yatra | Ibex Ice Axe</title>
         <meta name="description" content="Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey." />
       </Helmet>

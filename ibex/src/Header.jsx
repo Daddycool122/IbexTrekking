@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import logo from "./assets/home/logo.webp";
 import { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import PreviewGrid from "./components/PreviewGrid";
 import { TREKS, TOURS, RAFTING, MENU_POSITIONS } from "./constants/navigationData";
@@ -52,12 +52,8 @@ export default function Header() {
           </div>
 
           <nav className={styles.links_section} role="navigation" aria-label="Main navigation">
-            <div className={styles.links} onClick={() => navigate("/")}>
-              Home
-            </div>
-            <div 
-              className={styles.links} 
-              onClick={() => navigate("/tours")}
+            <Link to="/" className={styles.links} style={{textDecoration: "none", color: "inherit"}}>Home</Link>
+            <Link to="/tours" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
               onMouseEnter={() => setHoveredMenu('tours')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -66,10 +62,8 @@ export default function Header() {
               aria-haspopup="menu"
             >
               Tours
-            </div>
-            <div 
-              className={styles.links} 
-              onClick={() => navigate("/trekking")}
+            </Link>
+            <Link to="/trekking" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
               onMouseEnter={() => setHoveredMenu('treks')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -78,10 +72,8 @@ export default function Header() {
               aria-haspopup="menu"
             >
               Treks
-            </div>
-            <div 
-              className={styles.links} 
-              onClick={() => navigate("/river-rafting")}
+            </Link>
+            <Link to="/river-rafting" className={styles.links} style={{textDecoration: "none", color: "inherit"}}
               onMouseEnter={() => setHoveredMenu('rafting')}
               onMouseLeave={() => setHoveredMenu(null)}
               role="button"
@@ -90,13 +82,8 @@ export default function Header() {
               aria-haspopup="menu"
             >
               Rafting
-            </div>
-            <div 
-              className={styles.links} 
-              onClick={() => navigate("/blog")}
-            >
-              Blogs
-            </div>
+            </Link>
+            <Link to="/blog" className={styles.links} style={{textDecoration: "none", color: "inherit"}}>Blogs</Link>
           </nav>
 
           {/* Hover Preview */}
@@ -212,9 +199,9 @@ export default function Header() {
                       { name: 'Dayara Bugyal', path: '/dayara-bugyal-trek' },
                       { name: 'Ali Bedni Bugyal', path: '/ali-bedni-bugyal-trek' },
                     ].map(trek => (
-                      <div key={trek.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(trek.path); }}>
+                      <Link key={trek.name} to={trek.path} className={styles.options} onClick={() => setOpen_options(false)} style={{textDecoration: "none", color: "inherit", display: "block"}}>
                         {trek.name}
-                      </div>
+                      </Link>
                     ))}
                   </motion.div>
                 )}
@@ -240,9 +227,9 @@ export default function Header() {
                       { name: 'Panch Kedar', path: '/panch-kedar-trek' },
                       { name: 'Kunjapuri Hike', path: '/kunjapuri-hike' }
                     ].map(tour => (
-                      <div key={tour.name} className={styles.options} onClick={() => { setOpen_options(false); navigate(tour.path); }}>
+                      <Link key={tour.name} to={tour.path} className={styles.options} onClick={() => setOpen_options(false)} style={{textDecoration: "none", color: "inherit", display: "block"}}>
                         {tour.name}
-                      </div>
+                      </Link>
                     ))}
                   </motion.div>
                 )}
@@ -265,21 +252,17 @@ export default function Header() {
                     style={{ overflow: 'hidden' }}
                   >
                     {[16, 25, 35].map(km => (
-                      <div key={km} className={styles.options} onClick={() => { setOpen_options(false); navigate(`/rafting?id=${km}`); }}>
+                      <Link key={km} to={`/rafting?id=${km}`} className={styles.options} onClick={() => setOpen_options(false)} style={{textDecoration: "none", color: "inherit", display: "block"}}>
                         {km} KM River Rafting
-                      </div>
+                      </Link>
                     ))}
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              <div 
-                className={styles.options_title} 
-                style={{ marginTop: 20, cursor: 'pointer', display: 'block' }}
-                onClick={() => { setOpen_options(false); navigate('/blog'); }}
-              >
+              <Link to="/blog" className={styles.options_title} style={{ marginTop: 20, cursor: "pointer", display: "block", textDecoration: "none", color: "inherit" }} onClick={() => setOpen_options(false)}>
                 Blogs
-              </div>
+              </Link>
             </motion.div>
           </motion.div>
         )}

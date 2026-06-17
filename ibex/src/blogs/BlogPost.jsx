@@ -24,6 +24,7 @@ export default function BlogPost() {
   return (
     <div className={styles.postContainer}>
       <Helmet>
+        <link rel="canonical" href={`https://ibexiceaxe.com/blog/${post.slug}`} />
         <title>{post.title} - Ibex Iceaxe</title>
         <meta name="description" content={post.excerpt} />
       </Helmet>
@@ -38,7 +39,13 @@ export default function BlogPost() {
       </div>
 
       <div className={styles.postContent}>
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            h1: 'h2'
+          }}
+        >
+          {post.content}
+        </ReactMarkdown>
       </div>
 
       <div className={styles.postFooter}>

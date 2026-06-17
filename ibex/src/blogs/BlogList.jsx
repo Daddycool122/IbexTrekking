@@ -11,6 +11,7 @@ export default function BlogList() {
   return (
     <div className={styles.container}>
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/blog" />
         <title>Ibex Iceaxe - Trekking & Travel Blogs</title>
         <meta name="description" content="Discover the best Himalayan treks, expert guides, and travel tips with Ibex Iceaxe's official blog." />
       </Helmet>

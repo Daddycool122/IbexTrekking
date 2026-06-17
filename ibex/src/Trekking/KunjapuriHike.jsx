@@ -25,6 +25,7 @@ export default function KunjapuriHike() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/kunjapuri-hike" />
         <title>Kunjapuri Sunrise Hike Rishikesh | Day Hike | Ibex Ice Axe</title>
         <meta name="description" content="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas." />
       </Helmet>

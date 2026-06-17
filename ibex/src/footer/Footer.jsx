@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import team1 from "../team-member-1.webp";
 import team2 from "../team-member-2.webp";
 import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
@@ -67,39 +67,39 @@ export default function Footer() {
         <div className={styles.links_grid}>
           <div className={styles.link_column}>
             <div className={styles.info_title}>Quick Links</div>
-            <a href="/about" className={styles.info_info}>About Us</a>
-            <a href="/contact-us" className={styles.info_info}>Contact Us</a>
-            <a href="/terms-and-condition" className={styles.info_info}>Terms & Condition</a>
-            <a href="/privacy-policy" className={styles.info_info}>Privacy Policy</a>
-            <a href="/refund-and-cancellation" className={styles.info_info}>Refund Policy</a>
+            <Link to="/about" className={styles.info_info} style={{textDecoration: "none"}}>About Us</Link>
+            <Link to="/contact-us" className={styles.info_info} style={{textDecoration: "none"}}>Contact Us</Link>
+            <Link to="/terms-and-condition" className={styles.info_info} style={{textDecoration: "none"}}>Terms & Condition</Link>
+            <Link to="/privacy-policy" className={styles.info_info} style={{textDecoration: "none"}}>Privacy Policy</Link>
+            <Link to="/refund-and-cancellation" className={styles.info_info} style={{textDecoration: "none"}}>Refund Policy</Link>
           </div>
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>Top Treks</div>
-            <div className={styles.info_info} onClick={() => navigate("/valley-of-flower")}>Valley of Flower</div>
-            <div className={styles.info_info} onClick={() => navigate("/kedarkantha-trek")}>Kedarkantha Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/chopta-chandrashilla-trek")}>Chopta Chandrashilla</div>
-            <div className={styles.info_info} onClick={() => navigate("/brahmatal-trek")}>Brahmatal Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/kuari-pass-trek")}>Kuari Pass Trek</div>
-            <div className={styles.info_info} onClick={() => navigate("/ali-bedni-bugyal-trek")}>Ali Bedni Bugyal</div>
-            <div className={styles.info_info} onClick={() => navigate("/dayara-bugyal-trek")}>Dayara Bugyal</div>
-            <div className={styles.info_info} onClick={() => navigate("/pangarchulla-peak-trek")}>Pangarchulla Peak</div>
-            <div className={styles.info_info} onClick={() => navigate("/gaumukh-tapovan-trek")}>Gaumukh Tapovan</div>
+            <Link to="/valley-of-flower" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Valley of Flower</Link>
+            <Link to="/kedarkantha-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kedarkantha Trek</Link>
+            <Link to="/chopta-chandrashilla-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Chopta Chandrashilla</Link>
+            <Link to="/brahmatal-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Brahmatal Trek</Link>
+            <Link to="/kuari-pass-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kuari Pass Trek</Link>
+            <Link to="/ali-bedni-bugyal-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Ali Bedni Bugyal</Link>
+            <Link to="/dayara-bugyal-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Dayara Bugyal</Link>
+            <Link to="/pangarchulla-peak-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Pangarchulla Peak</Link>
+            <Link to="/gaumukh-tapovan-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Gaumukh Tapovan</Link>
           </div>
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>Rafting</div>
-            <div className={styles.info_info} onClick={() => navigate("/rafting?id=16")}>16 KM River Rafting</div>
-             <div className={styles.info_info} onClick={() => navigate("/rafting?id=25")}>25 KM River Rafting</div>
-            <div className={styles.info_info} onClick={() => navigate("/rafting?id=35")}>35 KM River Rafting</div>
+            <Link to="/rafting?id=16" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>16 KM River Rafting</Link>
+             <Link to="/rafting?id=25" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>25 KM River Rafting</Link>
+            <Link to="/rafting?id=35" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>35 KM River Rafting</Link>
           </div>
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>Tours</div>
-            <div className={styles.info_info} onClick={() => navigate("/panch-kedar-trek")}>Panch Kedar Tour</div>
-            <div className={styles.info_info} onClick={() => navigate("/kunjapuri-hike")}>Kunjapuri One Day Hike</div>
-            <div className={styles.info_info} onClick={() => navigate("/adi-kailash-tour")}>Adi Kailash & Om Parvat</div>
-            <div className={styles.info_info} onClick={() => navigate("/chardham-yatra-2026")}>Chardham Yatra 2026</div>
+            <Link to="/panch-kedar-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Panch Kedar Tour</Link>
+            <Link to="/kunjapuri-hike" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kunjapuri One Day Hike</Link>
+            <Link to="/adi-kailash-tour" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Adi Kailash & Om Parvat</Link>
+            <Link to="/chardham-yatra-2026" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Chardham Yatra 2026</Link>
           </div>
         </div>
 

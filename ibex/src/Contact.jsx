@@ -7,6 +7,7 @@ export default function ContactUs() {
     <div className={styles.contactWrapper}>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/contact-us" />
         <title>Contact Us | Ibex Ice Axe</title>
         <meta name="description" content="Get in touch with Ibex Ice Axe for bookings, trek inquiries, and custom adventure packages. We are here to help you plan your next Himalayan journey." />
       </Helmet>

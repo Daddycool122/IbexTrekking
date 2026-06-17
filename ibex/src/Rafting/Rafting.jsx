@@ -37,6 +37,7 @@ export default function Rafting() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/river-rafting" />
         <title>River Rafting in Rishikesh | 16km, 25km, 35km | Ibex Ice Axe</title>
         <meta name="description" content="Experience the thrill of whitewater river rafting in Rishikesh. Choose from 16 KM, 25 KM, and 35 KM routes with expert guides and premium safety gear." />
         <meta name="keywords" content="River Rafting Rishikesh, Whitewater Rafting, Shivpuri Rafting, Rafting Packages" />

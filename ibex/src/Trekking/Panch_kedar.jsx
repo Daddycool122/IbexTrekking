@@ -30,6 +30,7 @@ export default function PanchKedar() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/panch-kedar-trek" />
         <title>Panch Kedar Trek Package | Himalayan Pilgrimage | Ibex Ice Axe</title>
         <meta name="description" content="Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure." />
       </Helmet>

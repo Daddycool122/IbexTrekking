@@ -81,6 +81,7 @@ const AboutUs = () => {
     <div className={styles.aboutPage}>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/about" />
         <title>About Ibex Ice Axe | Our Story & Mission</title>
         <meta name="description" content="Learn about Ibex Ice Axe, our expert team of mountaineers, and our mission to provide safe, sustainable, and unforgettable Himalayan adventures." />
       </Helmet>

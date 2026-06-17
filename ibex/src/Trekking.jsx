@@ -51,6 +51,7 @@ export default function Trekking() {
     <>
 
       <Helmet>
+        <link rel="canonical" href="https://ibexiceaxe.com/trekking" />
         <title>Himalayan Treks | Best Trekking Packages 2026 | Ibex Ice Axe</title>
         <meta name="description" content="Browse our extensive list of Himalayan treks. From beginner-friendly hikes to challenging summit climbs like Kedarkantha and Valley of Flowers. Book now!" />
         <meta name="keywords" content="Himalayan Treks, Trekking Packages, Kedarkantha Trek, Valley of Flowers Trek, High Altitude Treks" />
