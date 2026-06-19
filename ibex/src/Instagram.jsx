@@ -47,6 +47,14 @@ const Instagram = () => {
     document.body.appendChild(script);
 
     // Check periodically since the script loads asynchronously
+    const addTitleToIframe = () => {
+      const iframes = document.querySelectorAll('.instagram-media iframe');
+      iframes.forEach(iframe => {
+        if (!iframe.title) {
+          iframe.title = 'Instagram Embed';
+        }
+      });
+    };
     const intervalId = setInterval(addTitleToIframe, 1000);
 
     return () => clearInterval(intervalId);
