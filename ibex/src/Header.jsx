@@ -189,7 +189,7 @@ export default function Header() {
                     style={{ overflow: 'hidden' }}
                   >
                     {[
-                      { name: 'Valley Of Flower', path: '/valley-of-flower' },
+                      { name: 'Valley Of Flower', path: '/valley-of-flowers-trek' },
                       { name: 'Chopta Chandrashilla', path: '/chopta-chandrashilla-trek' },
                       { name: 'Pangarchulla Peak', path: '/pangarchulla-peak-trek' },
                       { name: 'Kuari Pass', path: '/kuari-pass-trek' },

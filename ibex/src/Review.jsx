@@ -81,7 +81,7 @@ const ReviewForm = () => {
             <option value="16 KM River Rafting">16 KM River Rafting</option>
             <option value="25 KM River Rafting">25 KM River Rafting</option>
             <option value="35 KM River Rafting">35 KM River Rafting</option>
-            <option value="Valley of flower trek">Valley of flower trek</option>
+            <option value="Valley of flowers trek">Valley of flowers trek</option>
             <option value="Chopta chandrashilla trek">
               Chopta chandrashilla trek
             </option>

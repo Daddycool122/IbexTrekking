@@ -98,7 +98,7 @@ export default function Rafting() {
             </div>
           </div>
           <div className={styles.ad_cd_title}>
-            Valley Of Flower Trek - A trail of flower, a journey to peace
+            Valley Of Flowers Trek - A trail of flower, a journey to peace
           </div>
           <div className={styles.ad_cd_price}>
             <span className={styles.ad_cd_price_main}>INR 10,999</span>
@@ -130,7 +130,7 @@ export default function Rafting() {
             </a>
             <div
               className={styles.ad_cd_book_book}
-              onClick={() => navigate("/valley-of-flower")}
+              onClick={() => navigate("/valley-of-flowers-trek")}
             >
               BOOK NOW
             </div>

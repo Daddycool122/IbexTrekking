@@ -279,7 +279,7 @@ export default function Home() {
             </a>
             <div
               className={styles.ad_cd_book_book}
-              onClick={() => navigate("/valley-of-flower")}
+              onClick={() => navigate("/valley-of-flowers-trek")}
             >
               VIEW DETAILS
             </div>

@@ -76,7 +76,7 @@ export default function Footer() {
 
           <div className={styles.link_column}>
             <div className={styles.info_title}>Top Treks</div>
-            <Link to="/valley-of-flower" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Valley of Flower</Link>
+            <Link to="/valley-of-flowers-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Valley of Flower</Link>
             <Link to="/kedarkantha-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Kedarkantha Trek</Link>
             <Link to="/chopta-chandrashilla-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Chopta Chandrashilla</Link>
             <Link to="/brahmatal-trek" className={styles.info_info} style={{textDecoration: "none", color: "inherit", display: "block"}}>Brahmatal Trek</Link>

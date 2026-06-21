@@ -48,7 +48,7 @@ export default function Valley_of_flower() {
 
         <link
           rel="canonical"
-          href="https://ibexiceaxe.com/valley-of-flower"
+          href="https://ibexiceaxe.com/valley-of-flowers-trek"
         />
 
         <script type="application/ld+json">
@@ -68,9 +68,9 @@ export default function Valley_of_flower() {
       <Header />
       <Desktop_intro_section
         img={img10}
-        title={"Valley of Flower"}
+        title={"Valley of Flowers"}
         open_form={setOpen_form}
-        des={"A trail of flower, a journey to peace"}
+        des={"A trail of flowers, a journey to peace"}
       />
       <Photos
         photos={[img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]}
@@ -490,7 +490,7 @@ export default function Valley_of_flower() {
         <Form
           open_form={open_form}
           setOpen_form={setOpen_form}
-          name={"Valley of Flower Trek"}
+          name={"Valley of Flowers Trek"}
           price={12999}
         />
       </div>

@@ -438,7 +438,7 @@ export default function AliBedniBugyal() {
             </li>
 
             <li className={styles.li}>
-              <Link to="/valley-of-flower">Valley of Flowers Trek</Link>
+              <Link to="/valley-of-flowers-trek">Valley of Flowers Trek</Link>
             </li>
           </ul>
         </div>

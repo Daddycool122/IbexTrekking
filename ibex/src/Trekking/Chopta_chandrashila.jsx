@@ -396,7 +396,7 @@ export default function Chopta_Chandrashila() {
     </li>
 
     <li className={styles.li}>
-      <Link to="/valley-of-flower">
+      <Link to="/valley-of-flowers-trek">
         Valley of Flowers Trek
       </Link>
     </li>

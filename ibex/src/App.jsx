@@ -79,7 +79,7 @@ function App() {
           <Route path="/Tours" element={<Tours />} />
           <Route path="/tours" element={<Tours />} />
           <Route
-            path="/valley-of-flower"
+            path="/valley-of-flowers-trek"
             element={<Valley_of_flower />}
           />
 

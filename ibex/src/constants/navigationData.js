@@ -24,7 +24,7 @@ import rafting25Img from "../assets/Rafting/rishikesh-river-rafting-7.webp";
 import rafting35Img from "../assets/Rafting/rishikesh-river-rafting-8.webp";
 
 export const TREKS = [
-  { name: 'Valley of Flower', route: '/valley-of-flower', image: valleyImg },
+  { name: 'Valley of Flowers', route: '/valley-of-flowers-trek', image: valleyImg },
   { name: 'Kedarkantha Trek', route: '/kedarkantha-trek', image: kedarkanthaImg },
   { name: 'Chopta Chandrashilla', route: '/chopta-chandrashilla-trek', image: choptaImg },
   { name: 'Brahmatal Trek', route: '/brahmatal-trek', image: brahmataalImg },
