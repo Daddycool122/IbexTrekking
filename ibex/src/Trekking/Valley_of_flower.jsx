@@ -20,7 +20,7 @@ import img11 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-11.jpeg
 import Footer from "../footer/Footer";
 import Header from "../Header";
 import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 
@@ -31,40 +31,28 @@ export default function Valley_of_flower() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>
-          Valley of Flowers Trek 2026 | Cost, Itinerary & Booking | Ibex Ice Axe
-        </title>
+      <SEO 
+        title="Valley of Flowers Trek 2026 | Cost, Itinerary & Booking"
+        description="Book Valley of Flowers Trek 2026 with Ibex Ice Axe. Explore the UNESCO World Heritage Site, complete itinerary, trek cost, difficulty level, altitude, and booking details."
+        keywords="Valley of Flowers Trek, Valley of Flowers Trek 2026, Valley of Flowers Trek Cost, Valley of Flowers Package, Uttarakhand Trekking, Valley of Flowers Booking"
+        path="/valley-of-flowers-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          "name": "Valley of Flowers Trek",
+          "description": "Valley of Flowers Trek in Uttarakhand with guided itinerary and booking.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Ibex Ice Axe"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "9500",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
 
-        <meta
-          name="description"
-          content="Book Valley of Flowers Trek 2026 with Ibex Ice Axe. Explore the UNESCO World Heritage Site, complete itinerary, trek cost, difficulty level, altitude, and booking details."
-        />
-
-        <meta
-          name="keywords"
-          content="Valley of Flowers Trek, Valley of Flowers Trek 2026, Valley of Flowers Trek Cost, Valley of Flowers Package, Uttarakhand Trekking, Valley of Flowers Booking"
-        />
-
-        <link
-          rel="canonical"
-          href="https://ibexiceaxe.com/valley-of-flowers-trek"
-        />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Valley of Flowers Trek",
-            description:
-              "Valley of Flowers Trek in Uttarakhand with guided itinerary and booking.",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-            },
-          })}
-        </script>
-      </Helmet>
       <Header />
       <Desktop_intro_section
         img={img10}

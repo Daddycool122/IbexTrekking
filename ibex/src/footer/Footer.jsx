@@ -110,7 +110,7 @@ export default function Footer() {
         <h2 className={styles.experts_heading}>Talk to Experts</h2>
         <div className={styles.experts_grid}>
           <div className={styles.expert_card}>
-            <img src={team2} alt="Team Member" loading="lazy" />
+            <img src={team2} alt="Ibex Ice Axe Team Expert" loading="lazy" />
             <div className={styles.expert_info}>
               <h3>Paras Rawat</h3>
               <p className={styles.phone_number}>+91-6396518778</p>
@@ -130,7 +130,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.expert_card}>
-            <img src={team1} alt="Team Member" loading="lazy" />
+            <img src={team1} alt="Ibex Ice Axe Team Expert" loading="lazy" />
             <div className={styles.expert_info}>
               <h3>Akshay Pandey</h3>
               <p className={styles.phone_number}>+91-8006861613</p>
@@ -166,7 +166,7 @@ export default function Footer() {
           <div className={styles.tb_images_section}>
             <img src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} loading="lazy" />
             <img src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} loading="lazy" />
-            <img src={rating_img2} alt="Img" className={styles.trust_imgs_3} loading="lazy" />
+            <img src={rating_img2} alt="Himalayan Adventure" className={styles.trust_imgs_3} loading="lazy" />
           </div>
           <div className={styles.trust_text_section}>
             <div className={styles.trust_line}>

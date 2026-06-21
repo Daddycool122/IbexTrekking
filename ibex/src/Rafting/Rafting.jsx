@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import Intro_section from "./Intro_section";
 import img1 from "../assets/Rafting/rishikesh-river-rafting-7.webp";
 import img2 from "../assets/Rafting/rishikesh-river-rafting-6.webp";
@@ -36,14 +36,12 @@ export default function Rafting() {
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/river-rafting" />
-        <title>River Rafting in Rishikesh | 16km, 25km, 35km | Ibex Ice Axe</title>
-        <meta name="description" content="Experience the thrill of whitewater river rafting in Rishikesh. Choose from 16 KM, 25 KM, and 35 KM routes with expert guides and premium safety gear." />
-        <meta name="keywords" content="River Rafting Rishikesh, Whitewater Rafting, Shivpuri Rafting, Rafting Packages" />
-        <meta property="og:title" content="River Rafting in Rishikesh | 16km, 25km, 35km" />
-        <meta property="og:description" content="Experience the thrill of whitewater river rafting in Rishikesh with expert guides." />
-      </Helmet>
+      <SEO 
+        title="River Rafting in Rishikesh | 16km, 25km, 35km"
+        description="Experience the thrill of whitewater river rafting in Rishikesh. Choose from 16 KM, 25 KM, and 35 KM routes with expert guides and premium safety gear."
+        keywords="River Rafting Rishikesh, Whitewater Rafting, Shivpuri Rafting, Rafting Packages"
+        path="/river-rafting"
+      />
 
       <Header />
       <Intro_section

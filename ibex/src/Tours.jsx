@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "./components/SEO";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
@@ -31,14 +31,12 @@ export default function Tours() {
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/tours" />
-        <title>Adventure Tours & Weekend Getaways | Ibex Ice Axe</title>
-        <meta name="description" content="Explore our curated adventure tours, weekend getaways, and spiritual journeys like Chardham Yatra and Adi Kailash. Book your next vacation with Ibex Ice Axe." />
-        <meta name="keywords" content="Adventure Tours, Chardham Yatra, Adi Kailash Tour, Uttarakhand Tours, Weekend Getaways" />
-        <meta property="og:title" content="Adventure Tours & Weekend Getaways | Ibex Ice Axe" />
-        <meta property="og:description" content="Explore our curated adventure tours, weekend getaways, and spiritual journeys." />
-      </Helmet>
+      <SEO 
+        title="Adventure Tours & Weekend Getaways"
+        description="Explore our curated adventure tours, weekend getaways, and spiritual journeys like Chardham Yatra and Adi Kailash. Book your next vacation with Ibex Ice Axe."
+        keywords="Adventure Tours, Chardham Yatra, Adi Kailash Tour, Uttarakhand Tours, Weekend Getaways"
+        path="/tours"
+      />
 
       <Header />
 
@@ -112,7 +110,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Tour</div>
 
@@ -180,7 +178,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={imgAdikailash} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={imgAdikailash} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -248,7 +246,7 @@ export default function Tours() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={imgChardham} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={imgChardham} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>10 Days & 9 Nights</div>
 

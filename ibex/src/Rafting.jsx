@@ -650,7 +650,7 @@ export default function Rafting() {
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting1} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting1} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -722,7 +722,7 @@ export default function Rafting() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting2} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting2} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -794,7 +794,7 @@ export default function Rafting() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting3} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting3} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 

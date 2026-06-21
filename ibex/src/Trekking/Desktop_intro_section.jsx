@@ -51,7 +51,7 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
             <div className={styles.tb_images_section}>
               <img loading="lazy" src={rating_img4} alt="Alibedni Trek" className={styles.trust_imgs_1} />
               <img src={rating_img5} alt="Alibedni Trek" className={styles.trust_imgs_2} loading="lazy" decoding="async" />
-              <img src={rating_img2} alt="Img" className={styles.trust_imgs_3} loading="lazy" decoding="async" />
+              <img src={rating_img2} alt="Himalayan Adventure" className={styles.trust_imgs_3} loading="lazy" decoding="async" />
             </div>
             <div className={styles.trust_line}>
               Trusted by 200+ Happy

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "./components/SEO";
 import Desktop_intro_section from "./Trekking/Desktop_intro_section";
 import Desktop_home from "./Trekking/Desktop_home";
 import img1 from "./assets/home/himalayan-trekking-home-1.jpg";
@@ -91,25 +91,16 @@ export default function Home() {
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/" />
-        <title>Ibex Ice Axe | Premium Himalayan Treks & Rafting Adventures</title>
-        <meta name="description" content="Discover the best Himalayan treks, river rafting in Rishikesh, and curated adventure tours with Ibex Ice Axe. Expert guides, premium safety, and unforgettable experiences." />
-        <meta name="keywords" content="Himalayan Treks, River Rafting Rishikesh, Kedarkantha Trek, Valley of Flowers, Adventure Tours India" />
-        <meta property="og:title" content="Ibex Ice Axe | Premium Himalayan Treks & Rafting Adventures" />
-        <meta property="og:description" content="Discover the best Himalayan treks, river rafting in Rishikesh, and curated adventure tours with Ibex Ice Axe." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ibexiceaxe.com/" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TravelAgency",
-            "name": "Ibex Ice Axe",
-            "url": "https://ibexiceaxe.com/",
-            "description": "Premium adventure travel agency specializing in Himalayan treks and river rafting."
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        path="/"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TravelAgency",
+          "name": "Ibex Ice Axe",
+          "url": "https://ibexiceaxe.com/",
+          "description": "Premium adventure travel agency specializing in Himalayan treks and river rafting."
+        }}
+      />
 
       <Desktop_home
         title={"Discover The Untamed"}
@@ -153,7 +144,7 @@ export default function Home() {
           className={styles.trr_indi}
           onClick={() => navigate("/tours")}
         >
-          <img loading="lazy" src={img12} className={styles.trr_img} alt="Img" />
+          <img loading="lazy" src={img12} className={styles.trr_img} alt="Himalayan Adventure" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Tours</div>
             <div className={styles.trr_des}>
@@ -935,7 +926,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Tour</div>
 
@@ -1059,7 +1050,7 @@ export default function Home() {
       {/* Hidden: Original rafting cards section */}
       <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting1} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting1} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -1131,7 +1122,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting2} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting2} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -1203,7 +1194,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting3} className={styles.ad_cd_img} alt="Img" />
+          <img loading="lazy" src={rafting3} className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 

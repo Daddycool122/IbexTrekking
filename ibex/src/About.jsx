@@ -259,7 +259,7 @@ const AboutUs = () => {
         <div className={styles.team_members}>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img loading="lazy" src={team2} alt="Team Member" />
+              <img loading="lazy" src={team2} alt="Ibex Ice Axe Team Expert" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>
@@ -273,7 +273,7 @@ const AboutUs = () => {
           </div>
           <div className={styles.member}>
             <div className={styles.memberImageWrapper}>
-              <img loading="lazy" src={team1} alt="Team Member" />
+              <img loading="lazy" src={team1} alt="Ibex Ice Axe Team Expert" />
               <div className={styles.memberOverlay}>
                 <p>Expert Guide</p>
               </div>
