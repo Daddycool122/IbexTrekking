@@ -153,6 +153,17 @@ const EnquiryWidget = () => {
                 />
               </div>
               <div className={styles.formGroup}>
+                <label htmlFor="date">Travel Date</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  value={formData.date}
+                  onChange={handleChange}
+                  min={new Date().toISOString().split('T')[0]}
+                />
+              </div>
+              <div className={styles.formGroup}>
                 <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
