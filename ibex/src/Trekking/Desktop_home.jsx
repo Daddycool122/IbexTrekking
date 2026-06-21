@@ -31,7 +31,7 @@ export default function Desktop_home({
 
         <div className={styles.content_section_home}>
           <div className={styles.text_content_home}>
-            <motion.div
+            <motion.h1
               className={styles.main_name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function Desktop_home({
               viewport={{ once: true }}
             >
               {title || "Discover The Untamed"}
-            </motion.div>
+            </motion.h1>
 
             <motion.div
               className={styles.tag_line}
@@ -57,7 +57,7 @@ export default function Desktop_home({
               transition={{ duration: 0.8, delay: 1.2 }}
               viewport={{ once: true }}
             >
-              <div className={styles.book_now_btn} onClick={scrollToTrekking}>
+              <div className={styles.book_now_btn} onClick={scrollToTrekking} aria-label="Start Your Adventure">
                 <span className={styles.book_now_text}>Start Your Adventure</span>
                 <div className={styles.book_now_arrow}>
                   <svg viewBox="0 0 24 24" fill="none" width="20px" height="20px">

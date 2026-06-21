@@ -75,9 +75,10 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* tarekking */}
-          <Route path="/Trekking" element={<Trekking />} />
-          <Route path="/Tours" element={<Tours />} />
+          <Route path="/trekking" element={<Trekking />} />
+          <Route path="/Trekking" element={<Navigate replace to="/trekking" />} />
           <Route path="/tours" element={<Tours />} />
+          <Route path="/Tours" element={<Navigate replace to="/tours" />} />
           <Route
             path="/valley-of-flowers-trek"
             element={<Valley_of_flower />}
@@ -102,12 +103,12 @@ function App() {
 
           {/* rafting */}
           <Route path="/river-rafting" element={<RiverRafting />} />
-          <Route path="/Rafting" element={<Rafting />} />
-          <Route path="/rafting" element={<Rafting />} />
+          <Route path="/Rafting" element={<Navigate replace to="/river-rafting" />} />
+          <Route path="/rafting" element={<Navigate replace to="/river-rafting" />} />
 
           {/* review */}
-          <Route path="/Review" element={<Review />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/Review" element={<Navigate replace to="/review" />} />
 
           {/* blogs */}
           <Route path="/blog" element={<BlogList />} />

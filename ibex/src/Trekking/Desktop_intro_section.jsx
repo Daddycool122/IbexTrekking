@@ -11,10 +11,11 @@ export default function Desktop_intro_section({ img, title, open_form, des }) {
         <img src={img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.main_img} loading="eager" decoding="async" />
         <div className={styles.dark_section}></div>
         <div className={styles.content_section}>
-          <div className={styles.main_name}>{title}</div>
+          <h1 className={styles.main_name}>{title}</h1>
           <div className={styles.tag_line}>{des}</div>
           <div
             className={styles.book_now_btn}
+            aria-label="Book this trek now"
             onClick={() => {
               open_form(true);
             }}

@@ -118,7 +118,7 @@ export default function Home() {
 
       <div className={styles.trr_section}>
         <div className={styles.trr_indi} onClick={() => navigate("/trekking")}>
-          <img loading="lazy" src={trekking} className={styles.trr_img} alt="Trekking" />
+          <img loading="lazy" src={trekking}  width="600" height="400" className={styles.trr_img} alt="Trekking" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Trekking</div>
             <div className={styles.trr_des}>
@@ -131,7 +131,7 @@ export default function Home() {
           className={styles.trr_indi}
           onClick={() => navigate("/river-rafting")}
         >
-          <img loading="lazy" src={rafting} className={styles.trr_img} alt="Rafting" />
+          <img loading="lazy" src={rafting}  width="600" height="400" className={styles.trr_img} alt="Rafting" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Rafting</div>
             <div className={styles.trr_des}>
@@ -144,7 +144,7 @@ export default function Home() {
           className={styles.trr_indi}
           onClick={() => navigate("/tours")}
         >
-          <img loading="lazy" src={img12} className={styles.trr_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={img12}  width="600" height="400" className={styles.trr_img} alt="Himalayan Adventure" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Tours</div>
             <div className={styles.trr_des}>
@@ -206,7 +206,7 @@ export default function Home() {
       {/* Hidden: Original trekking cards section */}
       <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img2} className={styles.ad_cd_img} alt="Valley Of Flower Trek" />
+          <img loading="lazy" src={img2}  width="600" height="400" className={styles.ad_cd_img} alt="Valley Of Flower Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img4} className={styles.ad_cd_img} alt="Chopta Trek" />
+          <img loading="lazy" src={img4}  width="600" height="400" className={styles.ad_cd_img} alt="Chopta Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>3 Days & 2 Nights</div>
 
@@ -350,7 +350,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img3} className={styles.ad_cd_img} alt="Brahmataal Trek" />
+          <img loading="lazy" src={img3}  width="600" height="400" className={styles.ad_cd_img} alt="Brahmataal Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -422,7 +422,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img5} className={styles.ad_cd_img} alt="Gaumukh Trek" />
+          <img loading="lazy" src={img5}  width="600" height="400" className={styles.ad_cd_img} alt="Gaumukh Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>8 Days & 7 Nights</div>
 
@@ -494,7 +494,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img6} className={styles.ad_cd_img} alt="Kedarkantha Trek" />
+          <img loading="lazy" src={img6}  width="600" height="400" className={styles.ad_cd_img} alt="Kedarkantha Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -566,7 +566,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img7} className={styles.ad_cd_img} alt="Kuari Trek" />
+          <img loading="lazy" src={img7}  width="600" height="400" className={styles.ad_cd_img} alt="Kuari Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -638,7 +638,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />
+          <img loading="lazy" src={img8}  width="600" height="400" className={styles.ad_cd_img} alt="Panch Kedar Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>12 Days & 11 Nights</div>
 
@@ -710,7 +710,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img9} className={styles.ad_cd_img} alt="Pangarchulla Trek" />
+          <img loading="lazy" src={img9}  width="600" height="400" className={styles.ad_cd_img} alt="Pangarchulla Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>7 Days & 6 Nights</div>
 
@@ -782,7 +782,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img10} className={styles.ad_cd_img} alt="Alibedni Trek" />
+          <img loading="lazy" src={img10}  width="600" height="400" className={styles.ad_cd_img} alt="Alibedni Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -854,7 +854,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img11} className={styles.ad_cd_img} alt="Dyarabugyal Trek" />
+          <img loading="lazy" src={img11}  width="600" height="400" className={styles.ad_cd_img} alt="Dyarabugyal Trek" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>5 Days & 4 Nights</div>
 
@@ -926,7 +926,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img12} className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={img12}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Tour</div>
 
@@ -1050,7 +1050,7 @@ export default function Home() {
       {/* Hidden: Original rafting cards section */}
       <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting1} className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting1}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -1122,7 +1122,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting2} className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting2}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -1194,7 +1194,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting3} className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting3}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 
