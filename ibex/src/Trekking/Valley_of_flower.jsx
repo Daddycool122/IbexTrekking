@@ -29,6 +29,94 @@ export default function Valley_of_flower() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const faqsData = [
+    {
+      question: "When is the best time to visit Valley of Flowers?",
+      answer: "The best time is July to mid-September. This is when the flowers are in full bloom due to monsoon rains.",
+    },
+    {
+      question: "What is the total trek distance?",
+      answer: "The trek is approximately 38 km round trip:",
+    },
+    {
+      question: "What is the trek altitude and difficulty level?",
+      answer: "Altitude: Around 12,000 ft (3,658 m) at the highest point in the Valley. Difficulty: Easy to moderate. The trail is well-defined but requires good stamina because of the climb and altitude.",
+    },
+    {
+      question: "Where does the trek start and end?",
+      answer: "Start: Govindghat (near Joshimath, Uttarakhand). End: Govindghat. From Govindghat, you trek to Ghangaria, the base village for the Valley of Flowers and Hemkund Sahib.",
+    },
+    {
+      question: "How many days does the trek take?",
+      answer: "Typically 5 to 6 days, including travel",
+    },
+    {
+      question: "How to reach Valley of Flowers from Delhi?",
+      answer: "By road: Delhi → Rishikesh → Joshimath → Govindghat (~520 km). By train: Nearest station: Haridwar/Rishikesh. By air: Nearest airport: Jolly Grant Airport, Dehradun. From Govindghat, start the trek.",
+    },
+    {
+      question: "Do I need permits?",
+      answer: "Yes. You need to purchase an entry permit at the Forest Department checkpoint at Ghangaria.",
+    },
+    {
+      question: "What are some places to visit nearby?",
+      answer: "Hemkund Sahib (a Sikh pilgrimage site, 6 km from Ghangaria). Badrinath Temple (famous Char Dham temple). Mana Village (India’s last village near Tibet border). Auli (skiing destination).",
+    },
+    {
+      question: "Is it safe to travel and trek?",
+      answer: "Yes, it is generally safe. However: Avoid trekking during heavy rains (risk of landslides). Stick to marked trails. Carry ID and emergency numbers.",
+    },
+    {
+      question: "Is camping allowed in the Valley?",
+      answer: "No, camping and overnight stays are strictly prohibited inside the Valley of Flowers as it is a UNESCO World Heritage Site and protected area.",
+    },
+    {
+      question: "Are mules/porters available for luggage?",
+      answer: "Yes. You can hire mules and porters at Govindghat or Ghangaria for carrying luggage.",
+    },
+    {
+      question: "What fitness level is required?",
+      answer: "A basic to moderate level of fitness is enough. You should be able to walk 8–10 km uphill comfortably. Start light exercises or walking a month before the trek.",
+    },
+    {
+      question: "How many flower species can be seen?",
+      answer: "Over 500 species of flowers, including rare Himalayan varieties like: Brahma Kamal, Blue Poppy, Cobra Lily, Himalayan Bellflower",
+    },
+    {
+      question: "Is the Valley of Flowers trek famous?",
+      answer: "Yes, it is one of India’s most famous Himalayan treks and a UNESCO World Heritage Site known for its alpine flowers and natural beauty.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqsData.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  const touristTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Valley of Flowers Trek",
+    "description": "Valley of Flowers Trek in Uttarakhand with guided itinerary and booking.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Ibex Ice Axe"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "12999",
+      "priceCurrency": "INR"
+    }
+  };
+
   return (
     <>
       <SEO 
@@ -36,21 +124,7 @@ export default function Valley_of_flower() {
         description="Book Valley of Flowers Trek 2026 with Ibex Ice Axe. Explore the UNESCO World Heritage Site, complete itinerary, trek cost, difficulty level, altitude, and booking details."
         keywords="Valley of Flowers Trek, Valley of Flowers Trek 2026, Valley of Flowers Trek Cost, Valley of Flowers Package, Uttarakhand Trekking, Valley of Flowers Booking"
         path="/valley-of-flowers-trek"
-        schemaData={{
-          "@context": "https://schema.org",
-          "@type": "TouristTrip",
-          "name": "Valley of Flowers Trek",
-          "description": "Valley of Flowers Trek in Uttarakhand with guided itinerary and booking.",
-          "provider": {
-            "@type": "Organization",
-            "name": "Ibex Ice Axe"
-          },
-          "offers": {
-            "@type": "Offer",
-            "price": "9500",
-            "priceCurrency": "INR"
-          }
-        }}
+        schemaData={[touristTripSchema, faqSchema]}
       />
 
       <Header />
@@ -373,78 +447,7 @@ export default function Valley_of_flower() {
             
           </div>
           <Title text={"Frequently Asked Questions (FAQ)"} />
-          <FaqAccordion
-            faqs={[
-              {
-                question: "When is the best time to visit Valley of Flowers?",
-                answer:
-                  "The best time is July to mid-September. This is when the flowers are in full bloom due to monsoon rains.",
-              },
-              {
-                question: "What is the total trek distance?",
-                answer: "The trek is approximately 38 km round trip:",
-              },
-              {
-                question: "What is the trek altitude and difficulty level?",
-                answer:
-                  "Altitude: Around 12,000 ft (3,658 m) at the highest point in the Valley. Difficulty: Easy to moderate. The trail is well-defined but requires good stamina because of the climb and altitude.",
-              },
-              {
-                question: "Where does the trek start and end?",
-                answer:
-                  "Start: Govindghat (near Joshimath, Uttarakhand). End: Govindghat. From Govindghat, you trek to Ghangaria, the base village for the Valley of Flowers and Hemkund Sahib.",
-              },
-              {
-                question: "How many days does the trek take?",
-                answer: "Typically 5 to 6 days, including travel",
-              },
-              {
-                question: "How to reach Valley of Flowers from Delhi?",
-                answer:
-                  "By road: Delhi → Rishikesh → Joshimath → Govindghat (~520 km). By train: Nearest station: Haridwar/Rishikesh. By air: Nearest airport: Jolly Grant Airport, Dehradun. From Govindghat, start the trek.",
-              },
-              {
-                question: "Do I need permits?",
-                answer:
-                  "Yes. You need to purchase an entry permit at the Forest Department checkpoint at Ghangaria.",
-              },
-              {
-                question: "What are some places to visit nearby?",
-                answer:
-                  "Hemkund Sahib (a Sikh pilgrimage site, 6 km from Ghangaria). Badrinath Temple (famous Char Dham temple). Mana Village (India’s last village near Tibet border). Auli (skiing destination).",
-              },
-              {
-                question: "Is it safe to travel and trek?",
-                answer:
-                  "Yes, it is generally safe. However: Avoid trekking during heavy rains (risk of landslides). Stick to marked trails. Carry ID and emergency numbers.",
-              },
-              {
-                question: "Is camping allowed in the Valley?",
-                answer:
-                  "No, camping and overnight stays are strictly prohibited inside the Valley of Flowers as it is a UNESCO World Heritage Site and protected area.",
-              },
-              {
-                question: "Are mules/porters available for luggage?",
-                answer:
-                  "Yes. You can hire mules and porters at Govindghat or Ghangaria for carrying luggage.",
-              },
-              {
-                question: "What fitness level is required?",
-                answer:
-                  "A basic to moderate level of fitness is enough. You should be able to walk 8–10 km uphill comfortably. Start light exercises or walking a month before the trek.",
-              },
-              {
-                question: "How many flower species can be seen?",
-                answer:
-                  "Over 500 species of flowers, including rare Himalayan varieties like: Brahma Kamal Blue Poppy Cobra Lily Himalayan Bellflower",
-              },
-              {
-                question: "Is the Valley of Flowers trek famous?",
-                answer:
-                  "Yes, it is one of India’s most famous Himalayan treks and a UNESCO World Heritage Site known for its alpine flowers and natural beauty.",
-              },
-            ]}
-          />
+          <FaqAccordion faqs={faqsData} />
         </div>
         <Title text={"Related Treks"} />
 
