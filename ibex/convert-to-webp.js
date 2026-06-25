@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const directoryPath = 'c:/Users/acer aspire 3/Desktop/ibex/ibex/src/assets/Trek';
+const directoryPath = 'c:/Users/acer aspire 3/Desktop/ibex/ibex/src/assets';
 
 function walkDir(dir, callback) {
     fs.readdirSync(dir).forEach(f => {
