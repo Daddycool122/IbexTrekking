@@ -1,10 +1,10 @@
 import SEO from "./components/SEO";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
-import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
-import img12 from "./assets/tour/kunjapuri/kunjapuri-sunrise-tour-4.jpeg";
+import img8 from "./assets/Trek/panch_kedar/panch-kedar-trek-1.webp";
+import img12 from "./assets/tour/kunjapuri/kunjapuri-sunrise-tour-4.webp";
 import imgAdikailash from "./assets/tour/adikailash/adikailash-tour-1.webp";
-import imgChardham from "./assets/tour/chardham/chardham-yatra-tour-1.jpg";
+import imgChardham from "./assets/tour/chardham/chardham-yatra-tour-1.webp";
 import { useEffect } from "react";
 import Footer from "./footer/Footer";
 import Header from "./Header";

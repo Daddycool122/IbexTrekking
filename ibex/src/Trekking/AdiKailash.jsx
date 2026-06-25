@@ -8,7 +8,7 @@ import img1 from "../assets/tour/adikailash/adikailash-tour-1.webp";
 import img2 from "../assets/tour/adikailash/adikailash-tour-2.webp";
 import img3 from "../assets/tour/adikailash/adikailash-tour-3.webp";
 import img4 from "../assets/tour/adikailash/adikailash-tour-4.webp";
-import img5 from "../assets/tour/adikailash/adikailash-tour-5.jpeg";
+import img5 from "../assets/tour/adikailash/adikailash-tour-5.webp";
 import img6 from "../assets/tour/adikailash/adikailash-tour-6.webp";
 import img7 from "../assets/tour/adikailash/adikailash-tour-7.webp";
 import { useState, useEffect } from "react";

@@ -1,9 +1,9 @@
 import styles from "./Intro_section.module.css";
-import rating_img1 from "../assets/Rating/trekker-review-1.jpg";
-import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
-import rating_img3 from "../assets/Rating/trekker-review-3.jpg";
-import rating_img4 from "../assets/Rating/trekker-review-4.jpg";
-import rating_img5 from "../assets/Rating/trekker-review-5.jpg";
+import rating_img1 from "../assets/Rating/trekker-review-1.webp";
+import rating_img2 from "../assets/Rating/trekker-review-2.webp";
+import rating_img3 from "../assets/Rating/trekker-review-3.webp";
+import rating_img4 from "../assets/Rating/trekker-review-4.webp";
+import rating_img5 from "../assets/Rating/trekker-review-5.webp";
 export default function Intro_section({ img, title, open_form, des, book }) {
   if (book == undefined) {
     book = true;

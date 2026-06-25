@@ -2,9 +2,9 @@ import styles from "./Footer.module.css";
 import { useNavigate, Link } from "react-router-dom";
 import team1 from "../team-member-1.webp";
 import team2 from "../team-member-2.webp";
-import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
-import rating_img4 from "../assets/Rating/trekker-review-4.jpg";
-import rating_img5 from "../assets/Rating/trekker-review-5.jpg";
+import rating_img2 from "../assets/Rating/trekker-review-2.webp";
+import rating_img4 from "../assets/Rating/trekker-review-4.webp";
+import rating_img5 from "../assets/Rating/trekker-review-5.webp";
 import { motion } from "framer-motion";
 
 export default function Footer() {

@@ -1,14 +1,14 @@
 import styles from "./Desktop_intro_section.module.css";
-import rating_img1 from "../assets/Rating/trekker-review-1.jpg";
-import rating_img2 from "../assets/Rating/trekker-review-2.jpg";
-import rating_img3 from "../assets/Rating/trekker-review-3.jpg";
-import rating_img4 from "../assets/Rating/trekker-review-4.jpg";
-import rating_img5 from "../assets/Rating/trekker-review-5.jpg";
+import rating_img1 from "../assets/Rating/trekker-review-1.webp";
+import rating_img2 from "../assets/Rating/trekker-review-2.webp";
+import rating_img3 from "../assets/Rating/trekker-review-3.webp";
+import rating_img4 from "../assets/Rating/trekker-review-4.webp";
+import rating_img5 from "../assets/Rating/trekker-review-5.webp";
 export default function Desktop_intro_section({ img, title, open_form, des }) {
   return (
     <>
       <div className={styles.main_intro_section}>
-        <img src={img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.main_img} loading="eager" decoding="async" />
+        <img src={img} alt={img ? img.split("/").pop().split("-").slice(0, -1).join(" ") : "Ibex Trekking"} className={styles.main_img} loading="eager" fetchpriority="high" decoding="async" />
         <div className={styles.dark_section}></div>
         <div className={styles.content_section}>
           <h1 className={styles.main_name}>{title}</h1>

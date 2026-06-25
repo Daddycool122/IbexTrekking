@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './TrustedReviews.module.css';
-import trust_1 from "./assets/home/himalayan-trekking-home-2.png";
-import trust_2 from "./assets/home/himalayan-trekking-home-3.jpg";
+import trust_1 from "./assets/home/himalayan-trekking-home-2.webp";
+import trust_2 from "./assets/home/himalayan-trekking-home-3.webp";
 
 const TrustedReviews = () => {
   const [activeTab, setActiveTab] = useState("google_reviews");

@@ -9,11 +9,11 @@ import Footer from "../footer/Footer";
 import Header from "../Header";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
-import img1 from "../assets/tour/chardham/chardham-yatra-tour-1.jpg";
+import img1 from "../assets/tour/chardham/chardham-yatra-tour-1.webp";
 import img2 from "../assets/tour/chardham/chardham-yatra-tour-2.webp";
-import img3 from "../assets/tour/chardham/chardham-yatra-tour-3.jpg";
+import img3 from "../assets/tour/chardham/chardham-yatra-tour-3.webp";
 import img4 from "../assets/tour/chardham/chardham-yatra-tour-4.webp";
-import img5 from "../assets/tour/chardham/chardham-yatra-tour-5.jpg";
+import img5 from "../assets/tour/chardham/chardham-yatra-tour-5.webp";
 import img6 from "../assets/tour/chardham/chardham-yatra-tour-6.webp";
 import img7 from "../assets/tour/chardham/chardham-yatra-tour-7.webp";
 

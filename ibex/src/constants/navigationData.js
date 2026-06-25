@@ -3,20 +3,20 @@
 
 // Trek data
 import valleyImg from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-1.webp";
-import kedarkanthaImg from "../assets/Trek/kedarkantha/kedarkantha-trek-1.jpeg";
-import choptaImg from "../assets/Trek/chopta/chopta-trek-1.jpeg";
-import brahmataalImg from "../assets/Trek/brahmataal/brahmataal-trek-1.jpeg";
-import kuariImg from "../assets/Trek/kuari/kuari-trek-1.jpeg";
+import kedarkanthaImg from "../assets/Trek/kedarkantha/kedarkantha-trek-1.webp";
+import choptaImg from "../assets/Trek/chopta/chopta-trek-1.webp";
+import brahmataalImg from "../assets/Trek/brahmataal/brahmataal-trek-1.webp";
+import kuariImg from "../assets/Trek/kuari/kuari-trek-1.webp";
 import aliBedniImg from "../assets/Trek/alibedni/alibedni-trek-1.webp";
 import dyaraBugyal from "../assets/Trek/dyarabugyal/dyarabugyal-trek-1.webp";
-import pangarchullaImg from "../assets/Trek/pangarchulla/pangarchulla-trek-1.jpeg";
-import gaumukhImg from "../assets/Trek/gaumukh/gaumukh-trek-1.jpeg";
+import pangarchullaImg from "../assets/Trek/pangarchulla/pangarchulla-trek-1.webp";
+import gaumukhImg from "../assets/Trek/gaumukh/gaumukh-trek-1.webp";
 
 // Tour data
-import panchkedarImg from "../assets/Trek/panch_kedar/panch-kedar-trek-1.jpeg";
+import panchkedarImg from "../assets/Trek/panch_kedar/panch-kedar-trek-1.webp";
 import adikailashImg from "../assets/tour/adikailash/adikailash-tour-1.webp";
-import chardhamImg from "../assets/tour/chardham/chardham-yatra-tour-1.jpg";
-import kunjapuriImg from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-1.jpeg";
+import chardhamImg from "../assets/tour/chardham/chardham-yatra-tour-1.webp";
+import kunjapuriImg from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-1.webp";
 
 // Rafting data
 import rafting16Img from "../assets/Rafting/rishikesh-river-rafting-6.webp";
