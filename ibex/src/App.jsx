@@ -103,8 +103,8 @@ function App() {
 
           {/* rafting */}
           <Route path="/river-rafting" element={<RiverRafting />} />
-          <Route path="/Rafting" element={<Navigate replace to="/river-rafting" />} />
-          <Route path="/rafting" element={<Navigate replace to="/river-rafting" />} />
+          <Route path="/rafting" element={<Rafting />} />
+          <Route path="/Rafting" element={<Navigate replace to="/rafting" />} />
 
           {/* review */}
           <Route path="/review" element={<Review />} />
