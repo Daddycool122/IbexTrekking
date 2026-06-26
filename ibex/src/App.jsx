@@ -41,6 +41,8 @@ const BlogList = lazy(() => import("./blogs/BlogList.jsx"));
 const BlogPost = lazy(() => import("./blogs/BlogPost.jsx"));
 const NotFound = lazy(() => import("./NotFound.jsx"));
 
+import GlobalCanonical from "./components/GlobalCanonical.jsx";
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -69,6 +71,7 @@ function App() {
 
   return (
     <Router>
+      <GlobalCanonical />
       <ScrollToTop />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
