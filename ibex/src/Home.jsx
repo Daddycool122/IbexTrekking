@@ -173,7 +173,7 @@ export default function Home() {
               playsInline
               controls={false}
               preload="none"
-              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=338&fit=crop&q=50&auto=format"
+              poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=338&fit=crop&q=50&auto=format"
             >
               <source src={trekking_video} type="video/mp4" />
             </video>

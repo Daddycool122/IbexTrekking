@@ -10,7 +10,7 @@ export default function Desktop_home({
   scrollToReviw,
 }) {
   // Majestic online nature image
-  const bgImg = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=60&w=1200&auto=format&fit=crop";
+  const bgImg = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=50&w=800&auto=format&fit=crop";
 
   return (
     <>
