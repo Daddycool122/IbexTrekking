@@ -17,7 +17,6 @@ import img9 from "../assets/Trek/brahmataal/brahmataal-trek-9.webp";
 import img10 from "../assets/Trek/brahmataal/brahmataal-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -59,8 +58,7 @@ export default function Brahmatal() {
           })}
         </script>
       </Helmet>
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img4}
         title={"Brahmatal Trek"}
         des={"A snowy wonderland with Himalayan giants in sight."}

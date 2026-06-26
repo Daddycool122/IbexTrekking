@@ -19,7 +19,6 @@ import img10 from "../assets/Trek/panch_kedar/panch-kedar-trek-10.webp";
 import img11 from "../assets/Trek/panch_kedar/panch-kedar-trek-11.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 
 export default function PanchKedar() {
   const [open_form, setOpen_form] = useState(false);
@@ -35,8 +34,7 @@ export default function PanchKedar() {
         <meta name="description" content="Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure." />
       </Helmet>
 
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Panch Kedar Tour & Drive"}
         open_form={setOpen_form}

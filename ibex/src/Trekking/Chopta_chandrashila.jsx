@@ -18,7 +18,6 @@ import img9 from "../assets/Trek/chopta/chopta-trek-9.webp";
 import img10 from "../assets/Trek/chopta/chopta-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -63,8 +62,7 @@ export default function Chopta_Chandrashila() {
     })}
   </script>
 </Helmet>
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img4}
         title={"Chopta Chandrashila"}
         open_form={setOpen_form}

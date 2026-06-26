@@ -14,7 +14,6 @@ import img5 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-5.webp";
 import img6 from "../assets/tour/kunjapuri/kunjapuri-sunrise-tour-6.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 
 export default function KunjapuriTour() {
   const [open_form, setOpen_form] = useState(false);
@@ -30,8 +29,7 @@ export default function KunjapuriTour() {
         <meta name="description" content="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas." />
       </Helmet>
 
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Kunjapuri One Day Tour"}
         open_form={setOpen_form}

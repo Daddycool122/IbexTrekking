@@ -15,7 +15,6 @@ import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
-import Header from "../Header";
 
 export default function AdiKailash() {
   const [open_form, setOpen_form] = useState(false);
@@ -31,8 +30,7 @@ export default function AdiKailash() {
         <meta name="description" content="Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey." />
       </Helmet>
 
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Adi Kailash & Om Parvat Tour"}
         open_form={setOpen_form}

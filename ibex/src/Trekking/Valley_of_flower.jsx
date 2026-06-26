@@ -18,7 +18,6 @@ import img9 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-9.webp";
 import img10 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-10.webp";
 import img11 from "../assets/Trek/Valley_of_flower/valley-of-flower-trek-11.webp";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import { useState, useEffect } from "react";
 import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
@@ -127,8 +126,7 @@ export default function Valley_of_flower() {
         schemaData={[touristTripSchema, faqSchema]}
       />
 
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img10}
         title={"Valley of Flowers"}
         open_form={setOpen_form}

@@ -12,7 +12,6 @@ import img10 from "./assets/Trek/alibedni/alibedni-trek-1.webp";
 import img11 from "./assets/Trek/dyarabugyal/dyarabugyal-trek-1.webp";
 import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
-import Header from "./Header";
 export default function Trekking() {
   const navigate = useNavigate();
   const trekking_ref = useRef(null);
@@ -59,8 +58,7 @@ export default function Trekking() {
         <meta property="og:description" content="Browse our extensive list of Himalayan treks. From beginner-friendly hikes to challenging summit climbs." />
       </Helmet>
 
-      <Header />
-
+      
       {/* <div className={styles.title} ref={trekking_ref}>
         Trekking
         <span className={styles.title_border}></span>

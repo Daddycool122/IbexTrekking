@@ -42,6 +42,7 @@ const BlogPost = lazy(() => import("./blogs/BlogPost.jsx"));
 const NotFound = lazy(() => import("./NotFound.jsx"));
 
 import GlobalCanonical from "./components/GlobalCanonical.jsx";
+import Header from "./Header.jsx";
 
 function App() {
   useEffect(() => {
@@ -72,6 +73,7 @@ function App() {
   return (
     <Router>
       <GlobalCanonical />
+      <Header />
       <ScrollToTop />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>

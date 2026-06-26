@@ -20,7 +20,6 @@ import { useRef, useEffect } from "react";
 import Footer from "./footer/Footer";
 import trust_1 from "./assets/home/himalayan-trekking-home-2.webp";
 import trust_2 from "./assets/home/himalayan-trekking-home-3.webp";
-import Header from "./Header";
 export default function Rafting() {
   const navigate = useNavigate();
   const trekking_ref = useRef(null);
@@ -57,8 +56,7 @@ export default function Rafting() {
 
   return (
     <>
-      <Header />
-
+      
       {/* <div className={styles.title} ref={trekking_ref}>
         Trekking
         <span className={styles.title_border}></span>

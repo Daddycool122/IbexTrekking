@@ -6,7 +6,6 @@ import Title from "./Title";
 import Itinerary from "./Itinerary";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import Form from "./Form";
 import FaqAccordion from "./FaqAccordion";
 import img1 from "../assets/tour/chardham/chardham-yatra-tour-1.webp";
@@ -31,8 +30,7 @@ export default function ChardhamYatra() {
         <meta name="description" content="Join our comprehensive Chardham Yatra 2026 package covering Yamunotri, Gangotri, Kedarnath, and Badrinath. Premium stay and guided spiritual journey." />
       </Helmet>
 
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Chardham Yatra 2026"}
         open_form={setOpen_form}

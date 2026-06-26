@@ -14,7 +14,6 @@ import img6 from "../assets/Trek/alibedni/alibedni-trek-6.webp";
 import img7 from "../assets/Trek/alibedni/alibedni-trek-7.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -60,8 +59,7 @@ export default function AliBedniBugyal() {
           })}
         </script>
       </Helmet>
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Ali Bedni Bugyal Trek"}
         open_form={setOpen_form}

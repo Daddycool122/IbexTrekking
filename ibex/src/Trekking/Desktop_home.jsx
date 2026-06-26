@@ -1,7 +1,6 @@
 import styles from "./Desktop_home.module.css";
 
 import { motion } from "framer-motion";
-import Header from "../Header";
 
 export default function Desktop_home({
   title,
@@ -14,8 +13,7 @@ export default function Desktop_home({
 
   return (
     <>
-      <Header />
-
+      
 
       <div className={styles.main_intro_section_home}>
         <motion.div

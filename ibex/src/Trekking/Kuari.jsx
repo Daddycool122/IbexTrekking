@@ -17,7 +17,6 @@ import img9 from "../assets/Trek/kuari/kuari-trek-9.webp";
 import img10 from "../assets/Trek/kuari/kuari-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import Header from "../Header";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -57,8 +56,7 @@ export default function WinterKuariPass() {
           })}
         </script>
       </Helmet>
-      <Header />
-      <Desktop_intro_section
+            <Desktop_intro_section
         img={img1}
         title={"Winter Kuari Pass Trek"}
         open_form={setOpen_form}

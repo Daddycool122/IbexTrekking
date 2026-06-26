@@ -22,7 +22,6 @@ import RaftingForm from "../Trekking/RaftingForm";
 import { useSearchParams } from "react-router-dom";
 import Videos from "./Video";
 import { motion } from "framer-motion";
-import Header from "../Header";
 
 export default function Rafting() {
   const [searchParams] = useSearchParams();
@@ -43,8 +42,7 @@ export default function Rafting() {
         path="/river-rafting"
       />
 
-      <Header />
-      <Intro_section
+            <Intro_section
         title={"River Rafting"}
         img={img1}
         des={"Where roaring rivers meet fearless hearts."}

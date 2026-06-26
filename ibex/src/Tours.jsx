@@ -7,7 +7,6 @@ import imgAdikailash from "./assets/tour/adikailash/adikailash-tour-1.webp";
 import imgChardham from "./assets/tour/chardham/chardham-yatra-tour-1.webp";
 import { useEffect } from "react";
 import Footer from "./footer/Footer";
-import Header from "./Header";
 
 export default function Tours() {
   const navigate = useNavigate();
@@ -38,8 +37,7 @@ export default function Tours() {
         path="/tours"
       />
 
-      <Header />
-
+      
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
           <img loading="lazy" src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />
