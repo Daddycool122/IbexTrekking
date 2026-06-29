@@ -164,6 +164,19 @@
   font-weight: 700;
 }
 
+.postContent a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.postContent a:hover {
+  color: #1d4ed8;
+  border-bottom: 1px solid #1d4ed8;
+}
+
 .postContent blockquote {
   border-left: 4px solid #1a1a1a;
   padding-left: 20px;
