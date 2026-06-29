@@ -3,53 +3,53 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <!-- Main Pages -->
-    <url><loc>https://ibexiceaxe.com/</loc><priority>1.0</priority></url>
-    <url><loc>https://ibexiceaxe.com/trekking</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/tours</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/river-rafting</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/rafting?id=16</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/rafting?id=25</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/rafting?id=35</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/about</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/contact-us</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/</loc><priority>1.0</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/trekking</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/tours</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/river-rafting</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/rafting?id=16</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/rafting?id=25</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/rafting?id=35</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/about</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/contact-us</loc><priority>0.8</priority></url>
 
     <!-- Policies -->
-    <url><loc>https://ibexiceaxe.com/terms-and-condition</loc><priority>0.5</priority></url>
-    <url><loc>https://ibexiceaxe.com/privacy-policy</loc><priority>0.5</priority></url>
-    <url><loc>https://ibexiceaxe.com/refund-and-cancellation</loc><priority>0.5</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/terms-and-condition</loc><priority>0.5</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/privacy-policy</loc><priority>0.5</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/refund-and-cancellation</loc><priority>0.5</priority></url>
 
     <!-- Treks & Tours -->
-    <url><loc>https://ibexiceaxe.com/valley-of-flowers-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/chopta-chandrashilla-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/pangarchulla-peak-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/panch-kedar-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/kedarkantha-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/kuari-pass-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/gaumukh-tapovan-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/brahmatal-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/ali-bedni-bugyal-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/dayara-bugyal-trek</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/kunjapuri-tour</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/adi-kailash-tour</loc><priority>0.9</priority></url>
-    <url><loc>https://ibexiceaxe.com/chardham-yatra-2026</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/valley-of-flowers-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/chopta-chandrashilla-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/pangarchulla-peak-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/panch-kedar-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/kedarkantha-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/kuari-pass-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/gaumukh-tapovan-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/brahmatal-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/ali-bedni-bugyal-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/dayara-bugyal-trek</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/kunjapuri-tour</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/adi-kailash-tour</loc><priority>0.9</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/chardham-yatra-2026</loc><priority>0.9</priority></url>
 
     <!-- Blogs -->
-    <url><loc>https://ibexiceaxe.com/blog/best-treks-in-uttarakhand-2026</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/valley-of-flowers-trek-complete-guide</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/kedarkantha-trek-cost-breakdown</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/what-to-pack-for-himalayan-treks</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/chopta-chandrashila-trek-for-beginners</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/top-10-treks-near-rishikesh</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/best-time-to-visit-valley-of-flowers</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/chardham-yatra-guide-2026</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/trekking-in-uttarakhand-in-winter</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/brahmatal-trek-perfect-winter-trek</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/roopkund-vs-ali-bedni-bugyal</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/how-to-prepare-physically-for-himalayan-trek</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/river-rafting-in-rishikesh-guide</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/panch-kedar-trek-itinerary-tips</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/kuari-pass-trek-curzon-trail</loc><priority>0.8</priority></url>
-    <url><loc>https://ibexiceaxe.com/blog/solo-trekking-in-himalayas-safety</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/best-treks-in-uttarakhand-2026</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/valley-of-flowers-trek-complete-guide</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/kedarkantha-trek-cost-breakdown</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/what-to-pack-for-himalayan-treks</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/chopta-chandrashila-trek-for-beginners</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/top-10-treks-near-rishikesh</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/best-time-to-visit-valley-of-flowers</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/chardham-yatra-guide-2026</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/trekking-in-uttarakhand-in-winter</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/brahmatal-trek-perfect-winter-trek</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/roopkund-vs-ali-bedni-bugyal</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/how-to-prepare-physically-for-himalayan-trek</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/river-rafting-in-rishikesh-guide</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/panch-kedar-trek-itinerary-tips</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/kuari-pass-trek-curzon-trail</loc><priority>0.8</priority></url>
+    <url><loc>https://www.ibexiceaxe.com/blog/solo-trekking-in-himalayas-safety</loc><priority>0.8</priority></url>
 
 </urlset>
