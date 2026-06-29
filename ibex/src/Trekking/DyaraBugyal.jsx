@@ -24,7 +24,7 @@ import img16 from "../assets/Trek/dyarabugyal/dyarabugyal-trek-16.webp";
 import img17 from "../assets/Trek/dyarabugyal/dyarabugyal-trek-17.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function DyaraBugyal() {
@@ -34,68 +34,35 @@ export default function DyaraBugyal() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>
-          Dayara Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex Ice
-          Axe
-        </title>
-
-        <meta
-          name="description"
-          content="Book Dayara Bugyal Trek 2026 with Ibex Ice Axe. Explore one of India's most beautiful alpine meadows with stunning views of Bandarpoonch, Gangotri Range, and Himalayan peaks. Beginner-friendly trek in Uttarakhand."
-        />
-
-        <meta
-          name="keywords"
-          content="Dayara Bugyal Trek, Dayara Bugyal Trek 2026, Dayara Bugyal Trek Uttarakhand, Dayara Bugyal package, best meadow trek India, beginner trek Uttarakhand, Dayara Bugyal itinerary, Dayara Bugyal booking, Dayara Bugyal cost, Himalayan meadow trek"
-        />
-
-        <link
-          rel="canonical"
-          href="https://ibexiceaxe.com/dayara-bugyal-trek"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Dayara Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand"
-        />
-        <meta
-          property="og:description"
-          content="Experience the stunning Dayara Bugyal Trek with endless meadows, forests, and breathtaking Himalayan views."
-        />
-        <meta
-          property="og:url"
-          content="https://ibexiceaxe.com/dayara-bugyal-trek"
-        />
-        <meta property="og:image" content={img8} />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Dayara Bugyal Trek",
-            description:
-              "Dayara Bugyal Trek is one of the most beautiful alpine meadow treks in Uttarakhand, offering panoramic Himalayan views and beginner-friendly trails.",
-            touristType: "Trekking",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-              url: "https://ibexiceaxe.com",
-            },
-            itinerary: {
-              "@type": "ItemList",
-              numberOfItems: 5,
-            },
-            offers: {
-              "@type": "Offer",
-              price: "10999",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock",
-            },
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        title="Dayara Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex Ice Axe"
+        description="Book Dayara Bugyal Trek 2026 with Ibex Ice Axe. Explore one of India's most beautiful alpine meadows with stunning views of Bandarpoonch, Gangotri Range, and Himalayan peaks. Beginner-friendly trek in Uttarakhand."
+        keywords="Dayara Bugyal Trek, Dayara Bugyal Trek 2026, Dayara Bugyal Trek Uttarakhand, Dayara Bugyal package, best meadow trek India, beginner trek Uttarakhand, Dayara Bugyal itinerary, Dayara Bugyal booking, Dayara Bugyal cost, Himalayan meadow trek"
+        path="/dayara-bugyal-trek"
+        image={img8}
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Dayara Bugyal Trek",
+          description: "Dayara Bugyal Trek is one of the most beautiful alpine meadow treks in Uttarakhand, offering panoramic Himalayan views and beginner-friendly trails.",
+          touristType: "Trekking",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe",
+            url: "https://ibexiceaxe.com"
+          },
+          itinerary: {
+            "@type": "ItemList",
+            numberOfItems: 5
+          },
+          offers: {
+            "@type": "Offer",
+            price: "10999",
+            priceCurrency: "INR",
+            availability: "https://schema.org/InStock"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img8}
         title={"Dayara Bugyal Trek"}

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "./components/SEO";
 import React, { useState } from "react";
 import styles from "./About.module.css"; // keep CSS separate for clarity
 import { useNavigate } from "react-router-dom";
@@ -80,11 +80,17 @@ const AboutUs = () => {
   return (
     <div className={styles.aboutPage}>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/about" />
-        <title>About Ibex Ice Axe | Our Story & Mission</title>
-        <meta name="description" content="Learn about Ibex Ice Axe, our expert team of mountaineers, and our mission to provide safe, sustainable, and unforgettable Himalayan adventures." />
-      </Helmet>
+      <SEO 
+        title="About Ibex Ice Axe | Our Story & Mission"
+        description="Learn about Ibex Ice Axe, our expert team of mountaineers, and our mission to provide safe, sustainable, and unforgettable Himalayan adventures."
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Ibex Ice Axe",
+          "url": "https://ibexiceaxe.com/",
+          "logo": "https://ibexiceaxe.com/logo.ico"
+        }}
+      />
 
       {/* Hero Section */}
       <header className={styles.hero}>

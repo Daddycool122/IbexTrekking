@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "./components/SEO";
 import React from "react";
 import styles from "./ContactUs.module.css";
 
@@ -6,11 +6,24 @@ export default function ContactUs() {
   return (
     <div className={styles.contactWrapper}>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/contact-us" />
-        <title>Contact Us | Ibex Ice Axe</title>
-        <meta name="description" content="Get in touch with Ibex Ice Axe for bookings, trek inquiries, and custom adventure packages. We are here to help you plan your next Himalayan journey." />
-      </Helmet>
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with Ibex Ice Axe for bookings, trek inquiries, and custom adventure packages. We are here to help you plan your next Himalayan journey."
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Ibex Ice Axe",
+          "telephone": "+91-6396518778",
+          "email": "contact@ibexiceaxe.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rishikesh",
+            "addressRegion": "Uttarakhand",
+            "addressCountry": "India",
+            "postalCode": "249193"
+          }
+        }}
+      />
 
       <header className={styles.contactHeader}>
         <h1>IBEX ICE AXE - Contact Us</h1>

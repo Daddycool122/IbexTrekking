@@ -1,3 +1,4 @@
+import SEO from "./components/SEO";
 import Desktop_intro_section from "./Trekking/Desktop_intro_section";
 import Desktop_home from "./Trekking/Desktop_home";
 import img1 from "./assets/home/himalayan-trekking-home-1.webp";
@@ -56,6 +57,11 @@ export default function Rafting() {
 
   return (
     <>
+      <SEO 
+        title="River Rafting in Rishikesh | Best Rafting Packages 2026"
+        description="Experience the thrill of river rafting in Rishikesh. Choose from 16km, 25km, and 35km rafting packages with expert guides and premium safety equipment."
+        keywords="River Rafting Rishikesh, Rishikesh Rafting Packages, White Water Rafting India, Adventure Sports"
+      />
       
       {/* <div className={styles.title} ref={trekking_ref}>
         Trekking

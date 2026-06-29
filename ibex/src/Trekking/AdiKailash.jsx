@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
 import styles from "./Trek.module.css";
@@ -21,14 +21,26 @@ export default function AdiKailash() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const touristTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Adi Kailash & Om Parvat Tour",
+    "description": "Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Ibex Ice Axe"
+    }
+  };
+
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/adi-kailash-tour" />
-        <title>Adi Kailash Tour Package 2026 | Om Parvat Yatra | Ibex Ice Axe</title>
-        <meta name="description" content="Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey." />
-      </Helmet>
+      <SEO 
+        title="Adi Kailash Tour Package 2026 | Om Parvat Yatra | Ibex Ice Axe"
+        description="Book the sacred Adi Kailash and Om Parvat Yatra for 2026. Complete itinerary, pricing, and booking details for this holy Himalayan journey."
+        path="/adi-kailash-tour"
+        schemaData={touristTripSchema}
+      />
 
             <Desktop_intro_section
         img={img1}

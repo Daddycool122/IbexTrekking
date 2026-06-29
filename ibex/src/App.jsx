@@ -41,7 +41,7 @@ const BlogList = lazy(() => import("./blogs/BlogList.jsx"));
 const BlogPost = lazy(() => import("./blogs/BlogPost.jsx"));
 const NotFound = lazy(() => import("./NotFound.jsx"));
 
-import GlobalCanonical from "./components/GlobalCanonical.jsx";
+
 import Header from "./Header.jsx";
 
 function App() {
@@ -72,7 +72,7 @@ function App() {
 
   return (
     <Router>
-      <GlobalCanonical />
+
       <Header />
       <ScrollToTop />
       <Suspense fallback={<LoadingScreen />}>

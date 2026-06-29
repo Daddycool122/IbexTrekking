@@ -17,7 +17,7 @@ import img9 from "../assets/Trek/brahmataal/brahmataal-trek-9.webp";
 import img10 from "../assets/Trek/brahmataal/brahmataal-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function Brahmatal() {
@@ -27,37 +27,22 @@ export default function Brahmatal() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>
-          Brahmatal Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe
-        </title>
-
-        <meta
-          name="description"
-          content="Book Brahmatal Trek 2026 with Ibex Ice Axe. Explore frozen lakes, snow-covered trails, Himalayan summit views, detailed itinerary, trek cost, and booking information."
-        />
-
-        <meta
-          name="keywords"
-          content="Brahmatal Trek, Brahmatal Trek 2026, Brahmatal Trek Cost, Snow Trek Uttarakhand, Winter Trek India, Brahmatal Package"
-        />
-
-        <link rel="canonical" href="https://ibexiceaxe.com/brahmatal-trek" />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Brahmatal Trek",
-            description:
-              "Brahmatal Trek with frozen lakes and Himalayan summit views.",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-            },
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        title="Brahmatal Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe"
+        description="Book Brahmatal Trek 2026 with Ibex Ice Axe. Explore frozen lakes, snow-covered trails, Himalayan summit views, detailed itinerary, trek cost, and booking information."
+        keywords="Brahmatal Trek, Brahmatal Trek 2026, Brahmatal Trek Cost, Snow Trek Uttarakhand, Winter Trek India, Brahmatal Package"
+        path="/brahmatal-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Brahmatal Trek",
+          description: "Brahmatal Trek with frozen lakes and Himalayan summit views.",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img4}
         title={"Brahmatal Trek"}

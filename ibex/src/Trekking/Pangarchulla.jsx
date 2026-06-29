@@ -16,7 +16,7 @@ import img9 from "../assets/Trek/pangarchulla/pangarchulla-trek-9.webp";
 import img10 from "../assets/Trek/pangarchulla/pangarchulla-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 import FaqAccordion from "./FaqAccordion";
 
@@ -27,67 +27,35 @@ export default function PangarchullaPeak() {
   }, []);
   return (
     <>
-    <Helmet>
-  <title>
-    Pangarchulla Peak Trek 2026 | Summit Trek in Uttarakhand | Ibex Ice Axe
-  </title>
-
-  <meta
-    name="description"
-    content="Book Pangarchulla Peak Trek 2026 with Ibex Ice Axe. Conquer the thrilling 15,100 ft summit and witness breathtaking views of Nanda Devi, Chaukhamba, Hathi Ghoda, and the Garhwal Himalayas."
-  />
-
-  <meta
-    name="keywords"
-    content="Pangarchulla Peak Trek, Pangarchulla Trek 2026, Pangarchulla Peak Uttarakhand, Pangarchulla Summit Trek, Pangarchulla Trek Cost, Pangarchulla Trek Package, Pangarchulla Trek Booking, Uttarakhand Summit Trek"
-  />
-
-  <link
-    rel="canonical"
-    href="https://ibexiceaxe.com/pangarchulla-peak-trek"
-  />
-
-  <meta property="og:type" content="website" />
-  <meta
-    property="og:title"
-    content="Pangarchulla Peak Trek 2026 | Summit Trek in Uttarakhand"
-  />
-  <meta
-    property="og:description"
-    content="Experience one of the most thrilling summit treks in Uttarakhand with stunning Himalayan panoramas."
-  />
-  <meta
-    property="og:url"
-    content="https://ibexiceaxe.com/pangarchulla-peak-trek"
-  />
-  <meta property="og:image" content={img1} />
-
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "TouristTrip",
-      name: "Pangarchulla Peak Trek",
-      description:
-        "Pangarchulla Peak Trek is a challenging summit trek in Uttarakhand offering panoramic Himalayan views and an exciting summit climb.",
-      touristType: "Trekking",
-      provider: {
-        "@type": "Organization",
-        name: "Ibex Ice Axe",
-        url: "https://ibexiceaxe.com",
-      },
-      itinerary: {
-        "@type": "ItemList",
-        numberOfItems: 7,
-      },
-      offers: {
-        "@type": "Offer",
-        price: "13999",
-        priceCurrency: "INR",
-        availability: "https://schema.org/InStock",
-      },
-    })}
-  </script>
-</Helmet>
+      <SEO 
+        title="Pangarchulla Peak Trek 2026 | Summit Trek in Uttarakhand | Ibex Ice Axe"
+        description="Book Pangarchulla Peak Trek 2026 with Ibex Ice Axe. Conquer the thrilling 15,100 ft summit and witness breathtaking views of Nanda Devi, Chaukhamba, Hathi Ghoda, and the Garhwal Himalayas."
+        keywords="Pangarchulla Peak Trek, Pangarchulla Trek 2026, Pangarchulla Peak Uttarakhand, Pangarchulla Summit Trek, Pangarchulla Trek Cost, Pangarchulla Trek Package, Pangarchulla Trek Booking, Uttarakhand Summit Trek"
+        path="/pangarchulla-peak-trek"
+        image={img1}
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Pangarchulla Peak Trek",
+          description: "Pangarchulla Peak Trek is a challenging summit trek in Uttarakhand offering panoramic Himalayan views and an exciting summit climb.",
+          touristType: "Trekking",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe",
+            url: "https://ibexiceaxe.com"
+          },
+          itinerary: {
+            "@type": "ItemList",
+            numberOfItems: 7
+          },
+          offers: {
+            "@type": "Offer",
+            price: "13999",
+            priceCurrency: "INR",
+            availability: "https://schema.org/InStock"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img1}
         title={"Pangarchulla Peak Trek"}

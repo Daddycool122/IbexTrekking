@@ -15,7 +15,7 @@ import img9 from "../assets/Trek/kedarkantha/kedarkantha-trek-9.webp";
 import img10 from "../assets/Trek/kedarkantha/kedarkantha-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function Kedarkantha() {
@@ -25,37 +25,22 @@ export default function Kedarkantha() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>
-          Kedarkantha Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe
-        </title>
-
-        <meta
-          name="description"
-          content="Book Kedarkantha Trek 2026 with Ibex Ice Axe. Experience India's most popular winter trek with snow-covered trails, summit views, itinerary, cost, and booking details."
-        />
-
-        <meta
-          name="keywords"
-          content="Kedarkantha Trek, Kedarkantha Trek 2026, Kedarkantha Trek Cost, Kedarkantha Package, Snow Trek Uttarakhand, Winter Trek India"
-        />
-
-        <link rel="canonical" href="https://ibexiceaxe.com/kedarkantha-trek" />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Kedarkantha Trek",
-            description:
-              "Kedarkantha Trek in Uttarakhand with snow-covered trails and summit views.",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-            },
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        title="Kedarkantha Trek 2026 | Snow Trek in Uttarakhand | Ibex Ice Axe"
+        description="Book Kedarkantha Trek 2026 with Ibex Ice Axe. Experience India's most popular winter trek with snow-covered trails, summit views, itinerary, cost, and booking details."
+        keywords="Kedarkantha Trek, Kedarkantha Trek 2026, Kedarkantha Trek Cost, Kedarkantha Package, Snow Trek Uttarakhand, Winter Trek India"
+        path="/kedarkantha-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Kedarkantha Trek",
+          description: "Kedarkantha Trek in Uttarakhand with snow-covered trails and summit views.",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img8}
         title={"Kedarkantha Trek"}

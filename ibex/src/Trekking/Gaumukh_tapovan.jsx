@@ -17,7 +17,7 @@ import img9 from "../assets/Trek/gaumukh/gaumukh-trek-9.webp";
 import img10 from "../assets/Trek/gaumukh/gaumukh-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function Gaumukh_Tapovan() {
@@ -27,67 +27,35 @@ export default function Gaumukh_Tapovan() {
   }, []);
   return (
     <>
-    <Helmet>
-  <title>
-    Gaumukh Tapovan Trek 2026 | Source of Ganga & Mt. Shivling Views | Ibex Ice Axe
-  </title>
-
-  <meta
-    name="description"
-    content="Book Gaumukh Tapovan Trek 2026 with Ibex Ice Axe. Trek to the source of the Ganga at Gaumukh Glacier and witness breathtaking views of Mt. Shivling, Bhagirathi Peaks, and Tapovan meadows."
-  />
-
-  <meta
-    name="keywords"
-    content="Gaumukh Tapovan Trek, Gaumukh Trek, Tapovan Trek, Gaumukh Tapovan Trek 2026, Gangotri Glacier Trek, Source of Ganga Trek, Mt Shivling Trek, Uttarakhand Himalayan Trek"
-  />
-
-  <link
-    rel="canonical"
-    href="https://ibexiceaxe.com/gaumukh-tapovan-trek"
-  />
-
-  <meta property="og:type" content="website" />
-  <meta
-    property="og:title"
-    content="Gaumukh Tapovan Trek 2026 | Source of Ganga & Mt. Shivling Views"
-  />
-  <meta
-    property="og:description"
-    content="Experience the legendary Gaumukh Tapovan Trek and witness the source of the Ganga along with majestic Himalayan peaks."
-  />
-  <meta
-    property="og:url"
-    content="https://ibexiceaxe.com/gaumukh-tapovan-trek"
-  />
-  <meta property="og:image" content={img10} />
-
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "TouristTrip",
-      name: "Gaumukh Tapovan Trek",
-      description:
-        "Gaumukh Tapovan Trek is one of the most iconic Himalayan treks leading to the source of the Ganga River and the stunning Tapovan meadows.",
-      touristType: "Trekking",
-      provider: {
-        "@type": "Organization",
-        name: "Ibex Ice Axe",
-        url: "https://ibexiceaxe.com",
-      },
-      itinerary: {
-        "@type": "ItemList",
-        numberOfItems: 8,
-      },
-      offers: {
-        "@type": "Offer",
-        price: "18999",
-        priceCurrency: "INR",
-        availability: "https://schema.org/InStock",
-      },
-    })}
-  </script>
-</Helmet>
+      <SEO 
+        title="Gaumukh Tapovan Trek 2026 | Source of Ganga & Mt. Shivling Views | Ibex Ice Axe"
+        description="Book Gaumukh Tapovan Trek 2026 with Ibex Ice Axe. Trek to the source of the Ganga at Gaumukh Glacier and witness breathtaking views of Mt. Shivling, Bhagirathi Peaks, and Tapovan meadows."
+        keywords="Gaumukh Tapovan Trek, Gaumukh Trek, Tapovan Trek, Gaumukh Tapovan Trek 2026, Gangotri Glacier Trek, Source of Ganga Trek, Mt Shivling Trek, Uttarakhand Himalayan Trek"
+        path="/gaumukh-tapovan-trek"
+        image={img10}
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Gaumukh Tapovan Trek",
+          description: "Gaumukh Tapovan Trek is one of the most iconic Himalayan treks leading to the source of the Ganga River and the stunning Tapovan meadows.",
+          touristType: "Trekking",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe",
+            url: "https://ibexiceaxe.com"
+          },
+          itinerary: {
+            "@type": "ItemList",
+            numberOfItems: 8
+          },
+          offers: {
+            "@type": "Offer",
+            price: "18999",
+            priceCurrency: "INR",
+            availability: "https://schema.org/InStock"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img10}
         title={"Gaumukh Tapovan Trek"}

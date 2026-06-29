@@ -18,7 +18,7 @@ import img9 from "../assets/Trek/chopta/chopta-trek-9.webp";
 import img10 from "../assets/Trek/chopta/chopta-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function Chopta_Chandrashila() {
@@ -28,40 +28,22 @@ export default function Chopta_Chandrashila() {
   }, []);
   return (
     <>
-    <Helmet>
-  <title>
-    Chopta Chandrashila Trek 2026 | Tungnath Trek Package | Ibex Ice Axe
-  </title>
-
-  <meta
-    name="description"
-    content="Book Chopta Chandrashila Trek 2026 with Ibex Ice Axe. Visit Tungnath Temple, Chandrashila Summit, enjoy Himalayan views, itinerary, cost, and booking details."
-  />
-
-  <meta
-    name="keywords"
-    content="Chopta Chandrashila Trek, Tungnath Trek, Chandrashila Trek 2026, Chopta Trek Package, Tungnath Temple Trek, Weekend Trek Uttarakhand"
-  />
-
-  <link
-    rel="canonical"
-    href="https://ibexiceaxe.com/chopta-chandrashilla-trek"
-  />
-
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "TouristTrip",
-      name: "Chopta Chandrashila Trek",
-      description:
-        "Chopta Chandrashila Trek with Tungnath Temple and Himalayan summit views.",
-      provider: {
-        "@type": "Organization",
-        name: "Ibex Ice Axe",
-      },
-    })}
-  </script>
-</Helmet>
+      <SEO 
+        title="Chopta Chandrashila Trek 2026 | Tungnath Trek Package | Ibex Ice Axe"
+        description="Book Chopta Chandrashila Trek 2026 with Ibex Ice Axe. Visit Tungnath Temple, Chandrashila Summit, enjoy Himalayan views, itinerary, cost, and booking details."
+        keywords="Chopta Chandrashila Trek, Tungnath Trek, Chandrashila Trek 2026, Chopta Trek Package, Tungnath Temple Trek, Weekend Trek Uttarakhand"
+        path="/chopta-chandrashilla-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Chopta Chandrashila Trek",
+          description: "Chopta Chandrashila Trek with Tungnath Temple and Himalayan summit views.",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img4}
         title={"Chopta Chandrashila"}

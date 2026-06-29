@@ -14,7 +14,7 @@ import img6 from "../assets/Trek/alibedni/alibedni-trek-6.webp";
 import img7 from "../assets/Trek/alibedni/alibedni-trek-7.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function AliBedniBugyal() {
@@ -24,41 +24,22 @@ export default function AliBedniBugyal() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>
-          Ali Bedni Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex
-          Ice Axe
-        </title>
-
-        <meta
-          name="description"
-          content="Book Ali Bedni Bugyal Trek 2026 with Ibex Ice Axe. Explore India's most beautiful alpine meadows, Bedni Kund, Trishul views, complete itinerary, trek cost, and booking details."
-        />
-
-        <meta
-          name="keywords"
-          content="Ali Bedni Bugyal Trek, Ali Bugyal Trek, Bedni Bugyal Trek, Ali Bedni Bugyal Trek 2026, Meadow Trek Uttarakhand, Best Trek in Uttarakhand"
-        />
-
-        <link
-          rel="canonical"
-          href="https://ibexiceaxe.com/ali-bedni-bugyal-trek"
-        />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Ali Bedni Bugyal Trek",
-            description:
-              "Ali Bedni Bugyal Trek through India's most beautiful alpine meadows.",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-            },
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        title="Ali Bedni Bugyal Trek 2026 | Best Meadow Trek in Uttarakhand | Ibex Ice Axe"
+        description="Book Ali Bedni Bugyal Trek 2026 with Ibex Ice Axe. Explore India's most beautiful alpine meadows, Bedni Kund, Trishul views, complete itinerary, trek cost, and booking details."
+        keywords="Ali Bedni Bugyal Trek, Ali Bugyal Trek, Bedni Bugyal Trek, Ali Bedni Bugyal Trek 2026, Meadow Trek Uttarakhand, Best Trek in Uttarakhand"
+        path="/ali-bedni-bugyal-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Ali Bedni Bugyal Trek",
+          description: "Ali Bedni Bugyal Trek through India's most beautiful alpine meadows.",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img1}
         title={"Ali Bedni Bugyal Trek"}

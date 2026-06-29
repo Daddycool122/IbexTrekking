@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
@@ -20,14 +20,26 @@ export default function KunjapuriTour() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const touristTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Kunjapuri Sunrise Hike",
+    "description": "Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Ibex Ice Axe"
+    }
+  };
+
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/kunjapuri-tour" />
-        <title>Kunjapuri Sunrise Hike Rishikesh | Day Hike | Ibex Ice Axe</title>
-        <meta name="description" content="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas." />
-      </Helmet>
+      <SEO 
+        title="Kunjapuri Sunrise Hike Rishikesh | Day Hike | Ibex Ice Axe"
+        description="Experience the breathtaking Kunjapuri Sunrise Hike near Rishikesh. A perfect half-day trek with panoramic views of the Garhwal Himalayas."
+        path="/kunjapuri-tour"
+        schemaData={touristTripSchema}
+      />
 
             <Desktop_intro_section
         img={img1}

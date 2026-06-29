@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "./components/SEO";
 import "./Review.css"; // We'll write custom CSS
 import axios from "axios";
 import { apiUrl } from "./apiConfig";
@@ -43,6 +44,10 @@ const ReviewForm = () => {
 
   return (
     <div className="review-wrapper">
+      <SEO 
+        title="Leave a Review | Ibex Ice Axe"
+        description="Share your adventure experience with Ibex Ice Axe. Read and write reviews for Himalayan treks and river rafting tours."
+      />
       <div className="review-card">
         <h2>Share Your Adventure!</h2>
         <p>We’d love to hear about your experience with us.</p>

@@ -108,6 +108,17 @@ export default function Home() {
         scrollToTrekking={scrollToTrekking}
         scrollToReviw={scrollToReviw}
       />
+
+      <section className={styles.seo_content}>
+        <h1>Ibex Ice Axe - Explore the Unexplored Himalayas</h1>
+        <p>
+          Welcome to Ibex Ice Axe, your premier adventure travel agency specializing in Himalayan treks, river rafting in Rishikesh, and breathtaking outdoor tours. We are dedicated to providing safe, thrilling, and unforgettable experiences in the heart of the Indian Himalayas.
+        </p>
+        <p>
+          Whether you are looking to conquer high-altitude peaks like Kedarkantha and Pangarchulla, explore lush alpine meadows such as Ali Bedni Bugyal and Dayara Bugyal, or experience the adrenaline rush of white water river rafting on the Ganges, our expert guides and well-planned itineraries ensure a journey of a lifetime. Join us to discover the untamed beauty of nature, challenge your limits, and create memories that will last forever.
+        </p>
+      </section>
+
       <div className={styles.section_intro}>
         <p className={styles.section_kicker}>Adventure Starts Here</p>
         <h2 className={styles.section_title}>
@@ -118,7 +129,7 @@ export default function Home() {
 
       <div className={styles.trr_section}>
         <div className={styles.trr_indi} onClick={() => navigate("/trekking")}>
-          <img loading="lazy" src={trekking}  width="600" height="400" className={styles.trr_img} alt="Trekking" />
+          <img loading="lazy" src={trekking}  width="600" height="400" className={styles.trr_img} alt="Group of trekkers exploring the Himalayan trails in Uttarakhand" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Trekking</div>
             <div className={styles.trr_des}>
@@ -131,7 +142,7 @@ export default function Home() {
           className={styles.trr_indi}
           onClick={() => navigate("/river-rafting")}
         >
-          <img loading="lazy" src={rafting}  width="600" height="400" className={styles.trr_img} alt="Rafting" />
+          <img loading="lazy" src={rafting}  width="600" height="400" className={styles.trr_img} alt="Exciting white water rafting experience in Rishikesh on the Ganges" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Rafting</div>
             <div className={styles.trr_des}>
@@ -144,7 +155,7 @@ export default function Home() {
           className={styles.trr_indi}
           onClick={() => navigate("/tours")}
         >
-          <img loading="lazy" src={img12}  width="600" height="400" className={styles.trr_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={img12}  width="600" height="400" className={styles.trr_img} alt="Adventurous trekking and camping experience in the Indian Himalayas" />
           <div className={styles.trr_blur}>
             <div className={styles.trr_title}>Tours</div>
             <div className={styles.trr_des}>
@@ -206,7 +217,7 @@ export default function Home() {
       {/* Hidden: Original trekking cards section */}
       <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img2}  width="600" height="400" className={styles.ad_cd_img} alt="Valley Of Flower Trek" />
+          <img loading="lazy" src={img2}  width="600" height="400" className={styles.ad_cd_img} alt="Valley of Flowers Trek - Vibrant alpine meadows and diverse flora in Uttarakhand" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -278,7 +289,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img4}  width="600" height="400" className={styles.ad_cd_img} alt="Chopta Trek" />
+          <img loading="lazy" src={img4}  width="600" height="400" className={styles.ad_cd_img} alt="Chopta Chandrashila Trek - Snow-covered trails and views of Tungnath Temple" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>3 Days & 2 Nights</div>
 
@@ -350,7 +361,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img3}  width="600" height="400" className={styles.ad_cd_img} alt="Brahmataal Trek" />
+          <img loading="lazy" src={img3}  width="600" height="400" className={styles.ad_cd_img} alt="Brahmatal Trek - Frozen lake and majestic Himalayan mountain peaks in winter" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -422,7 +433,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img5}  width="600" height="400" className={styles.ad_cd_img} alt="Gaumukh Trek" />
+          <img loading="lazy" src={img5}  width="600" height="400" className={styles.ad_cd_img} alt="Gaumukh Tapovan Trek - Journey to the source of the river Ganga and Mt. Shivling" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>8 Days & 7 Nights</div>
 
@@ -494,7 +505,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img6}  width="600" height="400" className={styles.ad_cd_img} alt="Kedarkantha Trek" />
+          <img loading="lazy" src={img6}  width="600" height="400" className={styles.ad_cd_img} alt="Kedarkantha Trek - Popular winter snow trekking destination in the Himalayas" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -566,7 +577,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img7}  width="600" height="400" className={styles.ad_cd_img} alt="Kuari Trek" />
+          <img loading="lazy" src={img7}  width="600" height="400" className={styles.ad_cd_img} alt="Kuari Pass Trek - Lord Curzon trail with stunning views of the Garhwal Himalayas" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -638,7 +649,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img8}  width="600" height="400" className={styles.ad_cd_img} alt="Panch Kedar Trek" />
+          <img loading="lazy" src={img8}  width="600" height="400" className={styles.ad_cd_img} alt="Panch Kedar Trek - Sacred Himalayan pilgrimage trail visiting five Shiva temples" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>12 Days & 11 Nights</div>
 
@@ -710,7 +721,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img9}  width="600" height="400" className={styles.ad_cd_img} alt="Pangarchulla Trek" />
+          <img loading="lazy" src={img9}  width="600" height="400" className={styles.ad_cd_img} alt="Pangarchulla Peak Trek - Thrilling high-altitude summit trek in Uttarakhand" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>7 Days & 6 Nights</div>
 
@@ -782,7 +793,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img10}  width="600" height="400" className={styles.ad_cd_img} alt="Alibedni Trek" />
+          <img loading="lazy" src={img10}  width="600" height="400" className={styles.ad_cd_img} alt="Ali Bedni Bugyal Trek - Breathtaking high-altitude alpine meadows and Trishul views" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>6 Days & 5 Nights</div>
 
@@ -854,7 +865,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img11}  width="600" height="400" className={styles.ad_cd_img} alt="Dyarabugyal Trek" />
+          <img loading="lazy" src={img11}  width="600" height="400" className={styles.ad_cd_img} alt="Dayara Bugyal Trek - Expansive green alpine meadows ideal for beginner trekkers" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>5 Days & 4 Nights</div>
 
@@ -926,7 +937,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={img12}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={img12}  width="600" height="400" className={styles.ad_cd_img} alt="Exciting Himalayan adventure sports and outdoor activities in India" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>1 Day Tour</div>
 
@@ -1050,7 +1061,7 @@ export default function Home() {
       {/* Hidden: Original rafting cards section */}
       <div className={styles.adventure_card_section} style={{display: 'none'}}>
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting1}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting1}  width="600" height="400" className={styles.ad_cd_img} alt="Thrilling 16km white water rafting adventure in Rishikesh" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>16 KM River Rafting</div>
 
@@ -1122,7 +1133,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting2}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting2}  width="600" height="400" className={styles.ad_cd_img} alt="Exhilarating 24km river rafting experience on the Ganges in Rishikesh" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>25 KM River Rafting</div>
 
@@ -1194,7 +1205,7 @@ export default function Home() {
         </div>
 
         <div className={styles.indi_adventure_card}>
-          <img loading="lazy" src={rafting3}  width="600" height="400" className={styles.ad_cd_img} alt="Himalayan Adventure" />
+          <img loading="lazy" src={rafting3}  width="600" height="400" className={styles.ad_cd_img} alt="Ultimate 36km white water river rafting challenge in Rishikesh, Uttarakhand" />
           <div className={styles.date_night_rating}>
             <div className={styles.date_night}>35 KM River Rafting</div>
 

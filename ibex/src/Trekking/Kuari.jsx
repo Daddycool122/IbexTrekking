@@ -17,7 +17,7 @@ import img9 from "../assets/Trek/kuari/kuari-trek-9.webp";
 import img10 from "../assets/Trek/kuari/kuari-trek-10.webp";
 import { useState, useEffect } from "react";
 import Footer from "../footer/Footer";
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
 export default function WinterKuariPass() {
@@ -27,35 +27,22 @@ export default function WinterKuariPass() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>Kuari Pass Trek 2026 | Lord Curzon Trail | Ibex Ice Axe</title>
-
-        <meta
-          name="description"
-          content="Book Kuari Pass Trek 2026 with Ibex Ice Axe. Explore the famous Lord Curzon Trail, snow-covered forests, Himalayan views, detailed itinerary, cost, and booking information."
-        />
-
-        <meta
-          name="keywords"
-          content="Kuari Pass Trek, Kuari Pass Trek 2026, Lord Curzon Trail, Kuari Pass Trek Cost, Winter Trek Uttarakhand, Kuari Pass Package"
-        />
-
-        <link rel="canonical" href="https://ibexiceaxe.com/kuari-pass-trek" />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristTrip",
-            name: "Kuari Pass Trek",
-            description:
-              "Kuari Pass Trek on the famous Lord Curzon Trail in Uttarakhand.",
-            provider: {
-              "@type": "Organization",
-              name: "Ibex Ice Axe",
-            },
-          })}
-        </script>
-      </Helmet>
+      <SEO 
+        title="Kuari Pass Trek 2026 | Lord Curzon Trail | Ibex Ice Axe"
+        description="Book Kuari Pass Trek 2026 with Ibex Ice Axe. Explore the famous Lord Curzon Trail, snow-covered forests, Himalayan views, detailed itinerary, cost, and booking information."
+        keywords="Kuari Pass Trek, Kuari Pass Trek 2026, Lord Curzon Trail, Kuari Pass Trek Cost, Winter Trek Uttarakhand, Kuari Pass Package"
+        path="/kuari-pass-trek"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          name: "Kuari Pass Trek",
+          description: "Kuari Pass Trek on the famous Lord Curzon Trail in Uttarakhand.",
+          provider: {
+            "@type": "Organization",
+            name: "Ibex Ice Axe"
+          }
+        }}
+      />
             <Desktop_intro_section
         img={img1}
         title={"Winter Kuari Pass Trek"}

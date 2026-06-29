@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import FaqAccordion from "./FaqAccordion";
 import Photos from "./Photos";
 import Desktop_intro_section from "./Desktop_intro_section";
@@ -25,14 +25,26 @@ export default function PanchKedar() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const touristTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Panch Kedar Trek",
+    "description": "Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Ibex Ice Axe"
+    }
+  };
+
   return (
     <>
 
-      <Helmet>
-        <link rel="canonical" href="https://ibexiceaxe.com/panch-kedar-trek" />
-        <title>Panch Kedar Trek Package | Himalayan Pilgrimage | Ibex Ice Axe</title>
-        <meta name="description" content="Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure." />
-      </Helmet>
+      <SEO 
+        title="Panch Kedar Trek Package | Himalayan Pilgrimage | Ibex Ice Axe"
+        description="Embark on the legendary Panch Kedar Trek. Visit the five sacred Shiva temples nestled high in the Garhwal Himalayas. Book your spiritual adventure."
+        path="/panch-kedar-trek"
+        schemaData={touristTripSchema}
+      />
 
             <Desktop_intro_section
         img={img1}
