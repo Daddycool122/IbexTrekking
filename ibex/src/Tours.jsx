@@ -37,7 +37,10 @@ export default function Tours() {
         path="/tours"
       />
 
-      
+      <h1 className={styles.title} style={{ textAlign: "center", margin: "2rem 0", color: "#1a1a1a", fontSize: "2.5rem" }}>
+        Adventure Tours & Weekend Getaways
+        <span className={styles.title_border}></span>
+      </h1>
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
           <img loading="lazy" src={img8} className={styles.ad_cd_img} alt="Panch Kedar Trek" />

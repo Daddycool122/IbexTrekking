@@ -56,10 +56,10 @@ export default function Trekking() {
       />
 
       
-      {/* <div className={styles.title} ref={trekking_ref}>
-        Trekking
+      <h1 className={styles.title} ref={trekking_ref} style={{ textAlign: "center", margin: "2rem 0", color: "#1a1a1a", fontSize: "2.5rem" }}>
+        Himalayan Treks
         <span className={styles.title_border}></span>
-      </div> */}
+      </h1>
 
       <div className={styles.adventure_card_section}>
         <div className={styles.indi_adventure_card}>
