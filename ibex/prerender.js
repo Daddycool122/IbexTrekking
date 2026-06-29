@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';
+import puppeteerCore from 'puppeteer-core';
+import chromium from '@sparticuz/chromium';
 import express from 'express';
 import { fileURLToPath } from 'url';
 
@@ -41,7 +43,16 @@ const server = app.listen(PORT, async () => {
         routes.push('/404');
 
         // 3. Launch Puppeteer
-        browser = await puppeteer.launch({ headless: "new" });
+        if (process.env.VERCEL || process.env.CI) {
+            browser = await puppeteerCore.launch({
+                args: chromium.args,
+                defaultViewport: chromium.defaultViewport,
+                executablePath: await chromium.executablePath(),
+                headless: chromium.headless,
+            });
+        } else {
+            browser = await puppeteer.launch({ headless: "new" });
+        }
         const page = await browser.newPage();
         
         // Log page errors
